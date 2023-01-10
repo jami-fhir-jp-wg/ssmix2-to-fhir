@@ -21,11 +21,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: makedir ./output
-      run: | 
-        mkdir output
-        mkdir fsh-generated
-        touch testfile
     - name: ssh key generate
       run: echo "$SSH_PRIVATE_KEY" > key && chmod 600 key
       env:
@@ -62,7 +57,7 @@ jobs:
         PACKAGE: jp-core.r4#1.1.1-snap
         PACKAGECORE: hl7.fhir.r4.core#4.0.1
       run: | 
-        mkdir input-cache
+        mkdir -p input-cache
         mv ./publisher.jar ./input-cache
         : # mv hl7.fhir.r4.core-4.0.1.tgz  $PACKAGECORE.tgz
         : # - name: Wget IG PublisherJPFHIR
