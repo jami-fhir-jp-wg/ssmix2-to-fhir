@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="table-v2-0127-to-allergyintolerancecategory"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Tablev2-0127toAllergyIntoleranceCategory (http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/table-v2-0127-to-allergyintolerancecategory)</h2><p>Mapping from <a href="http://terminology.hl7.org/4.0.0/CodeSystem-v2-0127.html">http://terminology.hl7.org/CodeSystem/v2-0127</a> to <a href="http://hl7.org/fhir/R4/codesystem-allergy-intolerance-category.html">http://hl7.org/fhir/allergy-intolerance-category</a></p><p>ACTIVE (not intended for production usage). Published on 2022-02-01 by swgssmix. </p><br/><p><b>Group 1</b>Mapping from <a href="http://terminology.hl7.org/4.0.0/CodeSystem-v2-0127.html">allergenType</a> to <a href="http://hl7.org/fhir/R4/codesystem-allergy-intolerance-category.html">AllergyIntoleranceCategory</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>DA (薬物アレルギー)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>medication</td></tr><tr><td>FA (食物アレルギー)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>food</td></tr><tr><td>MA (種々のアレルギー)</td><td colspan="2" style="background-color: #efefef">(not mapped)</td></tr><tr><td>MC (種々の禁忌)</td><td colspan="2" style="background-color: #efefef">(not mapped)</td></tr><tr><td>EA (環境アレルギー)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>environment</td></tr><tr><td>AA (動物アレルギー)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>biologic (Environment)</td></tr><tr><td>PA (植物アレルギー)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>environment</td></tr><tr><td>LA (花粉アレルギー)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>environment</td></tr></table></div>
+  </text>
+  <extension url="AllergyIntoleranceCategory">
+    <extension url="type">
+      <valueCode value="derived-from"/>
+    </extension>
+  </extension>
+  <extension url="label">
+    <valueString value="Table v2-0127 to AllergyIntoleranceCategory.fsh"/>
+  </extension>
+  <url value="http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/table-v2-0127-to-allergyintolerancecategory"/>
+  <version value="0.1.0"/>
+  <name value="Tablev2-0127toAllergyIntoleranceCategory"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-02-01"/>
+  <publisher value="swgssmix"/>
+  <sourceUri value="http://terminology.hl7.org/CodeSystem/v2-0127"/>
+  <targetUri value="http://hl7.org/fhir/allergy-intolerance-category"/>
+  <group>
+    <source value="http://terminology.hl7.org/CodeSystem/v2-0127"/>
+    <target value="http://hl7.org/fhir/allergy-intolerance-category"/>
+    <element>
+      <code value="DA"/>
+      <display value="薬物アレルギー"/>
+      <target>
+        <code value="medication"/>
+        <display value="Medication"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FA"/>
+      <display value="食物アレルギー"/>
+      <target>
+        <code value="food"/>
+        <display value="Food"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="MA"/>
+      <display value="種々のアレルギー"/>
+      <target>
+        <equivalence value="unmatched"/>
+      </target>
+    </element>
+    <element>
+      <code value="MC"/>
+      <display value="種々の禁忌"/>
+      <target>
+        <equivalence value="unmatched"/>
+      </target>
+    </element>
+    <element>
+      <code value="EA"/>
+      <display value="環境アレルギー"/>
+      <target>
+        <code value="environment"/>
+        <display value="Environment"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="AA"/>
+      <display value="動物アレルギー"/>
+      <target>
+        <code value="biologic"/>
+        <display value="Environment"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PA"/>
+      <display value="植物アレルギー"/>
+      <target>
+        <code value="environment"/>
+        <display value="Environment"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LA"/>
+      <display value="花粉アレルギー"/>
+      <target>
+        <code value="environment"/>
+        <display value="Environment"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

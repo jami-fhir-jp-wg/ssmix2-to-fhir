@@ -1,0 +1,38 @@
+管理番号,区分,gid,name,表記,編集日,sourceUri,targetUri
+,md,,,このセクションでは、テーブルレベルのマッピングを説明する。,,,
+,md,,,,,,
+,md,,,### テーブルレベルマッピング仕様,,,
+,md,,, * テーブルレベルのマッピングはSS-MIX2の「別紙：コード表」にある各表に対し定義する。,,,
+,md,,,各表に対応する内容はこのページの下部にある[テーブル一覧](#テーブル一覧)のリンク先で説明する。<br/>,,,
+,md,,, * これらの定義はプロファイルの Terminology Binding が強度で、SS-MIX2のコード体系をそのまま使用できない場合に限り作成する。,,,
+,md,,,<br/><br/>,,,
+,md,,,,,,
+,md,,,### テーブル一覧,,,
+,md,,,#### HL7表,,,
+v2-0001,fsh,584562580,Table v2-0001 to AdministrativeGender,性別,2022-02-01,http://terminology.hl7.org/CodeSystem/v2-0001,http://hl7.org/fhir/administrative-gender
+v2-0003-to-encounter-status,fsh,2061545565,Table v2-0003 to EncounterStatus,EncounterStatus,2022-07-27,http://terminology.hl7.org/CodeSystem/v2-0003,http://hl7.org/fhir/ValueSet/encounter-status
+v2-0003-to-encounter-location-status,fsh,180395392,Table v2-0003 to EncounterLocationStatus,EncounterLocationStatus,2022-07-27,http://terminology.hl7.org/CodeSystem/v2-0003,http://hl7.org/fhir/ValueSet/encounter-location-status
+v2-0004,fsh,2132498693,Table v2-0004 to v3-ActCode,入外区分,2022-02-01,http://terminology.hl7.org/CodeSystem/v2-0004,http://terminology.hl7.org/CodeSystem/v3-ActCode
+v2-0127,fsh,677885665,Table v2-0127 to AllergyIntoleranceCategory,アレルギー分類,2022-02-01,http://terminology.hl7.org/CodeSystem/v2-0127,http://hl7.org/fhir/allergy-intolerance-category
+v2-0128,fsh,83652929,Table v2-0128 to ReactionEventSeverity,アレルギー重症度,2022-02-01,http://terminology.hl7.org/CodeSystem/v2-0128,http://hl7.org/fhir/reaction-event-severity
+v2-0201,fsh,184842256,Table v2-0201 to ContactPointUse,電話連絡手段区分,2022-02-01,http://terminology.hl7.org/CodeSystem/v2-0201,http://hl7.org/fhir/contact-point-use
+v2-0465,fsh,1501392119,Table v2-0465 to iso-21090,名前表記コード,2022-02-01,http://terminology.hl7.org/CodeSystem/v2-0465,iso-21090
+,md,,,,,,
+,md,,,#### JAHIS 定義コード表,,,
+,md,,,,,,
+,md,,,,,,
+,md,,,#### MERIT-9 処方オーダ Ver1.1 コード表,,,
+,md,,,,,,
+,md,,,,,,
+,md,,,#### 日本臨床検査医学会 臨床検査項目分類コード コード表,,,
+,md,,,,,,
+,md,,,,,,
+,md,,,#### 標準用法マスタ コード表,,,
+,md,,,,,,
+,md,,,,,,
+,md,,,#### SS-MIX2 TF コード表,,,
+,md,,,,,,
+,md,,,,,,
+,md,,,#### その他,,,
+,md,,,,,,
+,md,,,,,,

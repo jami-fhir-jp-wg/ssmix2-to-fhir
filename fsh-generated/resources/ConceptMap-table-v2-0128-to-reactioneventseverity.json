@@ -1,0 +1,71 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "table-v2-0128-to-reactioneventseverity",
+  "version": "1.0",
+  "name": "Tablev2-0128toReactionEventSeverity",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-02-01",
+  "publisher": "swgssmix",
+  "sourceUri": "http://terminology.hl7.org/CodeSystem/v2-0128",
+  "targetUri": "http://hl7.org/fhir/reaction-event-severity",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/v2-0128",
+      "target": "http://hl7.org/fhir/reaction-event-severity",
+      "element": [
+        {
+          "code": "MI",
+          "display": "軽度",
+          "target": [
+            {
+              "code": "mild",
+              "display": "Mild",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "MO",
+          "display": "中等度",
+          "target": [
+            {
+              "code": "moderate",
+              "display": "Moderate",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "SV",
+          "display": "重度",
+          "target": [
+            {
+              "code": "severe",
+              "display": "Severe",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "ReactionEventSeverity",
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        }
+      ]
+    },
+    {
+      "url": "label",
+      "valueString": "Table v2-0128 to ReactionEventSeverity.fsh"
+    }
+  ]
+}

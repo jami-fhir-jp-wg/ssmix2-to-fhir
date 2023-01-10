@@ -1,0 +1,187 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-adt-00-in1-to-coverage> a fhir:ConceptMap;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "segment-adt-00-in1-to-coverage"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SegmentADT_00_IN1toCoverage (http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-adt-00-in1-to-coverage)</h2><p>Mapping from ADT-00.IN1 to JP_Coverage</p><p>ACTIVE (not intended for production usage). Published on 2022-02-01 by swgssmix. </p><div><p>この ConceptMap には ADT-00 IN1  保険 から Coverage への変換を定義する。</p>\n</div><br/><p><b>Group 1</b>Mapping from <code>ADT-00.IN1</code> to <code>JP_Coverage</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>PID-3 (患者ID リスト)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Coverage.subject</td><td>Patientへの参照を設定する。</td></tr><tr><td>PID-3 (患者ID リスト)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Coverage.beneficiary</td><td>Patientへの参照を設定する。</td></tr><tr><td>IN1-0 (セグメントID)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>IN1-1 (セットID-IN1)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>IN1-2 (保険プランID)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Coverage.type</td><td/></tr><tr><td>IN1-3 (保険会社ID)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Coverage.payor</td><td>Organization（保険者）への参照を設定する。</td></tr><tr><td>IN1-3 (保険会社ID)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Coverage.class.value</td><td>公費負担者番号</td></tr><tr><td>IN1-4 (保険会社名)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Coverage.class.name</td><td/></tr><tr><td>IN1-10 (被保険者グループ雇用者ID)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Coverage.subscriberId</td><td/></tr><tr><td>IN1-10 (枝番)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Coverage.dependent</td><td/></tr><tr><td>IN1-11 (被保険者グループ雇用者名)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Coverage.subscriberId</td><td/></tr><tr><td>IN1-12 (プラン有効日付)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Coverage.period.start</td><td/></tr><tr><td>IN1-13 (プラン失効日付)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Coverage.period.end</td><td/></tr><tr><td>IN1-15 (プランタイプ)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>IN1-17 (被保険者と患者の関係)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Coverage.relationship</td><td/></tr></table></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "type" ];
+       fhir:Extension.valueCode [ fhir:value "derived-from" ]
+     ];
+     fhir:Extension.url [ fhir:value "Coverage" ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "label" ];
+     fhir:Extension.valueString [ fhir:value "Segment ADT_00_IN1 to Coverage.fsh" ]
+  ];
+  fhir:ConceptMap.url [ fhir:value "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-adt-00-in1-to-coverage"];
+  fhir:ConceptMap.version [ fhir:value "0.1.0"];
+  fhir:ConceptMap.name [ fhir:value "SegmentADT_00_IN1toCoverage"];
+  fhir:ConceptMap.status [ fhir:value "active"];
+  fhir:ConceptMap.experimental [ fhir:value "true"^^xsd:boolean];
+  fhir:ConceptMap.date [ fhir:value "2022-02-01"^^xsd:date];
+  fhir:ConceptMap.publisher [ fhir:value "swgssmix"];
+  fhir:ConceptMap.description [ fhir:value "この ConceptMap には ADT-00 IN1  保険 から Coverage への変換を定義する。"];
+  fhir:ConceptMap.sourceUri [ fhir:value "ADT-00.IN1"];
+  fhir:ConceptMap.targetUri [ fhir:value "JP_Coverage"];
+  fhir:ConceptMap.group [
+     fhir:index 0;
+     fhir:ConceptMap.group.source [ fhir:value "ADT-00.IN1" ];
+     fhir:ConceptMap.group.target [ fhir:value "JP_Coverage" ];
+     fhir:ConceptMap.group.element [
+       fhir:index 0;
+       fhir:ConceptMap.group.element.code [ fhir:value "PID-3" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "患者ID リスト" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Coverage.subject" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "Patientへの参照を設定する。" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ConceptMap.group.element.code [ fhir:value "PID-3" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "患者ID リスト" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Coverage.beneficiary" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "Patientへの参照を設定する。" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:ConceptMap.group.element.code [ fhir:value "IN1-0" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "セグメントID" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:ConceptMap.group.element.code [ fhir:value "IN1-1" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "セットID-IN1" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:ConceptMap.group.element.code [ fhir:value "IN1-2" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "保険プランID" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Coverage.type" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:ConceptMap.group.element.code [ fhir:value "IN1-3" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "保険会社ID" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Coverage.payor" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "Organization（保険者）への参照を設定する。" ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:ConceptMap.group.element.code [ fhir:value "IN1-3" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "保険会社ID" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Coverage.class.value" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "公費負担者番号" ]
+       ]
+     ], [
+       fhir:index 7;
+       fhir:ConceptMap.group.element.code [ fhir:value "IN1-4" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "保険会社名" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Coverage.class.name" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 8;
+       fhir:ConceptMap.group.element.code [ fhir:value "IN1-10" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "被保険者グループ雇用者ID" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Coverage.subscriberId" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 9;
+       fhir:ConceptMap.group.element.code [ fhir:value "IN1-10" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "枝番" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Coverage.dependent" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 10;
+       fhir:ConceptMap.group.element.code [ fhir:value "IN1-11" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "被保険者グループ雇用者名" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Coverage.subscriberId" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 11;
+       fhir:ConceptMap.group.element.code [ fhir:value "IN1-12" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "プラン有効日付" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Coverage.period.start" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 12;
+       fhir:ConceptMap.group.element.code [ fhir:value "IN1-13" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "プラン失効日付" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Coverage.period.end" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 13;
+       fhir:ConceptMap.group.element.code [ fhir:value "IN1-15" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "プランタイプ" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 14;
+       fhir:ConceptMap.group.element.code [ fhir:value "IN1-17" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "被保険者と患者の関係" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Coverage.relationship" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-adt-00-in1-to-coverage.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

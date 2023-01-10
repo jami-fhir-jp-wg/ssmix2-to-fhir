@@ -1,0 +1,271 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "segment-pid-to-patient",
+  "description": "この ConceptMap には 共通 PID 患者識別 から Patient への変換を定義する。",
+  "version": "1.0",
+  "name": "SegmentPIDtoPatient",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-02-01",
+  "publisher": "swgssmix",
+  "sourceUri": "PID",
+  "targetUri": "JP_Patient",
+  "group": [
+    {
+      "source": "PID",
+      "target": "JP_Patient",
+      "element": [
+        {
+          "code": "PID-0",
+          "display": "セグメントID",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "PID-1",
+          "display": "セットID-PV1",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "PID-3",
+          "display": "患者ID リスト",
+          "target": [
+            {
+              "code": "Patient.identifier",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "PID-5",
+          "display": "患者氏名",
+          "target": [
+            {
+              "code": "Patient.name",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "PID-7",
+          "display": "生年月日年齢",
+          "target": [
+            {
+              "code": "Patient.birthDate",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "PID-8",
+          "display": "性別",
+          "target": [
+            {
+              "code": "Patient.gender",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "PID-11",
+          "display": "患者住所",
+          "target": [
+            {
+              "code": "Patient.address",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "PID-13",
+          "display": "電話番号－自宅",
+          "target": [
+            {
+              "code": "Patient.telecom",
+              "equivalence": "equivalent",
+              "comment": "system:  phone,  use: home"
+            }
+          ]
+        },
+        {
+          "code": "PID-14",
+          "display": "電話番号－勤務先",
+          "target": [
+            {
+              "code": "Patient.telecom",
+              "equivalence": "equivalent",
+              "comment": "system:  phone,  use: work"
+            }
+          ]
+        },
+        {
+          "code": "PID-33",
+          "display": "最終更新日時",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "DB1-0",
+          "display": "セグメントID",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "DB1-1",
+          "display": "セットID-DB1",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "DB1-2",
+          "display": "身体障害情報",
+          "target": [
+            {
+              "code": "Patient.extension",
+              "equivalence": "equivalent",
+              "comment": "http://hl7.org/fhir/R4/extension-patient-disability.html、CodeableConcept1件として設定する。"
+            }
+          ]
+        },
+        {
+          "code": "DB1-4",
+          "display": "身体障害の有無",
+          "target": [
+            {
+              "code": "Patient.extension",
+              "equivalence": "equivalent",
+              "comment": "http://hl7.org/fhir/R4/extension-patient-disability.html、CodeableConcept1件として設定する。"
+            }
+          ]
+        },
+        {
+          "code": "NK1-0",
+          "display": "セグメントID",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "NK1-1",
+          "display": "セットID-NK1",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "NK1-2",
+          "display": "氏名",
+          "target": [
+            {
+              "code": "Patient.contact.name",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "NK1-3",
+          "display": "続柄",
+          "target": [
+            {
+              "code": "Patient.contact.relationship",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "NK1-4",
+          "display": "住所",
+          "target": [
+            {
+              "code": "Patient.contact.address",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "NK1-5",
+          "display": "電話番号",
+          "target": [
+            {
+              "code": "Patient.contact.telecom",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "NK1-6",
+          "display": "勤務先電話番号",
+          "target": [
+            {
+              "code": "Patient.contact.telecom",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "NK1-13",
+          "display": "所属組織名",
+          "target": [
+            {
+              "code": "Patient.contact.organization",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "Patient",
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        }
+      ]
+    },
+    {
+      "url": "label",
+      "valueString": "Segment PID to Patient.fsh"
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "segment-oml-11-obr-to-diagnosticreport",
+  "description": "この ConceptMap には OML-11 OBR 検査要求 から DiagnosticReport への変換を定義する。",
+  "version": "1.0",
+  "name": "SegmentOML_11_OBRtoDiagnosticReport",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-02-01",
+  "publisher": "swgssmix",
+  "sourceUri": "OML-11.OBR",
+  "targetUri": "DiagnosticReport",
+  "group": [
+    {
+      "source": "OML-11.OBR",
+      "target": "DiagnosticReport",
+      "element": [
+        {
+          "code": "PID-3",
+          "display": "患者ID リスト",
+          "target": [
+            {
+              "code": "DiagnosticReport.subject",
+              "equivalence": "equivalent",
+              "comment": "Patientへの参照を設定する。"
+            }
+          ]
+        },
+        {
+          "code": "SPM",
+          "display": "検体セグメント",
+          "target": [
+            {
+              "code": "DiagnosticReport.specimen",
+              "equivalence": "equivalent",
+              "comment": "Specimenへの参照を設定する。"
+            }
+          ]
+        },
+        {
+          "code": "OBR-0",
+          "display": "セグメントID",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "OBR-1",
+          "display": "セットID-OBR",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "OBR-2",
+          "display": "依頼者オーダ番号",
+          "target": [
+            {
+              "code": "DiagnosticReport.identifier",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "OBR-3",
+          "display": "実施者オーダ番号",
+          "target": [
+            {
+              "code": "DiagnosticReport.identifier",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "OBR-4",
+          "display": "検査項目ID",
+          "target": [
+            {
+              "code": "DiagnosticReport.category",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "OBR-4",
+          "display": "検査項目ID",
+          "target": [
+            {
+              "code": "DiagnosticReport.code",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "OBR-7",
+          "display": "検査/採取日時",
+          "target": [
+            {
+              "code": "DiagnosticReport.effectivePeriod.start",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "OBR-8",
+          "display": "検査/採取終了日時",
+          "target": [
+            {
+              "code": "DiagnosticReport.effectivePeriod.end",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "OBR-12",
+          "display": "危険(検体)コード",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "OBR-16",
+          "display": "依頼者",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "OBR-22",
+          "display": "結果報告/状態変更-日時",
+          "target": [
+            {
+              "code": "DiagnosticReport.issued",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "OBR-26",
+          "display": "親結果",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "OBX",
+          "display": "検査結果セグメント",
+          "target": [
+            {
+              "code": "DiagnosticReport.result",
+              "equivalence": "equivalent",
+              "comment": "Observationへの参照を設定する。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "DiagnosticReport",
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        }
+      ]
+    },
+    {
+      "url": "label",
+      "valueString": "Segment OML_11_OBR to DiagnosticReport.fsh"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+管理番号,変換前コード,変換前表記,変換後コード,変換後表記,等価性,コメント,自由記載欄
+,MSH-3,送信アプリケーション,MessageHeader.source.name,,equivalent,,
+,MSH-5,受信アプリケーション,MessageHeader.destination.name,,equivalent,,
+,MSH-9,メッセージ型,MessageHeader.eventCoding	,,equivalent,"第2 成分のHL7 表「0003 - イベント型」を設定する。
+http://terminology.hl7.org/CodeSystem/v2-0003",
+,MSH-24,送信ネットワークアドレス,MessageHeader.source.endpoint,,equivalent,HL7v2.7の項目、SS-MIX2では設定されていないため、固定のURLを設定する。,
+,MSH-25,受信ネットワークアドレス,MessageHeader.destination.endpoint,,equivalent,HL7v2.7の項目、SS-MIX2では設定されていないため、固定のURLを設定する。,

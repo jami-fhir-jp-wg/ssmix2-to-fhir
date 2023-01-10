@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="segment-adt-00-in1-to-coverage"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>SegmentADT_00_IN1toCoverage (http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-adt-00-in1-to-coverage)</h2><p>Mapping from ADT-00.IN1 to JP_Coverage</p><p>ACTIVE (not intended for production usage). Published on 2022-02-01 by swgssmix. </p><div><p>この ConceptMap には ADT-00 IN1  保険 から Coverage への変換を定義する。</p>
+</div><br/><p><b>Group 1</b>Mapping from <code>ADT-00.IN1</code> to <code>JP_Coverage</code></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>PID-3 (患者ID リスト)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Coverage.subject</td><td>Patientへの参照を設定する。</td></tr><tr><td>PID-3 (患者ID リスト)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Coverage.beneficiary</td><td>Patientへの参照を設定する。</td></tr><tr><td>IN1-0 (セグメントID)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>IN1-1 (セットID-IN1)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>IN1-2 (保険プランID)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Coverage.type</td><td/></tr><tr><td>IN1-3 (保険会社ID)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Coverage.payor</td><td>Organization（保険者）への参照を設定する。</td></tr><tr><td>IN1-3 (保険会社ID)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Coverage.class.value</td><td>公費負担者番号</td></tr><tr><td>IN1-4 (保険会社名)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Coverage.class.name</td><td/></tr><tr><td>IN1-10 (被保険者グループ雇用者ID)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Coverage.subscriberId</td><td/></tr><tr><td>IN1-10 (枝番)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Coverage.dependent</td><td/></tr><tr><td>IN1-11 (被保険者グループ雇用者名)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Coverage.subscriberId</td><td/></tr><tr><td>IN1-12 (プラン有効日付)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Coverage.period.start</td><td/></tr><tr><td>IN1-13 (プラン失効日付)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Coverage.period.end</td><td/></tr><tr><td>IN1-15 (プランタイプ)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>IN1-17 (被保険者と患者の関係)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Coverage.relationship</td><td/></tr></table></div>
+  </text>
+  <extension url="Coverage">
+    <extension url="type">
+      <valueCode value="derived-from"/>
+    </extension>
+  </extension>
+  <extension url="label">
+    <valueString value="Segment ADT_00_IN1 to Coverage.fsh"/>
+  </extension>
+  <url value="http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-adt-00-in1-to-coverage"/>
+  <version value="0.1.0"/>
+  <name value="SegmentADT_00_IN1toCoverage"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-02-01"/>
+  <publisher value="swgssmix"/>
+  <description value="この ConceptMap には ADT-00 IN1  保険 から Coverage への変換を定義する。"/>
+  <sourceUri value="ADT-00.IN1"/>
+  <targetUri value="JP_Coverage"/>
+  <group>
+    <source value="ADT-00.IN1"/>
+    <target value="JP_Coverage"/>
+    <element>
+      <code value="PID-3"/>
+      <display value="患者ID リスト"/>
+      <target>
+        <code value="Coverage.subject"/>
+        <equivalence value="equivalent"/>
+        <comment value="Patientへの参照を設定する。"/>
+      </target>
+    </element>
+    <element>
+      <code value="PID-3"/>
+      <display value="患者ID リスト"/>
+      <target>
+        <code value="Coverage.beneficiary"/>
+        <equivalence value="equivalent"/>
+        <comment value="Patientへの参照を設定する。"/>
+      </target>
+    </element>
+    <element>
+      <code value="IN1-0"/>
+      <display value="セグメントID"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="IN1-1"/>
+      <display value="セットID-IN1"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="IN1-2"/>
+      <display value="保険プランID"/>
+      <target>
+        <code value="Coverage.type"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="IN1-3"/>
+      <display value="保険会社ID"/>
+      <target>
+        <code value="Coverage.payor"/>
+        <equivalence value="equivalent"/>
+        <comment value="Organization（保険者）への参照を設定する。"/>
+      </target>
+    </element>
+    <element>
+      <code value="IN1-3"/>
+      <display value="保険会社ID"/>
+      <target>
+        <code value="Coverage.class.value"/>
+        <equivalence value="equivalent"/>
+        <comment value="公費負担者番号"/>
+      </target>
+    </element>
+    <element>
+      <code value="IN1-4"/>
+      <display value="保険会社名"/>
+      <target>
+        <code value="Coverage.class.name"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="IN1-10"/>
+      <display value="被保険者グループ雇用者ID"/>
+      <target>
+        <code value="Coverage.subscriberId"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="IN1-10"/>
+      <display value="枝番"/>
+      <target>
+        <code value="Coverage.dependent"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="IN1-11"/>
+      <display value="被保険者グループ雇用者名"/>
+      <target>
+        <code value="Coverage.subscriberId"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="IN1-12"/>
+      <display value="プラン有効日付"/>
+      <target>
+        <code value="Coverage.period.start"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="IN1-13"/>
+      <display value="プラン失効日付"/>
+      <target>
+        <code value="Coverage.period.end"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="IN1-15"/>
+      <display value="プランタイプ"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="IN1-17"/>
+      <display value="被保険者と患者の関係"/>
+      <target>
+        <code value="Coverage.relationship"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

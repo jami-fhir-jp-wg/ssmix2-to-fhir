@@ -1,0 +1,466 @@
+<html><head><title>Terminology Server Log</title></head><body><h2>Terminology Server Log</h2>
+<hr/><a name="l1"> </a>
+<p>#1</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;coding&quot;,&quot;valueCoding&quot;:{&quot;system&quot;:&quot;JP_AllergyIntolerance&quot;,&quot;code&quot;:&quot;AllergyIntolerance.patient&quot;}},{&quot;name&quot;:&quot;displayLanguage&quot;,&quot;valueString&quot;:&quot;en-US&quot;},{&quot;name&quot;:&quot;default-to-latest-version&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;profile&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;x-system-cache-id&quot;,&quot;valueString&quot;:&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;}]}}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:423
+content-type:application/fhir+json
+date:Wed, 30 Nov 2022 03:40:43 GMT
+last-modified:Wed, 30 Nov 2022 03:40:43 GMT
+pragma:no-cache
+server:nginx
+x-gdpr-disclosure:All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+x-request-id:57-703215
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;The code system 'JP_AllergyIntolerance' is not known (encountered paired with code = 'AllergyIntolerance.patient'); The code provided (JP_AllergyIntolerance#AllergyIntolerance.patient) is not valid in the value set 'All codes known to the system'&quot;},{&quot;name&quot; : &quot;cause&quot;,&quot;valueString&quot; : &quot;not-found&quot;}]}
+</pre>
+<hr/><a name="l2"> </a>
+<p>#2</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;coding&quot;,&quot;valueCoding&quot;:{&quot;system&quot;:&quot;JP_Coverage&quot;,&quot;code&quot;:&quot;Coverage.subject&quot;}},{&quot;name&quot;:&quot;displayLanguage&quot;,&quot;valueString&quot;:&quot;en-US&quot;},{&quot;name&quot;:&quot;default-to-latest-version&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;profile&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;x-system-cache-id&quot;,&quot;valueString&quot;:&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;}]}}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:383
+content-type:application/fhir+json
+date:Wed, 30 Nov 2022 03:40:44 GMT
+last-modified:Wed, 30 Nov 2022 03:40:44 GMT
+pragma:no-cache
+server:nginx
+x-gdpr-disclosure:All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+x-request-id:57-703216
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;The code system 'JP_Coverage' is not known (encountered paired with code = 'Coverage.subject'); The code provided (JP_Coverage#Coverage.subject) is not valid in the value set 'All codes known to the system'&quot;},{&quot;name&quot; : &quot;cause&quot;,&quot;valueString&quot; : &quot;not-found&quot;}]}
+</pre>
+<hr/><a name="l3"> </a>
+<p>#3</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;coding&quot;,&quot;valueCoding&quot;:{&quot;system&quot;:&quot;JP_Observation_Common&quot;,&quot;code&quot;:&quot;Observation.subject&quot;}},{&quot;name&quot;:&quot;displayLanguage&quot;,&quot;valueString&quot;:&quot;en-US&quot;},{&quot;name&quot;:&quot;default-to-latest-version&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;profile&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;x-system-cache-id&quot;,&quot;valueString&quot;:&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;}]}}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:409
+content-type:application/fhir+json
+date:Wed, 30 Nov 2022 03:40:44 GMT
+last-modified:Wed, 30 Nov 2022 03:40:44 GMT
+pragma:no-cache
+server:nginx
+x-gdpr-disclosure:All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+x-request-id:57-703218
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;The code system 'JP_Observation_Common' is not known (encountered paired with code = 'Observation.subject'); The code provided (JP_Observation_Common#Observation.subject) is not valid in the value set 'All codes known to the system'&quot;},{&quot;name&quot; : &quot;cause&quot;,&quot;valueString&quot; : &quot;not-found&quot;}]}
+</pre>
+<hr/><a name="l4"> </a>
+<p>#4</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;coding&quot;,&quot;valueCoding&quot;:{&quot;system&quot;:&quot;Encounter&quot;,&quot;code&quot;:&quot;Encounter.status&quot;}},{&quot;name&quot;:&quot;displayLanguage&quot;,&quot;valueString&quot;:&quot;en-US&quot;},{&quot;name&quot;:&quot;default-to-latest-version&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;profile&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;x-system-cache-id&quot;,&quot;valueString&quot;:&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;}]}}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:379
+content-type:application/fhir+json
+date:Wed, 30 Nov 2022 03:40:45 GMT
+last-modified:Wed, 30 Nov 2022 03:40:45 GMT
+pragma:no-cache
+server:nginx
+x-gdpr-disclosure:All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+x-request-id:57-703219
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;The code system 'Encounter' is not known (encountered paired with code = 'Encounter.status'); The code provided (Encounter#Encounter.status) is not valid in the value set 'All codes known to the system'&quot;},{&quot;name&quot; : &quot;cause&quot;,&quot;valueString&quot; : &quot;not-found&quot;}]}
+</pre>
+<hr/><a name="l5"> </a>
+<p>#5</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;coding&quot;,&quot;valueCoding&quot;:{&quot;system&quot;:&quot;Bundle&quot;,&quot;code&quot;:&quot;Bundle.timestamp&quot;}},{&quot;name&quot;:&quot;displayLanguage&quot;,&quot;valueString&quot;:&quot;en-US&quot;},{&quot;name&quot;:&quot;default-to-latest-version&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;profile&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;x-system-cache-id&quot;,&quot;valueString&quot;:&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;}]}}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:373
+content-type:application/fhir+json
+date:Wed, 30 Nov 2022 03:40:45 GMT
+last-modified:Wed, 30 Nov 2022 03:40:45 GMT
+pragma:no-cache
+server:nginx
+x-gdpr-disclosure:All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+x-request-id:57-703220
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;The code system 'Bundle' is not known (encountered paired with code = 'Bundle.timestamp'); The code provided (Bundle#Bundle.timestamp) is not valid in the value set 'All codes known to the system'&quot;},{&quot;name&quot; : &quot;cause&quot;,&quot;valueString&quot; : &quot;not-found&quot;}]}
+</pre>
+<hr/><a name="l6"> </a>
+<p>#6</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;coding&quot;,&quot;valueCoding&quot;:{&quot;system&quot;:&quot;MessageHeader&quot;,&quot;code&quot;:&quot;MessageHeader.source.name&quot;}},{&quot;name&quot;:&quot;displayLanguage&quot;,&quot;valueString&quot;:&quot;en-US&quot;},{&quot;name&quot;:&quot;default-to-latest-version&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;profile&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;x-system-cache-id&quot;,&quot;valueString&quot;:&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;}]}}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:405
+content-type:application/fhir+json
+date:Wed, 30 Nov 2022 03:40:45 GMT
+last-modified:Wed, 30 Nov 2022 03:40:45 GMT
+pragma:no-cache
+server:nginx
+x-gdpr-disclosure:All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+x-request-id:57-703221
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;The code system 'MessageHeader' is not known (encountered paired with code = 'MessageHeader.source.name'); The code provided (MessageHeader#MessageHeader.source.name) is not valid in the value set 'All codes known to the system'&quot;},{&quot;name&quot; : &quot;cause&quot;,&quot;valueString&quot; : &quot;not-found&quot;}]}
+</pre>
+<hr/><a name="l7"> </a>
+<p>#7</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;coding&quot;,&quot;valueCoding&quot;:{&quot;system&quot;:&quot;DiagnosticReport&quot;,&quot;code&quot;:&quot;DiagnosticReport.subject&quot;}},{&quot;name&quot;:&quot;displayLanguage&quot;,&quot;valueString&quot;:&quot;en-US&quot;},{&quot;name&quot;:&quot;default-to-latest-version&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;profile&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;x-system-cache-id&quot;,&quot;valueString&quot;:&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;}]}}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:409
+content-type:application/fhir+json
+date:Wed, 30 Nov 2022 03:40:45 GMT
+last-modified:Wed, 30 Nov 2022 03:40:45 GMT
+pragma:no-cache
+server:nginx
+x-gdpr-disclosure:All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+x-request-id:57-703223
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;The code system 'DiagnosticReport' is not known (encountered paired with code = 'DiagnosticReport.subject'); The code provided (DiagnosticReport#DiagnosticReport.subject) is not valid in the value set 'All codes known to the system'&quot;},{&quot;name&quot; : &quot;cause&quot;,&quot;valueString&quot; : &quot;not-found&quot;}]}
+</pre>
+<hr/><a name="l8"> </a>
+<p>#8</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;coding&quot;,&quot;valueCoding&quot;:{&quot;system&quot;:&quot;JP_Observation_LabResult&quot;,&quot;code&quot;:&quot;Observation.subject&quot;}},{&quot;name&quot;:&quot;displayLanguage&quot;,&quot;valueString&quot;:&quot;en-US&quot;},{&quot;name&quot;:&quot;default-to-latest-version&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;profile&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;x-system-cache-id&quot;,&quot;valueString&quot;:&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;}]}}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:415
+content-type:application/fhir+json
+date:Wed, 30 Nov 2022 03:40:46 GMT
+last-modified:Wed, 30 Nov 2022 03:40:46 GMT
+pragma:no-cache
+server:nginx
+x-gdpr-disclosure:All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+x-request-id:57-703224
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;The code system 'JP_Observation_LabResult' is not known (encountered paired with code = 'Observation.subject'); The code provided (JP_Observation_LabResult#Observation.subject) is not valid in the value set 'All codes known to the system'&quot;},{&quot;name&quot; : &quot;cause&quot;,&quot;valueString&quot; : &quot;not-found&quot;}]}
+</pre>
+<hr/><a name="l9"> </a>
+<p>#9</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;coding&quot;,&quot;valueCoding&quot;:{&quot;system&quot;:&quot;ServiceRequest&quot;,&quot;code&quot;:&quot;ServiceRequest.subject&quot;}},{&quot;name&quot;:&quot;displayLanguage&quot;,&quot;valueString&quot;:&quot;en-US&quot;},{&quot;name&quot;:&quot;default-to-latest-version&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;profile&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;x-system-cache-id&quot;,&quot;valueString&quot;:&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;}]}}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:401
+content-type:application/fhir+json
+date:Wed, 30 Nov 2022 03:40:46 GMT
+last-modified:Wed, 30 Nov 2022 03:40:46 GMT
+pragma:no-cache
+server:nginx
+x-gdpr-disclosure:All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+x-request-id:57-703225
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;The code system 'ServiceRequest' is not known (encountered paired with code = 'ServiceRequest.subject'); The code provided (ServiceRequest#ServiceRequest.subject) is not valid in the value set 'All codes known to the system'&quot;},{&quot;name&quot; : &quot;cause&quot;,&quot;valueString&quot; : &quot;not-found&quot;}]}
+</pre>
+<hr/><a name="l10"> </a>
+<p>#10</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;coding&quot;,&quot;valueCoding&quot;:{&quot;system&quot;:&quot;Specimen&quot;,&quot;code&quot;:&quot;Observation.subject&quot;}},{&quot;name&quot;:&quot;displayLanguage&quot;,&quot;valueString&quot;:&quot;en-US&quot;},{&quot;name&quot;:&quot;default-to-latest-version&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;profile&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;x-system-cache-id&quot;,&quot;valueString&quot;:&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;}]}}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:383
+content-type:application/fhir+json
+date:Wed, 30 Nov 2022 03:40:46 GMT
+last-modified:Wed, 30 Nov 2022 03:40:46 GMT
+pragma:no-cache
+server:nginx
+x-gdpr-disclosure:All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+x-request-id:57-703226
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;The code system 'Specimen' is not known (encountered paired with code = 'Observation.subject'); The code provided (Specimen#Observation.subject) is not valid in the value set 'All codes known to the system'&quot;},{&quot;name&quot; : &quot;cause&quot;,&quot;valueString&quot; : &quot;not-found&quot;}]}
+</pre>
+<hr/><a name="l11"> </a>
+<p>#11</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;coding&quot;,&quot;valueCoding&quot;:{&quot;system&quot;:&quot;JP_MedicationRequest&quot;,&quot;code&quot;:&quot;MedicationRequest.subject&quot;}},{&quot;name&quot;:&quot;displayLanguage&quot;,&quot;valueString&quot;:&quot;en-US&quot;},{&quot;name&quot;:&quot;default-to-latest-version&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;profile&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;x-system-cache-id&quot;,&quot;valueString&quot;:&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;}]}}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:419
+content-type:application/fhir+json
+date:Wed, 30 Nov 2022 03:40:47 GMT
+last-modified:Wed, 30 Nov 2022 03:40:47 GMT
+pragma:no-cache
+server:nginx
+x-gdpr-disclosure:All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+x-request-id:57-703229
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;The code system 'JP_MedicationRequest' is not known (encountered paired with code = 'MedicationRequest.subject'); The code provided (JP_MedicationRequest#MedicationRequest.subject) is not valid in the value set 'All codes known to the system'&quot;},{&quot;name&quot; : &quot;cause&quot;,&quot;valueString&quot; : &quot;not-found&quot;}]}
+</pre>
+<hr/><a name="l12"> </a>
+<p>#12</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;coding&quot;,&quot;valueCoding&quot;:{&quot;system&quot;:&quot;JP_MedicationAdministration_Injection&quot;,&quot;code&quot;:&quot;MedicationAdministration.subject&quot;}},{&quot;name&quot;:&quot;displayLanguage&quot;,&quot;valueString&quot;:&quot;en-US&quot;},{&quot;name&quot;:&quot;default-to-latest-version&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;profile&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;x-system-cache-id&quot;,&quot;valueString&quot;:&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;}]}}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:467
+content-type:application/fhir+json
+date:Wed, 30 Nov 2022 03:40:47 GMT
+last-modified:Wed, 30 Nov 2022 03:40:47 GMT
+pragma:no-cache
+server:nginx
+x-gdpr-disclosure:All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+x-request-id:57-703231
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;The code system 'JP_MedicationAdministration_Injection' is not known (encountered paired with code = 'MedicationAdministration.subject'); The code provided (JP_MedicationAdministration_Injection#MedicationAdministration.subject) is not valid in the value set 'All codes known to the system'&quot;},{&quot;name&quot; : &quot;cause&quot;,&quot;valueString&quot; : &quot;not-found&quot;}]}
+</pre>
+<hr/><a name="l13"> </a>
+<p>#13</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;coding&quot;,&quot;valueCoding&quot;:{&quot;system&quot;:&quot;JP_Patient&quot;,&quot;code&quot;:&quot;Patient.identifier&quot;}},{&quot;name&quot;:&quot;displayLanguage&quot;,&quot;valueString&quot;:&quot;en-US&quot;},{&quot;name&quot;:&quot;default-to-latest-version&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;profile&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;x-system-cache-id&quot;,&quot;valueString&quot;:&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;}]}}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:385
+content-type:application/fhir+json
+date:Wed, 30 Nov 2022 03:40:48 GMT
+last-modified:Wed, 30 Nov 2022 03:40:48 GMT
+pragma:no-cache
+server:nginx
+x-gdpr-disclosure:All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+x-request-id:57-703233
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;The code system 'JP_Patient' is not known (encountered paired with code = 'Patient.identifier'); The code provided (JP_Patient#Patient.identifier) is not valid in the value set 'All codes known to the system'&quot;},{&quot;name&quot; : &quot;cause&quot;,&quot;valueString&quot; : &quot;not-found&quot;}]}
+</pre>
+<hr/><a name="l14"> </a>
+<p>#14</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;coding&quot;,&quot;valueCoding&quot;:{&quot;system&quot;:&quot;JP_Condition&quot;,&quot;code&quot;:&quot;Condition.subject&quot;}},{&quot;name&quot;:&quot;displayLanguage&quot;,&quot;valueString&quot;:&quot;en-US&quot;},{&quot;name&quot;:&quot;default-to-latest-version&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;profile&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;x-system-cache-id&quot;,&quot;valueString&quot;:&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;}]}}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:387
+content-type:application/fhir+json
+date:Wed, 30 Nov 2022 03:40:48 GMT
+last-modified:Wed, 30 Nov 2022 03:40:48 GMT
+pragma:no-cache
+server:nginx
+x-gdpr-disclosure:All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+x-request-id:57-703235
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;The code system 'JP_Condition' is not known (encountered paired with code = 'Condition.subject'); The code provided (JP_Condition#Condition.subject) is not valid in the value set 'All codes known to the system'&quot;},{&quot;name&quot; : &quot;cause&quot;,&quot;valueString&quot; : &quot;not-found&quot;}]}
+</pre>
+<hr/><a name="l15"> </a>
+<p>#15</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;coding&quot;,&quot;valueCoding&quot;:{&quot;system&quot;:&quot;http://hl7.org/fhir/ValueSet/encounter-location-status&quot;,&quot;code&quot;:&quot;active&quot;}},{&quot;name&quot;:&quot;displayLanguage&quot;,&quot;valueString&quot;:&quot;en-US&quot;},{&quot;name&quot;:&quot;default-to-latest-version&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;profile&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;x-system-cache-id&quot;,&quot;valueString&quot;:&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;}]}}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:449
+content-type:application/fhir+json
+date:Wed, 30 Nov 2022 03:40:49 GMT
+last-modified:Wed, 30 Nov 2022 03:40:48 GMT
+pragma:no-cache
+server:nginx
+x-gdpr-disclosure:All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+x-request-id:57-703237
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;The code system 'http://hl7.org/fhir/ValueSet/encounter-location-status' is not known (encountered paired with code = 'active'); The code provided (http://hl7.org/fhir/ValueSet/encounter-location-status#active) is not valid in the value set 'All codes known to the system'&quot;},{&quot;name&quot; : &quot;cause&quot;,&quot;valueString&quot; : &quot;not-found&quot;}]}
+</pre>
+<hr/><a name="l16"> </a>
+<p>#16</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;coding&quot;,&quot;valueCoding&quot;:{&quot;system&quot;:&quot;http://hl7.org/fhir/ValueSet/encounter-status&quot;,&quot;code&quot;:&quot;in-progress&quot;}},{&quot;name&quot;:&quot;displayLanguage&quot;,&quot;valueString&quot;:&quot;en-US&quot;},{&quot;name&quot;:&quot;default-to-latest-version&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;profile&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;x-system-cache-id&quot;,&quot;valueString&quot;:&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;}]}}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:441
+content-type:application/fhir+json
+date:Wed, 30 Nov 2022 03:40:49 GMT
+last-modified:Wed, 30 Nov 2022 03:40:49 GMT
+pragma:no-cache
+server:nginx
+x-gdpr-disclosure:All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+x-request-id:57-703238
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;The code system 'http://hl7.org/fhir/ValueSet/encounter-status' is not known (encountered paired with code = 'in-progress'); The code provided (http://hl7.org/fhir/ValueSet/encounter-status#in-progress) is not valid in the value set 'All codes known to the system'&quot;},{&quot;name&quot; : &quot;cause&quot;,&quot;valueString&quot; : &quot;not-found&quot;}]}
+</pre>
+</head></html>

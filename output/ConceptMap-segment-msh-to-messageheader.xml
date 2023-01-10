@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="segment-msh-to-messageheader"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>SegmentMSHtoMessageHeader (http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-msh-to-messageheader)</h2><p>Mapping from MSH to <a href="http://hl7.org/fhir/R4/messageheader.html">MessageHeader</a></p><p>ACTIVE (not intended for production usage). Published on 2022-02-01 by swgssmix. </p><div><p>この ConceptMap には 共通 MSH メッセージヘッダ MessageHeader から MessageHeader への変換を定義する。</p>
+</div><br/><p><b>Group 1</b>Mapping from <code>MSH</code> to <a href="http://hl7.org/fhir/R4/messageheader.html">MessageHeader</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>MSH-3 (送信アプリケーション)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>MessageHeader.source.name</td><td/></tr><tr><td>MSH-5 (受信アプリケーション)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>MessageHeader.destination.name</td><td/></tr><tr><td>MSH-9 (メッセージ型)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>MessageHeader.eventCoding</td><td>第2 成分のHL7 表「0003 - イベント型」を設定する。
+http://terminology.hl7.org/CodeSystem/v2-0003</td></tr><tr><td>MSH-24 (送信ネットワークアドレス)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>MessageHeader.source.endpoint</td><td>HL7v2.7の項目、SS-MIX2では設定されていないため、固定のURLを設定する。</td></tr><tr><td>MSH-25 (受信ネットワークアドレス)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>MessageHeader.destination.endpoint</td><td>HL7v2.7の項目、SS-MIX2では設定されていないため、固定のURLを設定する。</td></tr></table></div>
+  </text>
+  <extension url="MessageHeader">
+    <extension url="type">
+      <valueCode value="derived-from"/>
+    </extension>
+  </extension>
+  <extension url="label">
+    <valueString value="Segment MSH to MessageHeader.fsh"/>
+  </extension>
+  <url value="http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-msh-to-messageheader"/>
+  <version value="0.1.0"/>
+  <name value="SegmentMSHtoMessageHeader"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-02-01"/>
+  <publisher value="swgssmix"/>
+  <description value="この ConceptMap には 共通 MSH メッセージヘッダ MessageHeader から MessageHeader への変換を定義する。"/>
+  <sourceUri value="MSH"/>
+  <targetUri value="MessageHeader"/>
+  <group>
+    <source value="MSH"/>
+    <target value="MessageHeader"/>
+    <element>
+      <code value="MSH-3"/>
+      <display value="送信アプリケーション"/>
+      <target>
+        <code value="MessageHeader.source.name"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="MSH-5"/>
+      <display value="受信アプリケーション"/>
+      <target>
+        <code value="MessageHeader.destination.name"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="MSH-9"/>
+      <display value="メッセージ型"/>
+      <target>
+        <code value="MessageHeader.eventCoding"/>
+        <equivalence value="equivalent"/>
+        <comment value="第2 成分のHL7 表「0003 - イベント型」を設定する。&#xD;&#xA;http://terminology.hl7.org/CodeSystem/v2-0003"/>
+      </target>
+    </element>
+    <element>
+      <code value="MSH-24"/>
+      <display value="送信ネットワークアドレス"/>
+      <target>
+        <code value="MessageHeader.source.endpoint"/>
+        <equivalence value="equivalent"/>
+        <comment value="HL7v2.7の項目、SS-MIX2では設定されていないため、固定のURLを設定する。"/>
+      </target>
+    </element>
+    <element>
+      <code value="MSH-25"/>
+      <display value="受信ネットワークアドレス"/>
+      <target>
+        <code value="MessageHeader.destination.endpoint"/>
+        <equivalence value="equivalent"/>
+        <comment value="HL7v2.7の項目、SS-MIX2では設定されていないため、固定のURLを設定する。"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

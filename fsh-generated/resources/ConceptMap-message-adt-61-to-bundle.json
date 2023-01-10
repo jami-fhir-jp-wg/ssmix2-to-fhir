@@ -1,0 +1,72 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "message-adt-61-to-bundle",
+  "description": "この ConceptMap には ADT-61 アレルギー情報 から Message Bundle への変換を定義する。",
+  "version": "1.0",
+  "name": "MessageADT_61toBundle",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-02-01",
+  "publisher": "swgssmix",
+  "sourceUri": "ADT-61",
+  "targetUri": "Bundle",
+  "group": [
+    {
+      "source": "ADT-61",
+      "target": "Bundle",
+      "element": [
+        {
+          "code": "ADT_A60.MSH",
+          "display": "メッセージヘッダ",
+          "target": [
+            {
+              "code": "MessageHeader",
+              "display": "メッセージヘッダ",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "ADT_A60.PID",
+          "display": "患者識別",
+          "target": [
+            {
+              "code": "JP_Patient",
+              "display": "患者",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "ADT_A60.IAM",
+          "display": "アレルギー情報",
+          "target": [
+            {
+              "code": "JP_AllergyIntolerance",
+              "display": "アレルギー情報",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "Bundle",
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        }
+      ]
+    },
+    {
+      "url": "label",
+      "valueString": "Message ADT_61 to Bundle.fsh"
+    }
+  ]
+}

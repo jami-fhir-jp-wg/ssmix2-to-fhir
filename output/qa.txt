@@ -1,0 +1,356 @@
+﻿ImplementationGuideSSMIX2FHIRMappings : Validation Results
+=========================================
+
+err = 62, warn = 22, info = 0
+IG Publisher Version: 1.2.14 Out of date - current version is 1.2.19
+Generated Wed Nov 30 12:43:10 JST 2022. FHIR version 4.0.1 for ssmix2.fhir.mappings#0.1.0 (canonical = http://example.org/fhir/ig/ssmix2.fhir.mappings)
+ Build Errors : 199 / 12 / 0
+ C:\sushi\ssmix2-to-fhir-master\fsh-generated\resources\ConceptMap-message-adt-00-to-bundle : 2 / 0 / 1
+ C:\sushi\ssmix2-to-fhir-master\fsh-generated\resources\ConceptMap-message-adt-22-to-bundle : 2 / 0 / 1
+ C:\sushi\ssmix2-to-fhir-master\fsh-generated\resources\ConceptMap-message-adt-61-to-bundle : 2 / 0 / 1
+ C:\sushi\ssmix2-to-fhir-master\fsh-generated\resources\ConceptMap-message-oml-11-to-bundle : 2 / 0 / 1
+ C:\sushi\ssmix2-to-fhir-master\fsh-generated\resources\ConceptMap-message-omp-01-to-bundle : 2 / 0 / 1
+ C:\sushi\ssmix2-to-fhir-master\fsh-generated\resources\ConceptMap-message-omp-12-to-bundle : 2 / 0 / 1
+ C:\sushi\ssmix2-to-fhir-master\fsh-generated\resources\ConceptMap-message-ppr-01-to-bundle : 2 / 0 / 1
+ C:\sushi\ssmix2-to-fhir-master\fsh-generated\resources\ConceptMap-segment-adt-00-al1-to-allergyintolerance : 2 / 0 / 1
+ C:\sushi\ssmix2-to-fhir-master\fsh-generated\resources\ConceptMap-segment-adt-00-in1-to-coverage : 2 / 0 / 1
+ C:\sushi\ssmix2-to-fhir-master\fsh-generated\resources\ConceptMap-segment-adt-00-obx-to-observation : 2 / 0 / 1
+ C:\sushi\ssmix2-to-fhir-master\fsh-generated\resources\ConceptMap-segment-adt-61-iam-to-allergyintolerance : 2 / 0 / 1
+ C:\sushi\ssmix2-to-fhir-master\fsh-generated\resources\ConceptMap-segment-adt-xx-pv1-to-encounter : 2 / 0 / 1
+ C:\sushi\ssmix2-to-fhir-master\fsh-generated\resources\ConceptMap-segment-msh-to-bundle : 2 / 0 / 1
+ C:\sushi\ssmix2-to-fhir-master\fsh-generated\resources\ConceptMap-segment-msh-to-messageheader : 2 / 0 / 1
+ C:\sushi\ssmix2-to-fhir-master\fsh-generated\resources\ConceptMap-segment-oml-11-obr-to-diagnosticreport : 2 / 0 / 1
+ C:\sushi\ssmix2-to-fhir-master\fsh-generated\resources\ConceptMap-segment-oml-11-obx-to-observation : 2 / 0 / 1
+ C:\sushi\ssmix2-to-fhir-master\fsh-generated\resources\ConceptMap-segment-oml-11-orc-to-servicerequest : 2 / 0 / 1
+ C:\sushi\ssmix2-to-fhir-master\fsh-generated\resources\ConceptMap-segment-oml-11-spm-to-specimen : 2 / 0 / 1
+ C:\sushi\ssmix2-to-fhir-master\fsh-generated\resources\ConceptMap-segment-omp-01-rxe-to-medicationrequest : 2 / 0 / 1
+ C:\sushi\ssmix2-to-fhir-master\fsh-generated\resources\ConceptMap-segment-omp-12-rxa-to-medicationadministration : 2 / 0 / 1
+ C:\sushi\ssmix2-to-fhir-master\fsh-generated\resources\ConceptMap-segment-pid-to-patient : 2 / 0 / 1
+ C:\sushi\ssmix2-to-fhir-master\fsh-generated\resources\ConceptMap-segment-ppr-01-prb-to-condition : 2 / 0 / 1
+ C:\sushi\ssmix2-to-fhir-master\fsh-generated\resources\ConceptMap-segment-pv1-to-encounter : 2 / 0 / 1
+ C:\sushi\ssmix2-to-fhir-master\fsh-generated\resources\ConceptMap-table-v2-0001-to-administrativegender : 2 / 1 / 1
+ C:\sushi\ssmix2-to-fhir-master\fsh-generated\resources\ConceptMap-table-v2-0003-to-encounterlocationstatus : 2 / 1 / 1
+ C:\sushi\ssmix2-to-fhir-master\fsh-generated\resources\ConceptMap-table-v2-0003-to-encounterstatus : 2 / 1 / 1
+ C:\sushi\ssmix2-to-fhir-master\fsh-generated\resources\ConceptMap-table-v2-0004-to-v3-actcode : 2 / 1 / 1
+ C:\sushi\ssmix2-to-fhir-master\fsh-generated\resources\ConceptMap-table-v2-0127-to-allergyintolerancecategory : 2 / 1 / 1
+ C:\sushi\ssmix2-to-fhir-master\fsh-generated\resources\ConceptMap-table-v2-0128-to-reactioneventseverity : 2 / 1 / 1
+ C:\sushi\ssmix2-to-fhir-master\fsh-generated\resources\ConceptMap-table-v2-0201-to-contactpointuse : 2 / 3 / 1
+ C:\sushi\ssmix2-to-fhir-master\fsh-generated\resources\ConceptMap-table-v2-0465-to-iso-21090 : 2 / 1 / 1
+ C:\sushi\ssmix2-to-fhir-master\fsh-generated\resources\ImplementationGuide-ssmix2.fhir.mappings : 0 / 0 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ConceptMap/table-v2-0001-to-administrativegender.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ConceptMap/table-v2-0003-to-encounterlocationstatus.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ConceptMap/table-v2-0003-to-encounterstatus.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ConceptMap/table-v2-0004-to-v3-actcode.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ConceptMap/table-v2-0127-to-allergyintolerancecategory.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ConceptMap/table-v2-0128-to-reactioneventseverity.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ConceptMap/table-v2-0201-to-contactpointuse.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ConceptMap/table-v2-0465-to-iso-21090.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\010_common_specifications.html#/html/body/div/div/div/p/a at Line 363, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\020_mappings.html#/html/body/div/div/div/p/a at Line 357, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\021_message_maps.html#/html/body/div/div/div/div/div/ul/li/ul/li/a at Line 171, column 12: The link 'ConceptMap-segment-msh-to-provenance.html' for "Segment MSH to Provenance" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\021_message_maps.html#/html/body/div/div/div/div/div/ul/li/ul/li/a at Line 279, column 12: The link 'ConceptMap-segment-omp-12-rxa-to-immuznization.html' for "Segment OMP_12_RXA to Immunization" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\021_message_maps.html#/html/body/div/div/div/p/a at Line 333, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\022_segment_maps.html#/html/body/div/div/div/p/a at Line 255, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\023_datatype_maps.html#/html/body/div/div/div/p/a at Line 178, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\024_table_maps.html#/html/body/div/div/div/p/a at Line 213, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\030_profiles.html#/html/body/div/div/div/p/a at Line 186, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\040_usecases.html#/html/body/div/div/div/p/a at Line 484, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-adt-00-to-bundle-testing.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-adt-00-to-bundle.change.history.html#/html/body/div/div/div/p/a at Line 224, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-adt-00-to-bundle.html#/html/body/div/div/div/p/a at Line 267, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-adt-00-to-bundle.json.html#/html/body/div/div/div/p/a at Line 357, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-adt-00-to-bundle.ttl.html#/html/body/div/div/div/p/a at Line 342, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-adt-00-to-bundle.xml.html#/html/body/div/div/div/p/a at Line 335, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-adt-22-to-bundle-testing.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-adt-22-to-bundle.change.history.html#/html/body/div/div/div/p/a at Line 224, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-adt-22-to-bundle.html#/html/body/div/div/div/p/a at Line 267, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-adt-22-to-bundle.json.html#/html/body/div/div/div/p/a at Line 322, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-adt-22-to-bundle.ttl.html#/html/body/div/div/div/p/a at Line 316, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-adt-22-to-bundle.xml.html#/html/body/div/div/div/p/a at Line 304, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-adt-61-to-bundle-testing.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-adt-61-to-bundle.change.history.html#/html/body/div/div/div/p/a at Line 224, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-adt-61-to-bundle.html#/html/body/div/div/div/p/a at Line 267, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-adt-61-to-bundle.json.html#/html/body/div/div/div/p/a at Line 300, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-adt-61-to-bundle.ttl.html#/html/body/div/div/div/p/a at Line 300, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-adt-61-to-bundle.xml.html#/html/body/div/div/div/p/a at Line 286, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-oml-11-to-bundle-testing.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-oml-11-to-bundle.change.history.html#/html/body/div/div/div/p/a at Line 224, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-oml-11-to-bundle.html#/html/body/div/div/div/p/a at Line 267, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-oml-11-to-bundle.json.html#/html/body/div/div/div/p/a at Line 381, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-oml-11-to-bundle.ttl.html#/html/body/div/div/div/p/a at Line 360, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-oml-11-to-bundle.xml.html#/html/body/div/div/div/p/a at Line 355, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-omp-01-to-bundle-testing.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-omp-01-to-bundle.change.history.html#/html/body/div/div/div/p/a at Line 224, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-omp-01-to-bundle.html#/html/body/div/div/div/p/a at Line 267, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-omp-01-to-bundle.json.html#/html/body/div/div/div/p/a at Line 358, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-omp-01-to-bundle.ttl.html#/html/body/div/div/div/p/a at Line 343, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-omp-01-to-bundle.xml.html#/html/body/div/div/div/p/a at Line 335, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-omp-12-to-bundle-testing.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-omp-12-to-bundle.change.history.html#/html/body/div/div/div/p/a at Line 224, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-omp-12-to-bundle.html#/html/body/div/div/div/p/a at Line 267, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-omp-12-to-bundle.json.html#/html/body/div/div/div/p/a at Line 416, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-omp-12-to-bundle.ttl.html#/html/body/div/div/div/p/a at Line 386, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-omp-12-to-bundle.xml.html#/html/body/div/div/div/p/a at Line 384, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-ppr-01-to-bundle-testing.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-ppr-01-to-bundle.change.history.html#/html/body/div/div/div/p/a at Line 224, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-ppr-01-to-bundle.html#/html/body/div/div/div/p/a at Line 267, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-ppr-01-to-bundle.json.html#/html/body/div/div/div/p/a at Line 311, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-ppr-01-to-bundle.ttl.html#/html/body/div/div/div/p/a at Line 308, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-message-ppr-01-to-bundle.xml.html#/html/body/div/div/div/p/a at Line 295, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-adt-00-al1-to-allergyintolerance-testing.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-adt-00-al1-to-allergyintolerance.change.history.html#/html/body/div/div/div/p/a at Line 224, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-adt-00-al1-to-allergyintolerance.html#/html/body/div/div/div/p/a at Line 267, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-adt-00-al1-to-allergyintolerance.json.html#/html/body/div/div/div/p/a at Line 316, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-adt-00-al1-to-allergyintolerance.ttl.html#/html/body/div/div/div/p/a at Line 310, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-adt-00-al1-to-allergyintolerance.xml.html#/html/body/div/div/div/p/a at Line 298, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-adt-00-in1-to-coverage-testing.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-adt-00-in1-to-coverage.change.history.html#/html/body/div/div/div/p/a at Line 224, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-adt-00-in1-to-coverage.html#/html/body/div/div/div/p/a at Line 267, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-adt-00-in1-to-coverage.json.html#/html/body/div/div/div/p/a at Line 418, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-adt-00-in1-to-coverage.ttl.html#/html/body/div/div/div/p/a at Line 382, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-adt-00-in1-to-coverage.xml.html#/html/body/div/div/div/p/a at Line 380, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-adt-00-obx-to-observation-testing.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-adt-00-obx-to-observation.change.history.html#/html/body/div/div/div/p/a at Line 224, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-adt-00-obx-to-observation.html#/html/body/div/div/div/p/a at Line 268, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-adt-00-obx-to-observation.json.html#/html/body/div/div/div/p/a at Line 409, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-adt-00-obx-to-observation.ttl.html#/html/body/div/div/div/p/a at Line 376, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-adt-00-obx-to-observation.xml.html#/html/body/div/div/div/p/a at Line 377, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-adt-61-iam-to-allergyintolerance-testing.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-adt-61-iam-to-allergyintolerance.change.history.html#/html/body/div/div/div/p/a at Line 224, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-adt-61-iam-to-allergyintolerance.html#/html/body/div/div/div/p/a at Line 267, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-adt-61-iam-to-allergyintolerance.json.html#/html/body/div/div/div/p/a at Line 463, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-adt-61-iam-to-allergyintolerance.ttl.html#/html/body/div/div/div/p/a at Line 412, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-adt-61-iam-to-allergyintolerance.xml.html#/html/body/div/div/div/p/a at Line 415, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-adt-xx-pv1-to-encounter-testing.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-adt-xx-pv1-to-encounter.change.history.html#/html/body/div/div/div/p/a at Line 224, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-adt-xx-pv1-to-encounter.html#/html/body/div/div/div/p/a at Line 267, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-adt-xx-pv1-to-encounter.json.html#/html/body/div/div/div/p/a at Line 532, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-adt-xx-pv1-to-encounter.ttl.html#/html/body/div/div/div/p/a at Line 466, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-adt-xx-pv1-to-encounter.xml.html#/html/body/div/div/div/p/a at Line 474, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-msh-to-bundle-testing.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-msh-to-bundle.change.history.html#/html/body/div/div/div/p/a at Line 224, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-msh-to-bundle.html#/html/body/div/div/div/p/a at Line 267, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-msh-to-bundle.json.html#/html/body/div/div/div/p/a at Line 300, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-msh-to-bundle.ttl.html#/html/body/div/div/div/p/a at Line 300, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-msh-to-bundle.xml.html#/html/body/div/div/div/p/a at Line 287, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-msh-to-messageheader-testing.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-msh-to-messageheader.change.history.html#/html/body/div/div/div/p/a at Line 224, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-msh-to-messageheader.html#/html/body/div/div/div/p/a at Line 268, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-msh-to-messageheader.json.html#/html/body/div/div/div/p/a at Line 320, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-msh-to-messageheader.ttl.html#/html/body/div/div/div/p/a at Line 314, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-msh-to-messageheader.xml.html#/html/body/div/div/div/p/a at Line 305, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-oml-11-obr-to-diagnosticreport-testing.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-oml-11-obr-to-diagnosticreport.change.history.html#/html/body/div/div/div/p/a at Line 224, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-oml-11-obr-to-diagnosticreport.html#/html/body/div/div/div/p/a at Line 267, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-oml-11-obr-to-diagnosticreport.json.html#/html/body/div/div/div/p/a at Line 415, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-oml-11-obr-to-diagnosticreport.ttl.html#/html/body/div/div/div/p/a at Line 379, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-oml-11-obr-to-diagnosticreport.xml.html#/html/body/div/div/div/p/a at Line 377, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-oml-11-obx-to-observation-testing.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-oml-11-obx-to-observation.change.history.html#/html/body/div/div/div/p/a at Line 224, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-oml-11-obx-to-observation.html#/html/body/div/div/div/p/a at Line 268, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-oml-11-obx-to-observation.json.html#/html/body/div/div/div/p/a at Line 408, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-oml-11-obx-to-observation.ttl.html#/html/body/div/div/div/p/a at Line 375, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-oml-11-obx-to-observation.xml.html#/html/body/div/div/div/p/a at Line 375, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-oml-11-orc-to-servicerequest-testing.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-oml-11-orc-to-servicerequest.change.history.html#/html/body/div/div/div/p/a at Line 224, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-oml-11-orc-to-servicerequest.html#/html/body/div/div/div/p/a at Line 269, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-oml-11-orc-to-servicerequest.json.html#/html/body/div/div/div/p/a at Line 482, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-oml-11-orc-to-servicerequest.ttl.html#/html/body/div/div/div/p/a at Line 425, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-oml-11-orc-to-servicerequest.xml.html#/html/body/div/div/div/p/a at Line 436, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-oml-11-spm-to-specimen-testing.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-oml-11-spm-to-specimen.change.history.html#/html/body/div/div/div/p/a at Line 224, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-oml-11-spm-to-specimen.html#/html/body/div/div/div/p/a at Line 267, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-oml-11-spm-to-specimen.json.html#/html/body/div/div/div/p/a at Line 326, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-oml-11-spm-to-specimen.ttl.html#/html/body/div/div/div/p/a at Line 317, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-oml-11-spm-to-specimen.xml.html#/html/body/div/div/div/p/a at Line 305, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-omp-01-rxe-to-medicationrequest-testing.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-omp-01-rxe-to-medicationrequest.change.history.html#/html/body/div/div/div/p/a at Line 224, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-omp-01-rxe-to-medicationrequest.html#/html/body/div/div/div/p/a at Line 270, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-omp-01-rxe-to-medicationrequest.json.html#/html/body/div/div/div/p/a at Line 786, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-omp-01-rxe-to-medicationrequest.ttl.html#/html/body/div/div/div/p/a at Line 636, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-omp-01-rxe-to-medicationrequest.xml.html#/html/body/div/div/div/p/a at Line 693, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-omp-12-rxa-to-medicationadministration-testing.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-omp-12-rxa-to-medicationadministration.change.history.html#/html/body/div/div/div/p/a at Line 224, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-omp-12-rxa-to-medicationadministration.html#/html/body/div/div/div/p/a at Line 267, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-omp-12-rxa-to-medicationadministration.json.html#/html/body/div/div/div/p/a at Line 594, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-omp-12-rxa-to-medicationadministration.ttl.html#/html/body/div/div/div/p/a at Line 501, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-omp-12-rxa-to-medicationadministration.xml.html#/html/body/div/div/div/p/a at Line 519, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-pid-to-patient-testing.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-pid-to-patient.change.history.html#/html/body/div/div/div/p/a at Line 224, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-pid-to-patient.html#/html/body/div/div/div/p/a at Line 267, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-pid-to-patient.json.html#/html/body/div/div/div/p/a at Line 484, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-pid-to-patient.ttl.html#/html/body/div/div/div/p/a at Line 427, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-pid-to-patient.xml.html#/html/body/div/div/div/p/a at Line 433, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-ppr-01-prb-to-condition-testing.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-ppr-01-prb-to-condition.change.history.html#/html/body/div/div/div/p/a at Line 224, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-ppr-01-prb-to-condition.html#/html/body/div/div/div/p/a at Line 268, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-ppr-01-prb-to-condition.json.html#/html/body/div/div/div/p/a at Line 608, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-ppr-01-prb-to-condition.ttl.html#/html/body/div/div/div/p/a at Line 509, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-ppr-01-prb-to-condition.xml.html#/html/body/div/div/div/p/a at Line 531, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-pv1-to-encounter-testing.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-pv1-to-encounter.change.history.html#/html/body/div/div/div/p/a at Line 224, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-pv1-to-encounter.html#/html/body/div/div/div/p/a at Line 267, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-pv1-to-encounter.json.html#/html/body/div/div/div/p/a at Line 532, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-pv1-to-encounter.ttl.html#/html/body/div/div/div/p/a at Line 466, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-segment-pv1-to-encounter.xml.html#/html/body/div/div/div/p/a at Line 474, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0001-to-administrativegender-testing.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0001-to-administrativegender.change.history.html#/html/body/div/div/div/p/a at Line 224, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0001-to-administrativegender.html#/html/body/div/div/div/p/a at Line 261, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0001-to-administrativegender.json.html#/html/body/div/div/div/p/a at Line 310, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0001-to-administrativegender.ttl.html#/html/body/div/div/div/p/a at Line 307, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0001-to-administrativegender.xml.html#/html/body/div/div/div/p/a at Line 292, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0003-to-encounterlocationstatus-testing.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0003-to-encounterlocationstatus.change.history.html#/html/body/div/div/div/p/a at Line 224, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0003-to-encounterlocationstatus.html#/html/body/div/div/div/p/a at Line 261, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0003-to-encounterlocationstatus.json.html#/html/body/div/div/div/p/a at Line 456, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0003-to-encounterlocationstatus.ttl.html#/html/body/div/div/div/p/a at Line 408, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0003-to-encounterlocationstatus.xml.html#/html/body/div/div/div/p/a at Line 408, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0003-to-encounterstatus-testing.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0003-to-encounterstatus.change.history.html#/html/body/div/div/div/p/a at Line 224, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0003-to-encounterstatus.html#/html/body/div/div/div/p/a at Line 261, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0003-to-encounterstatus.json.html#/html/body/div/div/div/p/a at Line 456, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0003-to-encounterstatus.ttl.html#/html/body/div/div/div/p/a at Line 408, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0003-to-encounterstatus.xml.html#/html/body/div/div/div/p/a at Line 408, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0004-to-v3-actcode-testing.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0004-to-v3-actcode.change.history.html#/html/body/div/div/div/p/a at Line 224, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0004-to-v3-actcode.html#/html/body/div/div/div/p/a at Line 261, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0004-to-v3-actcode.json.html#/html/body/div/div/div/p/a at Line 288, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0004-to-v3-actcode.ttl.html#/html/body/div/div/div/p/a at Line 291, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0004-to-v3-actcode.xml.html#/html/body/div/div/div/p/a at Line 274, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0127-to-allergyintolerancecategory-testing.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0127-to-allergyintolerancecategory.change.history.html#/html/body/div/div/div/p/a at Line 224, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0127-to-allergyintolerancecategory.html#/html/body/div/div/div/p/a at Line 261, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0127-to-allergyintolerancecategory.json.html#/html/body/div/div/div/p/a at Line 350, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0127-to-allergyintolerancecategory.ttl.html#/html/body/div/div/div/p/a at Line 335, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0127-to-allergyintolerancecategory.xml.html#/html/body/div/div/div/p/a at Line 324, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0128-to-reactioneventseverity-testing.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0128-to-reactioneventseverity.change.history.html#/html/body/div/div/div/p/a at Line 224, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0128-to-reactioneventseverity.html#/html/body/div/div/div/p/a at Line 261, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0128-to-reactioneventseverity.json.html#/html/body/div/div/div/p/a at Line 299, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0128-to-reactioneventseverity.ttl.html#/html/body/div/div/div/p/a at Line 299, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0128-to-reactioneventseverity.xml.html#/html/body/div/div/div/p/a at Line 283, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0201-to-contactpointuse-testing.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0201-to-contactpointuse.change.history.html#/html/body/div/div/div/p/a at Line 224, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0201-to-contactpointuse.html#/html/body/div/div/div/p/a at Line 263, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0201-to-contactpointuse.json.html#/html/body/div/div/div/p/a at Line 353, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0201-to-contactpointuse.ttl.html#/html/body/div/div/div/p/a at Line 335, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0201-to-contactpointuse.xml.html#/html/body/div/div/div/p/a at Line 329, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0465-to-iso-21090-testing.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0465-to-iso-21090.change.history.html#/html/body/div/div/div/p/a at Line 224, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0465-to-iso-21090.html#/html/body/div/div/div/p/a at Line 261, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0465-to-iso-21090.json.html#/html/body/div/div/div/p/a at Line 288, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0465-to-iso-21090.ttl.html#/html/body/div/div/div/p/a at Line 291, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\ConceptMap-table-v2-0465-to-iso-21090.xml.html#/html/body/div/div/div/p/a at Line 274, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\artifacts.html#/html/body/div/div/div/p/a at Line 465, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\index.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+ERROR: C:\sushi\ssmix2-to-fhir-master\output\toc.html#/html/body/div/div/div/p/a at Line 158, column 28: The link 'swgssmix.org@email.dummy' for "" cannot be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated\resources\ConceptMap-message-adt-00-to-bundle.json ==
+ERROR: ConceptMap/message-adt-00-to-bundle: ConceptMap.extension[0]: Extension.url must be an absolute URL
+ERROR: ConceptMap/message-adt-00-to-bundle: ConceptMap.extension[1]: Extension.url must be an absolute URL
+== fsh-generated\resources\ConceptMap-message-adt-22-to-bundle.json ==
+ERROR: ConceptMap/message-adt-22-to-bundle: ConceptMap.extension[0]: Extension.url must be an absolute URL
+ERROR: ConceptMap/message-adt-22-to-bundle: ConceptMap.extension[1]: Extension.url must be an absolute URL
+== fsh-generated\resources\ConceptMap-message-adt-61-to-bundle.json ==
+ERROR: ConceptMap/message-adt-61-to-bundle: ConceptMap.extension[0]: Extension.url must be an absolute URL
+ERROR: ConceptMap/message-adt-61-to-bundle: ConceptMap.extension[1]: Extension.url must be an absolute URL
+== fsh-generated\resources\ConceptMap-message-oml-11-to-bundle.json ==
+ERROR: ConceptMap/message-oml-11-to-bundle: ConceptMap.extension[0]: Extension.url must be an absolute URL
+ERROR: ConceptMap/message-oml-11-to-bundle: ConceptMap.extension[1]: Extension.url must be an absolute URL
+== fsh-generated\resources\ConceptMap-message-omp-01-to-bundle.json ==
+ERROR: ConceptMap/message-omp-01-to-bundle: ConceptMap.extension[0]: Extension.url must be an absolute URL
+ERROR: ConceptMap/message-omp-01-to-bundle: ConceptMap.extension[1]: Extension.url must be an absolute URL
+== fsh-generated\resources\ConceptMap-message-omp-12-to-bundle.json ==
+ERROR: ConceptMap/message-omp-12-to-bundle: ConceptMap.extension[0]: Extension.url must be an absolute URL
+ERROR: ConceptMap/message-omp-12-to-bundle: ConceptMap.extension[1]: Extension.url must be an absolute URL
+== fsh-generated\resources\ConceptMap-message-ppr-01-to-bundle.json ==
+ERROR: ConceptMap/message-ppr-01-to-bundle: ConceptMap.extension[0]: Extension.url must be an absolute URL
+ERROR: ConceptMap/message-ppr-01-to-bundle: ConceptMap.extension[1]: Extension.url must be an absolute URL
+== fsh-generated\resources\ConceptMap-segment-adt-00-al1-to-allergyintolerance.json ==
+ERROR: ConceptMap/segment-adt-00-al1-to-allergyintolerance: ConceptMap.extension[0]: Extension.url must be an absolute URL
+ERROR: ConceptMap/segment-adt-00-al1-to-allergyintolerance: ConceptMap.extension[1]: Extension.url must be an absolute URL
+== fsh-generated\resources\ConceptMap-segment-adt-00-in1-to-coverage.json ==
+ERROR: ConceptMap/segment-adt-00-in1-to-coverage: ConceptMap.extension[0]: Extension.url must be an absolute URL
+ERROR: ConceptMap/segment-adt-00-in1-to-coverage: ConceptMap.extension[1]: Extension.url must be an absolute URL
+== fsh-generated\resources\ConceptMap-segment-adt-00-obx-to-observation.json ==
+ERROR: ConceptMap/segment-adt-00-obx-to-observation: ConceptMap.extension[0]: Extension.url must be an absolute URL
+ERROR: ConceptMap/segment-adt-00-obx-to-observation: ConceptMap.extension[1]: Extension.url must be an absolute URL
+== fsh-generated\resources\ConceptMap-segment-adt-61-iam-to-allergyintolerance.json ==
+ERROR: ConceptMap/segment-adt-61-iam-to-allergyintolerance: ConceptMap.extension[0]: Extension.url must be an absolute URL
+ERROR: ConceptMap/segment-adt-61-iam-to-allergyintolerance: ConceptMap.extension[1]: Extension.url must be an absolute URL
+== fsh-generated\resources\ConceptMap-segment-adt-xx-pv1-to-encounter.json ==
+ERROR: ConceptMap/segment-adt-xx-pv1-to-encounter: ConceptMap.extension[0]: Extension.url must be an absolute URL
+ERROR: ConceptMap/segment-adt-xx-pv1-to-encounter: ConceptMap.extension[1]: Extension.url must be an absolute URL
+== fsh-generated\resources\ConceptMap-segment-msh-to-bundle.json ==
+ERROR: ConceptMap/segment-msh-to-bundle: ConceptMap.extension[0]: Extension.url must be an absolute URL
+ERROR: ConceptMap/segment-msh-to-bundle: ConceptMap.extension[1]: Extension.url must be an absolute URL
+== fsh-generated\resources\ConceptMap-segment-msh-to-messageheader.json ==
+ERROR: ConceptMap/segment-msh-to-messageheader: ConceptMap.extension[0]: Extension.url must be an absolute URL
+ERROR: ConceptMap/segment-msh-to-messageheader: ConceptMap.extension[1]: Extension.url must be an absolute URL
+== fsh-generated\resources\ConceptMap-segment-oml-11-obr-to-diagnosticreport.json ==
+ERROR: ConceptMap/segment-oml-11-obr-to-diagnosticreport: ConceptMap.extension[0]: Extension.url must be an absolute URL
+ERROR: ConceptMap/segment-oml-11-obr-to-diagnosticreport: ConceptMap.extension[1]: Extension.url must be an absolute URL
+== fsh-generated\resources\ConceptMap-segment-oml-11-obx-to-observation.json ==
+ERROR: ConceptMap/segment-oml-11-obx-to-observation: ConceptMap.extension[0]: Extension.url must be an absolute URL
+ERROR: ConceptMap/segment-oml-11-obx-to-observation: ConceptMap.extension[1]: Extension.url must be an absolute URL
+== fsh-generated\resources\ConceptMap-segment-oml-11-orc-to-servicerequest.json ==
+ERROR: ConceptMap/segment-oml-11-orc-to-servicerequest: ConceptMap.extension[0]: Extension.url must be an absolute URL
+ERROR: ConceptMap/segment-oml-11-orc-to-servicerequest: ConceptMap.extension[1]: Extension.url must be an absolute URL
+== fsh-generated\resources\ConceptMap-segment-oml-11-spm-to-specimen.json ==
+ERROR: ConceptMap/segment-oml-11-spm-to-specimen: ConceptMap.extension[0]: Extension.url must be an absolute URL
+ERROR: ConceptMap/segment-oml-11-spm-to-specimen: ConceptMap.extension[1]: Extension.url must be an absolute URL
+== fsh-generated\resources\ConceptMap-segment-omp-01-rxe-to-medicationrequest.json ==
+ERROR: ConceptMap/segment-omp-01-rxe-to-medicationrequest: ConceptMap.extension[0]: Extension.url must be an absolute URL
+ERROR: ConceptMap/segment-omp-01-rxe-to-medicationrequest: ConceptMap.extension[1]: Extension.url must be an absolute URL
+== fsh-generated\resources\ConceptMap-segment-omp-12-rxa-to-medicationadministration.json ==
+ERROR: ConceptMap/segment-omp-12-rxa-to-medicationadministration: ConceptMap.extension[0]: Extension.url must be an absolute URL
+ERROR: ConceptMap/segment-omp-12-rxa-to-medicationadministration: ConceptMap.extension[1]: Extension.url must be an absolute URL
+== fsh-generated\resources\ConceptMap-segment-pid-to-patient.json ==
+ERROR: ConceptMap/segment-pid-to-patient: ConceptMap.extension[0]: Extension.url must be an absolute URL
+ERROR: ConceptMap/segment-pid-to-patient: ConceptMap.extension[1]: Extension.url must be an absolute URL
+== fsh-generated\resources\ConceptMap-segment-ppr-01-prb-to-condition.json ==
+ERROR: ConceptMap/segment-ppr-01-prb-to-condition: ConceptMap.extension[0]: Extension.url must be an absolute URL
+ERROR: ConceptMap/segment-ppr-01-prb-to-condition: ConceptMap.extension[1]: Extension.url must be an absolute URL
+== fsh-generated\resources\ConceptMap-segment-pv1-to-encounter.json ==
+ERROR: ConceptMap/segment-pv1-to-encounter: ConceptMap.extension[0]: Extension.url must be an absolute URL
+ERROR: ConceptMap/segment-pv1-to-encounter: ConceptMap.extension[1]: Extension.url must be an absolute URL
+== fsh-generated\resources\ConceptMap-table-v2-0001-to-administrativegender.json ==
+WARNING: ConceptMap/table-v2-0001-to-administrativegender: ConceptMap: Rule cmd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: ConceptMap/table-v2-0001-to-administrativegender: ConceptMap.extension[0]: Extension.url must be an absolute URL
+ERROR: ConceptMap/table-v2-0001-to-administrativegender: ConceptMap.extension[1]: Extension.url must be an absolute URL
+== fsh-generated\resources\ConceptMap-table-v2-0003-to-encounterlocationstatus.json ==
+WARNING: ConceptMap/table-v2-0003-to-encounterlocationstatus: ConceptMap: Rule cmd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: ConceptMap/table-v2-0003-to-encounterlocationstatus: ConceptMap.extension[0]: Extension.url must be an absolute URL
+ERROR: ConceptMap/table-v2-0003-to-encounterlocationstatus: ConceptMap.extension[1]: Extension.url must be an absolute URL
+== fsh-generated\resources\ConceptMap-table-v2-0003-to-encounterstatus.json ==
+WARNING: ConceptMap/table-v2-0003-to-encounterstatus: ConceptMap: Rule cmd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: ConceptMap/table-v2-0003-to-encounterstatus: ConceptMap.extension[0]: Extension.url must be an absolute URL
+ERROR: ConceptMap/table-v2-0003-to-encounterstatus: ConceptMap.extension[1]: Extension.url must be an absolute URL
+== fsh-generated\resources\ConceptMap-table-v2-0004-to-v3-actcode.json ==
+WARNING: ConceptMap/table-v2-0004-to-v3-actcode: ConceptMap: Rule cmd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: ConceptMap/table-v2-0004-to-v3-actcode: ConceptMap.extension[0]: Extension.url must be an absolute URL
+ERROR: ConceptMap/table-v2-0004-to-v3-actcode: ConceptMap.extension[1]: Extension.url must be an absolute URL
+== fsh-generated\resources\ConceptMap-table-v2-0127-to-allergyintolerancecategory.json ==
+WARNING: ConceptMap/table-v2-0127-to-allergyintolerancecategory: ConceptMap: Rule cmd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: ConceptMap/table-v2-0127-to-allergyintolerancecategory: ConceptMap.extension[0]: Extension.url must be an absolute URL
+ERROR: ConceptMap/table-v2-0127-to-allergyintolerancecategory: ConceptMap.extension[1]: Extension.url must be an absolute URL
+== fsh-generated\resources\ConceptMap-table-v2-0128-to-reactioneventseverity.json ==
+WARNING: ConceptMap/table-v2-0128-to-reactioneventseverity: ConceptMap: Rule cmd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: ConceptMap/table-v2-0128-to-reactioneventseverity: ConceptMap.extension[0]: Extension.url must be an absolute URL
+ERROR: ConceptMap/table-v2-0128-to-reactioneventseverity: ConceptMap.extension[1]: Extension.url must be an absolute URL
+== fsh-generated\resources\ConceptMap-table-v2-0201-to-contactpointuse.json ==
+WARNING: ConceptMap/table-v2-0201-to-contactpointuse: ConceptMap: Rule cmd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: ConceptMap/table-v2-0201-to-contactpointuse: ConceptMap.extension[0]: Extension.url must be an absolute URL
+ERROR: ConceptMap/table-v2-0201-to-contactpointuse: ConceptMap.extension[1]: Extension.url must be an absolute URL
+WARNING: ConceptMap/table-v2-0201-to-contactpointuse: ConceptMap.group[0].element[0].display: value should not start or finish with whitespace '主要な自宅番号'
+WARNING: ConceptMap/table-v2-0201-to-contactpointuse: ConceptMap.group[0].element[2].display: value should not start or finish with whitespace '勤務先番号'
+== fsh-generated\resources\ConceptMap-table-v2-0465-to-iso-21090.json ==
+WARNING: ConceptMap/table-v2-0465-to-iso-21090: ConceptMap: Rule cmd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: ConceptMap/table-v2-0465-to-iso-21090: ConceptMap.extension[0]: Extension.url must be an absolute URL
+ERROR: ConceptMap/table-v2-0465-to-iso-21090: ConceptMap.extension[1]: Extension.url must be an absolute URL
+== fsh-generated\resources\ImplementationGuide-ssmix2.fhir.mappings.json ==

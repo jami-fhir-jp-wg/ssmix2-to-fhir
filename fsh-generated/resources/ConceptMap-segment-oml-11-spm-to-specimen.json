@@ -1,0 +1,100 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "segment-oml-11-spm-to-specimen",
+  "description": "この ConceptMap には OML-11 SPM 検体 から Specimen への変換を定義する。",
+  "version": "1.0",
+  "name": "SegmentOML_11_SPMtoSpecimen",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-02-01",
+  "publisher": "swgssmix",
+  "sourceUri": "OML-11.SPM",
+  "targetUri": "Specimen",
+  "group": [
+    {
+      "source": "OML-11.SPM",
+      "target": "Specimen",
+      "element": [
+        {
+          "code": "PID-3",
+          "display": "患者ID リスト",
+          "target": [
+            {
+              "code": "Observation.subject",
+              "equivalence": "equivalent",
+              "comment": "Patientへの参照を設定する。"
+            }
+          ]
+        },
+        {
+          "code": "SPM-0",
+          "display": "セグメントID",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "SPM-1",
+          "display": "セットID – SPM",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "SPM-4",
+          "display": "検体タイプ",
+          "target": [
+            {
+              "code": "Specimen.type",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "SPM-8",
+          "display": "検査材料・検査部位",
+          "target": [
+            {
+              "code": "Specimen.bodySite",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "SPM-17",
+          "display": "検体採取日時",
+          "target": [
+            {
+              "code": "Specimen.collection.collected",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "Specimen",
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        }
+      ]
+    },
+    {
+      "url": "label",
+      "valueString": "Segment OML_11_SPM to Specimen.fsh"
+    }
+  ]
+}

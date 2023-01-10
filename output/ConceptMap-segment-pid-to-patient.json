@@ -1,0 +1,258 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "segment-pid-to-patient",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SegmentPIDtoPatient (http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-pid-to-patient)</h2><p>Mapping from PID to JP_Patient</p><p>ACTIVE (not intended for production usage). Published on 2022-02-01 by swgssmix. </p><div><p>この ConceptMap には 共通 PID 患者識別 から Patient への変換を定義する。</p>\n</div><br/><p><b>Group 1</b>Mapping from <code>PID</code> to <code>JP_Patient</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>PID-0 (セグメントID)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>PID-1 (セットID-PV1)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>PID-3 (患者ID リスト)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td><td/></tr><tr><td>PID-5 (患者氏名)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td><td/></tr><tr><td>PID-7 (生年月日年齢)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.birthDate</td><td/></tr><tr><td>PID-8 (性別)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.gender</td><td/></tr><tr><td>PID-11 (患者住所)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.address</td><td/></tr><tr><td>PID-13 (電話番号－自宅)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.telecom</td><td>system:  phone,  use: home</td></tr><tr><td>PID-14 (電話番号－勤務先)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.telecom</td><td>system:  phone,  use: work</td></tr><tr><td>PID-33 (最終更新日時)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>DB1-0 (セグメントID)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>DB1-1 (セットID-DB1)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>DB1-2 (身体障害情報)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.extension</td><td>http://hl7.org/fhir/R4/extension-patient-disability.html、CodeableConcept1件として設定する。</td></tr><tr><td>DB1-4 (身体障害の有無)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.extension</td><td>http://hl7.org/fhir/R4/extension-patient-disability.html、CodeableConcept1件として設定する。</td></tr><tr><td>NK1-0 (セグメントID)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>NK1-1 (セットID-NK1)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>NK1-2 (氏名)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.contact.name</td><td/></tr><tr><td>NK1-3 (続柄)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.contact.relationship</td><td/></tr><tr><td>NK1-4 (住所)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.contact.address</td><td/></tr><tr><td>NK1-5 (電話番号)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.contact.telecom</td><td/></tr><tr><td>NK1-6 (勤務先電話番号)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.contact.telecom</td><td/></tr><tr><td>NK1-13 (所属組織名)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.contact.organization</td><td/></tr></table></div>"
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        }
+      ],
+      "url": "Patient"
+    },
+    {
+      "url": "label",
+      "valueString": "Segment PID to Patient.fsh"
+    }
+  ],
+  "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-pid-to-patient",
+  "version": "0.1.0",
+  "name": "SegmentPIDtoPatient",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-02-01",
+  "publisher": "swgssmix",
+  "description": "この ConceptMap には 共通 PID 患者識別 から Patient への変換を定義する。",
+  "sourceUri": "PID",
+  "targetUri": "JP_Patient",
+  "group": [
+    {
+      "source": "PID",
+      "target": "JP_Patient",
+      "element": [
+        {
+          "code": "PID-0",
+          "display": "セグメントID",
+          "target": [
+            {
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PID-1",
+          "display": "セットID-PV1",
+          "target": [
+            {
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PID-3",
+          "display": "患者ID リスト",
+          "target": [
+            {
+              "code": "Patient.identifier",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PID-5",
+          "display": "患者氏名",
+          "target": [
+            {
+              "code": "Patient.name",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PID-7",
+          "display": "生年月日年齢",
+          "target": [
+            {
+              "code": "Patient.birthDate",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PID-8",
+          "display": "性別",
+          "target": [
+            {
+              "code": "Patient.gender",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PID-11",
+          "display": "患者住所",
+          "target": [
+            {
+              "code": "Patient.address",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PID-13",
+          "display": "電話番号－自宅",
+          "target": [
+            {
+              "code": "Patient.telecom",
+              "equivalence": "equivalent",
+              "comment": "system:  phone,  use: home"
+            }
+          ]
+        },
+        {
+          "code": "PID-14",
+          "display": "電話番号－勤務先",
+          "target": [
+            {
+              "code": "Patient.telecom",
+              "equivalence": "equivalent",
+              "comment": "system:  phone,  use: work"
+            }
+          ]
+        },
+        {
+          "code": "PID-33",
+          "display": "最終更新日時",
+          "target": [
+            {
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DB1-0",
+          "display": "セグメントID",
+          "target": [
+            {
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DB1-1",
+          "display": "セットID-DB1",
+          "target": [
+            {
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DB1-2",
+          "display": "身体障害情報",
+          "target": [
+            {
+              "code": "Patient.extension",
+              "equivalence": "equivalent",
+              "comment": "http://hl7.org/fhir/R4/extension-patient-disability.html、CodeableConcept1件として設定する。"
+            }
+          ]
+        },
+        {
+          "code": "DB1-4",
+          "display": "身体障害の有無",
+          "target": [
+            {
+              "code": "Patient.extension",
+              "equivalence": "equivalent",
+              "comment": "http://hl7.org/fhir/R4/extension-patient-disability.html、CodeableConcept1件として設定する。"
+            }
+          ]
+        },
+        {
+          "code": "NK1-0",
+          "display": "セグメントID",
+          "target": [
+            {
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NK1-1",
+          "display": "セットID-NK1",
+          "target": [
+            {
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NK1-2",
+          "display": "氏名",
+          "target": [
+            {
+              "code": "Patient.contact.name",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NK1-3",
+          "display": "続柄",
+          "target": [
+            {
+              "code": "Patient.contact.relationship",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NK1-4",
+          "display": "住所",
+          "target": [
+            {
+              "code": "Patient.contact.address",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NK1-5",
+          "display": "電話番号",
+          "target": [
+            {
+              "code": "Patient.contact.telecom",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NK1-6",
+          "display": "勤務先電話番号",
+          "target": [
+            {
+              "code": "Patient.contact.telecom",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NK1-13",
+          "display": "所属組織名",
+          "target": [
+            {
+              "code": "Patient.contact.organization",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

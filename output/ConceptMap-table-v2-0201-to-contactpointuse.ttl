@@ -1,0 +1,128 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/table-v2-0201-to-contactpointuse> a fhir:ConceptMap;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "table-v2-0201-to-contactpointuse"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Tablev2-0201toContactPointUse (http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/table-v2-0201-to-contactpointuse)</h2><p>Mapping from <a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-v2-0201.html\">http://terminology.hl7.org/CodeSystem/v2-0201</a> to <a href=\"http://hl7.org/fhir/R4/codesystem-contact-point-use.html\">http://hl7.org/fhir/contact-point-use</a></p><p>ACTIVE (not intended for production usage). Published on 2022-02-01 by swgssmix. </p><br/><p><b>Group 1</b>Mapping from <a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-v2-0201.html\">telecommunicationUse</a> to <a href=\"http://hl7.org/fhir/R4/codesystem-contact-point-use.html\">ContactPointUse</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>PRN (主要な自宅番号\r)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>home</td></tr><tr><td>ORN (他の自宅番号)</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>WPN (勤務先番号\r)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>work</td></tr><tr><td>VHN (別荘番号)</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>ASN (留守電話応答サービス番号)</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>EMR (緊急番号)</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>NET (ネットワーク（電子メール）アドレス)</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>BPN (ポケットベルの番号)</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>PRS (個人の連絡先)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>mobile</td></tr></table></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "type" ];
+       fhir:Extension.valueCode [ fhir:value "derived-from" ]
+     ];
+     fhir:Extension.url [ fhir:value "ContactPointUse" ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "label" ];
+     fhir:Extension.valueString [ fhir:value "Table v2-0201 to ContactPointUse.fsh" ]
+  ];
+  fhir:ConceptMap.url [ fhir:value "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/table-v2-0201-to-contactpointuse"];
+  fhir:ConceptMap.version [ fhir:value "0.1.0"];
+  fhir:ConceptMap.name [ fhir:value "Tablev2-0201toContactPointUse"];
+  fhir:ConceptMap.status [ fhir:value "active"];
+  fhir:ConceptMap.experimental [ fhir:value "true"^^xsd:boolean];
+  fhir:ConceptMap.date [ fhir:value "2022-02-01"^^xsd:date];
+  fhir:ConceptMap.publisher [ fhir:value "swgssmix"];
+  fhir:ConceptMap.sourceUri [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0201"];
+  fhir:ConceptMap.targetUri [ fhir:value "http://hl7.org/fhir/contact-point-use"];
+  fhir:ConceptMap.group [
+     fhir:index 0;
+     fhir:ConceptMap.group.source [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0201" ];
+     fhir:ConceptMap.group.target [ fhir:value "http://hl7.org/fhir/contact-point-use" ];
+     fhir:ConceptMap.group.element [
+       fhir:index 0;
+       fhir:ConceptMap.group.element.code [ fhir:value "PRN" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "主要な自宅番号\r" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "home" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Home" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ConceptMap.group.element.code [ fhir:value "ORN" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "他の自宅番号" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:ConceptMap.group.element.code [ fhir:value "WPN" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "勤務先番号\r" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "work" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Work" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:ConceptMap.group.element.code [ fhir:value "VHN" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "別荘番号" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:ConceptMap.group.element.code [ fhir:value "ASN" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "留守電話応答サービス番号" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:ConceptMap.group.element.code [ fhir:value "EMR" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "緊急番号" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:ConceptMap.group.element.code [ fhir:value "NET" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "ネットワーク（電子メール）アドレス" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 7;
+       fhir:ConceptMap.group.element.code [ fhir:value "BPN" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "ポケットベルの番号" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 8;
+       fhir:ConceptMap.group.element.code [ fhir:value "PRS" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "個人の連絡先" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "mobile" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Mobile" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/table-v2-0201-to-contactpointuse.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

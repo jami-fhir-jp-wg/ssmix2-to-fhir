@@ -1,0 +1,15 @@
+{
+  "package-id": "ssmix2.fhir.mappings",
+  "canonical": "http://example.org/fhir/ig/ssmix2.fhir.mappings,
+  "title": "SSMIX2 to FHIR Implementation Guide",
+  "introduction": "An example of SS-MIX2 to FHIR IG.",
+  "list": [
+    {
+      "version": "current",
+      "desc": "Continuous Integration Build (latest in version control)",
+      "path": "http://example.org/fhir/ig/ssmix2.fhir.mappings",
+      "status": "ci-build",
+      "current": true
+    }
+  ]
+}

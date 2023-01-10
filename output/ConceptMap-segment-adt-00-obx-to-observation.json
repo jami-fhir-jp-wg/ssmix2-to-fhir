@@ -1,0 +1,183 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "segment-adt-00-obx-to-observation",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SegmentADT_00_OBXtoObservation (http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-adt-00-obx-to-observation)</h2><p>Mapping from ADT-00.OBX to JP_Observation_Common</p><p>ACTIVE (not intended for production usage). Published on 2022-02-01 by swgssmix. </p><div><p>この ConceptMap には ADT-00 OBX  検査結果 から Observation への変換を定義する。</p>\n</div><br/><p><b>Group 1</b>Mapping from <code>ADT-00.OBX</code> to <code>JP_Observation_Common</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>PID-3 (患者ID リスト)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.subject</td><td>Patientへの参照を設定する。</td></tr><tr><td>OBX-0 (セグメントID)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>OBX-1 (セットID-OBX)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>OBX-2 (値型)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Observation.value[x]</td><td>値型の設定により、value[x] の Data Type を変更する。\r\nNM: valueQuantity, ST: valueString, CWE: valueCodeableConcept</td></tr><tr><td>OBX-3 (検査項目)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.code</td><td/></tr><tr><td>OBX-3 (検査項目)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.category</td><td>マッピング例）JC10.9N001000000000001（身長）やJC10.9N006000000000001（体重）が指定されている場合、http://terminology.hl7.org/CodeSystem/observation-category の vital-sign を設定する。</td></tr><tr><td>OBX-4 (検査副ID)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.identifier</td><td/></tr><tr><td>OBX-5 (結果値)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.value[x]</td><td/></tr><tr><td>OBX-6 (単位)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueQuantity.code</td><td/></tr><tr><td>OBX-6 (単位)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.valueQuantity.unit</td><td/></tr><tr><td>OBX-7 (基準値範囲)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.referenceRange</td><td/></tr><tr><td>OBX-8 (異常フラグ)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.interpretation</td><td/></tr><tr><td>OBX-11 (検査結果状態)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.status</td><td>final 固定</td></tr><tr><td>OBX-14 (検査日時)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.effective</td><td/></tr></table></div>"
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        }
+      ],
+      "url": "Observation"
+    },
+    {
+      "url": "label",
+      "valueString": "Segment ADT_00_OBX to Observation.fsh"
+    }
+  ],
+  "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-adt-00-obx-to-observation",
+  "version": "0.1.0",
+  "name": "SegmentADT_00_OBXtoObservation",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-02-01",
+  "publisher": "swgssmix",
+  "description": "この ConceptMap には ADT-00 OBX  検査結果 から Observation への変換を定義する。",
+  "sourceUri": "ADT-00.OBX",
+  "targetUri": "JP_Observation_Common",
+  "group": [
+    {
+      "source": "ADT-00.OBX",
+      "target": "JP_Observation_Common",
+      "element": [
+        {
+          "code": "PID-3",
+          "display": "患者ID リスト",
+          "target": [
+            {
+              "code": "Observation.subject",
+              "equivalence": "equivalent",
+              "comment": "Patientへの参照を設定する。"
+            }
+          ]
+        },
+        {
+          "code": "OBX-0",
+          "display": "セグメントID",
+          "target": [
+            {
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OBX-1",
+          "display": "セットID-OBX",
+          "target": [
+            {
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OBX-2",
+          "display": "値型",
+          "target": [
+            {
+              "code": "Observation.value[x]",
+              "equivalence": "relatedto",
+              "comment": "値型の設定により、value[x] の Data Type を変更する。\r\nNM: valueQuantity, ST: valueString, CWE: valueCodeableConcept"
+            }
+          ]
+        },
+        {
+          "code": "OBX-3",
+          "display": "検査項目",
+          "target": [
+            {
+              "code": "Observation.code",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OBX-3",
+          "display": "検査項目",
+          "target": [
+            {
+              "code": "Observation.category",
+              "equivalence": "equivalent",
+              "comment": "マッピング例）JC10.9N001000000000001（身長）やJC10.9N006000000000001（体重）が指定されている場合、http://terminology.hl7.org/CodeSystem/observation-category の vital-sign を設定する。"
+            }
+          ]
+        },
+        {
+          "code": "OBX-4",
+          "display": "検査副ID",
+          "target": [
+            {
+              "code": "Observation.identifier",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OBX-5",
+          "display": "結果値",
+          "target": [
+            {
+              "code": "Observation.value[x]",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OBX-6",
+          "display": "単位",
+          "target": [
+            {
+              "code": "Observation.valueQuantity.code",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OBX-6",
+          "display": "単位",
+          "target": [
+            {
+              "code": "Observation.valueQuantity.unit",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OBX-7",
+          "display": "基準値範囲",
+          "target": [
+            {
+              "code": "Observation.referenceRange",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OBX-8",
+          "display": "異常フラグ",
+          "target": [
+            {
+              "code": "Observation.interpretation",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OBX-11",
+          "display": "検査結果状態",
+          "target": [
+            {
+              "code": "Observation.status",
+              "equivalence": "equivalent",
+              "comment": "final 固定"
+            }
+          ]
+        },
+        {
+          "code": "OBX-14",
+          "display": "検査日時",
+          "target": [
+            {
+              "code": "Observation.effective",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

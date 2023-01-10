@@ -1,0 +1,244 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "table-v2-0003-to-encounterlocationstatus",
+  "version": "1.0",
+  "name": "Tablev2-0003toEncounterLocationStatus",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-07-27",
+  "publisher": "swgssmix",
+  "sourceUri": "http://terminology.hl7.org/CodeSystem/v2-0003",
+  "targetUri": "http://hl7.org/fhir/ValueSet/encounter-location-status",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/v2-0003",
+      "target": "http://hl7.org/fhir/ValueSet/encounter-location-status",
+      "element": [
+        {
+          "code": "A54",
+          "display": "担当医の変更",
+          "target": [
+            {
+              "code": "active",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "A55",
+          "display": "担当医の取消",
+          "target": [
+            {
+              "code": "active",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "A04",
+          "display": "外来診察の受付",
+          "target": [
+            {
+              "code": "active",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "A14",
+          "display": "入院予定",
+          "target": [
+            {
+              "code": "planned",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "A27",
+          "display": "入院予定の取消",
+          "target": [
+            {
+              "code": "planned",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "A01",
+          "display": "入院実施",
+          "target": [
+            {
+              "code": "active",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "A11",
+          "display": "入院実施の取消",
+          "target": [
+            {
+              "code": "active",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "A21",
+          "display": "外出泊実施",
+          "target": [
+            {
+              "code": "active",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "A52",
+          "display": "外出泊実施の取消",
+          "target": [
+            {
+              "code": "active",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "A22",
+          "display": "外出泊帰院実施",
+          "target": [
+            {
+              "code": "active",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "A53",
+          "display": "外出泊帰院実施の取消",
+          "target": [
+            {
+              "code": "active",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "A15",
+          "display": "転科・転棟(転室・転床)予定",
+          "target": [
+            {
+              "code": "planned",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "A26",
+          "display": "転科・転棟(転室・転床)予定の取消",
+          "target": [
+            {
+              "code": "planned",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "A02",
+          "display": "転科・転棟(転室・転床)実施",
+          "target": [
+            {
+              "code": "active",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "A12",
+          "display": "転科・転棟(転室・転床)実施の取消",
+          "target": [
+            {
+              "code": "active",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "A16",
+          "display": "退院予定",
+          "target": [
+            {
+              "code": "planned",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "A25",
+          "display": "退院予定の取消",
+          "target": [
+            {
+              "code": "planned",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "A03",
+          "display": "退院実施",
+          "target": [
+            {
+              "code": "completed",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "A13",
+          "display": "退院実施の取消",
+          "target": [
+            {
+              "code": "active",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "EncounterLocationStatus",
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        }
+      ]
+    },
+    {
+      "url": "label",
+      "valueString": "Table v2-0003 to EncounterLocationStatus.fsh"
+    }
+  ]
+}

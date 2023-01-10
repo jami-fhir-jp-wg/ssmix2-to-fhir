@@ -1,0 +1,84 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "message-ppr-01-to-bundle",
+  "description": "この ConceptMap には PPR-01 病名（歴）情報 から Message Bundle への変換を定義する。",
+  "version": "1.0",
+  "name": "MessagePPR_01toBundle",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-02-01",
+  "publisher": "swgssmix",
+  "sourceUri": "PPR-01",
+  "targetUri": "Bundle",
+  "group": [
+    {
+      "source": "PPR-01",
+      "target": "Bundle",
+      "element": [
+        {
+          "code": "PPR_ZD1.MSH",
+          "display": "メッセージヘッダ",
+          "target": [
+            {
+              "code": "MessageHeader",
+              "display": "メッセージヘッダ",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "PPR_ZD1.PID",
+          "display": "患者識別",
+          "target": [
+            {
+              "code": "JP_Patient",
+              "display": "患者",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "PPR_ZD1.PRB",
+          "display": "プロブレム詳細",
+          "target": [
+            {
+              "code": "JP_Condition",
+              "display": "状態",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "PPR_ZD1.ZPR",
+          "display": "プロブレム拡張情報",
+          "target": [
+            {
+              "code": "JP_Condition",
+              "display": "状態",
+              "equivalence": "relatedto",
+              "comment": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "Bundle",
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        }
+      ]
+    },
+    {
+      "url": "label",
+      "valueString": "Message PPR_01 to Bundle.fsh"
+    }
+  ]
+}

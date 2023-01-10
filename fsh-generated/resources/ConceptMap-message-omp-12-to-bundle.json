@@ -1,0 +1,192 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "message-omp-12-to-bundle",
+  "description": "この ConceptMap には OMP-12 注射実施 から Message Bundle への変換を定義する。",
+  "version": "1.0",
+  "name": "MessageOMP_12toBundle",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-06-15",
+  "publisher": "swgssmix",
+  "sourceUri": "OMP-12",
+  "targetUri": "Bundle",
+  "group": [
+    {
+      "source": "OMP-12",
+      "target": "Bundle",
+      "element": [
+        {
+          "code": "RAS_O17.MSH",
+          "display": "メッセージヘッダ",
+          "target": [
+            {
+              "code": "MessageHeader",
+              "display": "メッセージヘッダ",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RAS_O17.PID",
+          "display": "患者識別",
+          "target": [
+            {
+              "code": "JP_Patient",
+              "display": "患者",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RAS_O17.AL1",
+          "display": "アレルギー情報",
+          "target": [
+            {
+              "code": "JP_AllergyIntolerance",
+              "display": "アレルギー情報・不耐性",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RAS_O17.PV1",
+          "display": "来院情報",
+          "target": [
+            {
+              "code": "Encounter",
+              "display": "来院情報",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RAS_O17.ORC",
+          "display": "共通オーダ",
+          "target": [
+            {
+              "code": "JP_MedicationAdministration_Injection",
+              "display": "薬剤／処置 成分オーダ",
+              "equivalence": "relatedto",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RAS_O17.RXE",
+          "display": "薬剤／処置 コード化されたオーダ",
+          "target": [
+            {
+              "code": "JP_MedicationRequest_Injection",
+              "display": "注射薬剤処方",
+              "equivalence": "disjoint",
+              "comment": "実施にひもづくオーダ情報、MedicationAdministration.request 参照を想定する。現在協議中であるため「disjoint」とし、マッピング対象外としている。"
+            }
+          ]
+        },
+        {
+          "code": "RAS_O17.TQ1",
+          "display": "タイミング／数量",
+          "target": [
+            {
+              "code": "JP_MedicationAdministration_Injection",
+              "display": "注射薬剤処方投与実施情報",
+              "equivalence": "disjoint",
+              "comment": "実施にひもづくオーダ情報、現在協議中であるため「disjoint」とし、マッピング対象外としている。"
+            }
+          ]
+        },
+        {
+          "code": "RAS_O17.RXR",
+          "display": "投薬経路",
+          "target": [
+            {
+              "code": "JP_MedicationAdministration_Injection",
+              "display": "注射薬剤処方投与実施情報",
+              "equivalence": "disjoint",
+              "comment": "実施にひもづくオーダ情報、現在協議中であるため「disjoint」とし、マッピング対象外としている。"
+            }
+          ]
+        },
+        {
+          "code": "RAS_O17.RXC",
+          "display": "薬剤／処置 成分オーダ",
+          "target": [
+            {
+              "code": "JP_MedicationAdministration_Injection",
+              "display": "注射薬剤処方投与実施情報",
+              "equivalence": "disjoint",
+              "comment": "実施にひもづくオーダ情報、現在協議中であるため「disjoint」とし、マッピング対象外としている。"
+            }
+          ]
+        },
+        {
+          "code": "RAS_O17.RXA",
+          "display": "薬剤／処置 投薬",
+          "target": [
+            {
+              "code": "JP_MedicationAdministration_Injection",
+              "display": "注射薬剤処方投与実施情報",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RAS_O17.RXA",
+          "display": "薬剤／処置 投薬",
+          "target": [
+            {
+              "code": "Immunization",
+              "display": "予防接種",
+              "equivalence": "equivalent",
+              "comment": "RXE-2 が 「06 予防接種（JHSI 表-#0002）」の場合、MedicationAdministrationに加えて生成する（検討中）。"
+            }
+          ]
+        },
+        {
+          "code": "RAS_O17.RXR",
+          "display": "投薬経路",
+          "target": [
+            {
+              "code": "JP_MedicationAdministration_Injection",
+              "display": "注射薬剤処方投与実施情報",
+              "equivalence": "relatedto",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RAS_O17.CTI",
+          "display": "治験情報",
+          "target": [
+            {
+              "code": "未定",
+              "display": "未定",
+              "equivalence": "disjoint",
+              "comment": "実施にひもづく治験情報、現在協議中であるため「disjoint」とし、マッピング対象外としている。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "Bundle",
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        }
+      ]
+    },
+    {
+      "url": "label",
+      "valueString": "Message OMP_12 to Bundle.fsh"
+    }
+  ]
+}

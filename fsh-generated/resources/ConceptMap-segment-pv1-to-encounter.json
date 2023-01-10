@@ -1,0 +1,305 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "segment-pv1-to-encounter",
+  "description": "この ConceptMap には 共通 PV1 来院情報 から Encounter への変換を定義する。",
+  "version": "1.0",
+  "name": "SegmentPV1toEncounter",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-02-01",
+  "publisher": "swgssmix",
+  "sourceUri": "PV1",
+  "targetUri": "Encounter",
+  "group": [
+    {
+      "source": "PV1",
+      "target": "Encounter",
+      "element": [
+        {
+          "code": "MSH-9",
+          "display": "メッセージ型",
+          "target": [
+            {
+              "code": "Encounter.status",
+              "equivalence": "equivalent",
+              "comment": "Table v2-0003 to EncounterStatusを参照。"
+            }
+          ]
+        },
+        {
+          "code": "MSH-9",
+          "display": "メッセージ型",
+          "target": [
+            {
+              "code": "Encounter.location.status",
+              "equivalence": "equivalent",
+              "comment": "Table v2-0003 to EncounterLocationStatusを参照。"
+            }
+          ]
+        },
+        {
+          "code": "EVN-6",
+          "display": "事象発生日時",
+          "target": [
+            {
+              "code": "Encounter.location.period.start",
+              "equivalence": "equivalent",
+              "comment": "ADT-31、ADT-32、ADT-42の場合、設定する。"
+            }
+          ]
+        },
+        {
+          "code": "PID-3",
+          "display": "患者ID リスト",
+          "target": [
+            {
+              "code": "Encounter.subject",
+              "equivalence": "equivalent",
+              "comment": "Patientへの参照を設定する。"
+            }
+          ]
+        },
+        {
+          "code": "PV1-0",
+          "display": "セグメントID",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "PV1-1",
+          "display": "セットID-PV1",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "PV1-2",
+          "display": "患者区分",
+          "target": [
+            {
+              "code": "Encounter.class",
+              "equivalence": "equivalent",
+              "comment": "v3-ActCodeを設定する。"
+            }
+          ]
+        },
+        {
+          "code": "PV1-3",
+          "display": "来院情報",
+          "target": [
+            {
+              "code": "Encounter.location.location",
+              "equivalence": "equivalent",
+              "comment": "ADT-31の場合、外出泊先が不明の場合は固定値を設定する。location.statusの設定値はSS-MIX2データ種別EncounterLocationStatusを参照。"
+            }
+          ]
+        },
+        {
+          "code": "PV1-6",
+          "display": "患者の以前の所在",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "PV1-7",
+          "display": "主治医",
+          "target": [
+            {
+              "code": "Encounter.participant",
+              "equivalence": "equivalent",
+              "comment": "v3-ParticipationType から ATND を設定する。"
+            }
+          ]
+        },
+        {
+          "code": "PV1-10",
+          "display": "診療部門",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "PV1-17",
+          "display": "入院時医師",
+          "target": [
+            {
+              "code": "Encounter.participant",
+              "equivalence": "equivalent",
+              "comment": "v3-ParticipationType から ADM を設定する。"
+            }
+          ]
+        },
+        {
+          "code": "PV1-36",
+          "display": "退院区分",
+          "target": [
+            {
+              "code": "Encounter.diagnostics.condition.identifier",
+              "equivalence": "equivalent",
+              "comment": "use には diagnosis-role から DD を設定する。"
+            }
+          ]
+        },
+        {
+          "code": "PV1-36",
+          "display": "退院区分",
+          "target": [
+            {
+              "code": "Encounter.diagnostics.condition.display",
+              "equivalence": "equivalent",
+              "comment": "退院区分の表記を設定する。"
+            }
+          ]
+        },
+        {
+          "code": "PV1-44",
+          "display": "入院日時",
+          "target": [
+            {
+              "code": "Encounter.period.start",
+              "equivalence": "equivalent",
+              "comment": "患者区分が入院の場合、イベント型に関係なく入院日時を設定する。"
+            }
+          ]
+        },
+        {
+          "code": "PV1-44",
+          "display": "入院日時",
+          "target": [
+            {
+              "code": "Encounter.location.period.start",
+              "equivalence": "equivalent",
+              "comment": "ADT-22の場合、入院日時を設定する。"
+            }
+          ]
+        },
+        {
+          "code": "PV1-45",
+          "display": "退院日時",
+          "target": [
+            {
+              "code": "Encounter.period.end",
+              "equivalence": "equivalent",
+              "comment": "患者区分が入院の場合、イベント型に関係なく退院日時を設定する。"
+            }
+          ]
+        },
+        {
+          "code": "PV1-45",
+          "display": "退院日時",
+          "target": [
+            {
+              "code": "Encounter.location.period.end",
+              "equivalence": "equivalent",
+              "comment": "ADT-52の場合、退院日時を設定する。"
+            }
+          ]
+        },
+        {
+          "code": "PV2-0",
+          "display": "セグメントID",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": "ADT以外から生成する場合は使用しない。"
+            }
+          ]
+        },
+        {
+          "code": "PV2-1",
+          "display": "事前保留所在場所",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": "ADT以外から生成する場合は使用しない。"
+            }
+          ]
+        },
+        {
+          "code": "PV2-8",
+          "display": "予定入院日時",
+          "target": [
+            {
+              "code": "Encounter.period.start",
+              "equivalence": "equivalent",
+              "comment": "ADT-21の場合、設定する。"
+            }
+          ]
+        },
+        {
+          "code": "PV2-8",
+          "display": "予定入院日時",
+          "target": [
+            {
+              "code": "Encounter.location.period.start",
+              "equivalence": "equivalent",
+              "comment": "ADT-21、ADT-41の場合、設定する。"
+            }
+          ]
+        },
+        {
+          "code": "PV2-9",
+          "display": "予定退院日時",
+          "target": [
+            {
+              "code": "Encounter.period.end",
+              "equivalence": "equivalent",
+              "comment": "ADT-21の場合、設定する。"
+            }
+          ]
+        },
+        {
+          "code": "PV2-9",
+          "display": "予定退院日時",
+          "target": [
+            {
+              "code": "Encounter.location.period.end",
+              "equivalence": "equivalent",
+              "comment": "ADT-51の場合、設定する。"
+            }
+          ]
+        },
+        {
+          "code": "PV2-47",
+          "display": "予定帰院日時",
+          "target": [
+            {
+              "code": "Encounter.location.period.end",
+              "equivalence": "equivalent",
+              "comment": "ADT-31の場合、設定する。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "Encounter",
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        }
+      ]
+    },
+    {
+      "url": "label",
+      "valueString": "Segment PV1 to Encounter.fsh"
+    }
+  ]
+}

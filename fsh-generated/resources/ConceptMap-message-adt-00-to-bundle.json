@@ -1,0 +1,132 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "message-adt-00-to-bundle",
+  "description": "この ConceptMap には ADT-00 患者基本情報 から Message Bundle への変換を定義する。",
+  "version": "1.0",
+  "name": "MessageADT_00toBundle",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-02-01",
+  "publisher": "swgssmix",
+  "sourceUri": "ADT-00",
+  "targetUri": "Bundle",
+  "group": [
+    {
+      "source": "ADT-00",
+      "target": "Bundle",
+      "element": [
+        {
+          "code": "ADT_A08.MSH",
+          "display": "メッセージヘッダ",
+          "target": [
+            {
+              "code": "MessageHeader",
+              "display": "メッセージヘッダ",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "ADT_A08.PID",
+          "display": "患者識別",
+          "target": [
+            {
+              "code": "JP_Patient",
+              "display": "患者",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "ADT_A08.PV1",
+          "display": "来院情報",
+          "target": [
+            {
+              "code": "Encounter",
+              "display": "来院情報",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "ADT_A08.DB1",
+          "display": "身体障害",
+          "target": [
+            {
+              "code": "JP_Patient",
+              "display": "患者",
+              "equivalence": "equivalent",
+              "comment": "http://hl7.org/fhir/R4/extension-patient-disability.html"
+            }
+          ]
+        },
+        {
+          "code": "ADT_A08.OBSERVATION.OBX",
+          "display": "検査結果",
+          "target": [
+            {
+              "code": "JP_Observation_Common",
+              "display": "検査（共通）",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "ADT_A08.AL1",
+          "display": "アレルギー情報",
+          "target": [
+            {
+              "code": "JP_AllergyIntolerance",
+              "display": "アレルギー・不耐症",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "ADT_A08.INSURANCE.IN1",
+          "display": "保険",
+          "target": [
+            {
+              "code": "JP_Coverage",
+              "display": "保険・公費",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "ADT_A08.NK1",
+          "display": "近親者情報",
+          "target": [
+            {
+              "code": "JP_Patient",
+              "display": "患者",
+              "equivalence": "relatedto",
+              "comment": "Patient.contact にマッピングする。詳細は[Segment PID to Patient](ConceptMap-segment-pid-to-patient.html)を参照のこと。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "Bundle",
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        }
+      ]
+    },
+    {
+      "url": "label",
+      "valueString": "Message ADT_00 to Bundle.fsh"
+    }
+  ]
+}

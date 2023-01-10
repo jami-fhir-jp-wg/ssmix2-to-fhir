@@ -1,0 +1,344 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-omp-12-rxa-to-medicationadministration> a fhir:ConceptMap;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "segment-omp-12-rxa-to-medicationadministration"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SegmentOMP_12_RXAtoMedicationAdministration (http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-omp-12-rxa-to-medicationadministration)</h2><p>Mapping from OMP-12.RXA to JP_MedicationAdministration_Injection</p><p>ACTIVE (not intended for production usage). Published on 2022-06-15 by swgssmix. </p><div><p>この ConceptMap には OMP-12 RXA 薬剤／処置 投薬 から MedicationAdministration への変換を定義する。</p>\n</div><br/><p><b>Group 1</b>Mapping from <code>OMP-12.RXA</code> to <code>JP_MedicationAdministration_Injection</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>PID-3 (患者ID リスト)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>MedicationAdministration.subject</td><td>Patientへの参照を設定する。</td></tr><tr><td>RXE-2 (与薬コード)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td/><td>「JHSI 表 0002-注射種別」が設定されているため、マッピング先のリソース選定に使用する（要検討）。</td></tr><tr><td>RXA-0 (セグメントID)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>RXA-1 (与薬サブID)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>RXA-2 (投薬サブID)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>RXA–3 (投薬開始日時)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>MedicationAdministration.effectivePeriod.start</td><td/></tr><tr><td>RXA-4 (投薬終了日時)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>MedicationAdministration.effectivePeriod.end</td><td/></tr><tr><td>RXA-5 (投薬コード)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>MedicationAdministration.medicationCodeableConcept</td><td/></tr><tr><td>RXA-6 (投薬量)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>MedicationAdministration.dosage.dose.value</td><td/></tr><tr><td>RXA-7 (投薬単位)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>MedicationAdministration.dosage.dose.code</td><td/></tr><tr><td>RXA-7 (投薬単位)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>MedicationAdministration.dosage.dose.unit</td><td/></tr><tr><td>RXA-8 (投薬剤形)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>RXA-9 (投薬注記)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>MedicationAdministration.note</td><td/></tr><tr><td>RXA-10 (投薬者)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>MedicationAdministration.performer.actor</td><td/></tr><tr><td>RXA-11 (投薬場所)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>RXA-12 (時間あたりの投薬)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>MedicationAdministration.dosage.rate</td><td/></tr><tr><td>RXA-13 (投薬力価)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>RXA-14 (投薬力価単位)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>RXA-15 (薬剤ロット番号)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>RXA-16 (薬剤有効期限)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>RXA-17 (薬剤製造者名)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>RXA-18 (薬剤/治療拒否理由)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>RXA-19 (指示)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>RXA-20 (完了状態)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>MedicationAdministration.status</td><td/></tr><tr><td>RXA-21 (アクションコード＿RXA)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>RXA-22 (システム入力日時)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>RXA-23 (投薬力価量)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>RXA-24 (投薬力価量単位)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>RXA-25 (投薬バーコード識別機能)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>RXA-26 (薬剤オーダタイプ)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>RXR-1 (経路)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>MedicationAdministration.dosage.route</td><td>RXAにひもづくRXRを対象とする。</td></tr><tr><td>RXR-2 (部位)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>MedicationAdministration.dosage.site</td><td>RXAにひもづくRXRを対象とする。</td></tr><tr><td>RXR-3 (投薬装置)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>MedicationAdministration.device</td><td>RXAにひもづくRXRを対象とする。</td></tr><tr><td>RXR-4 (投薬方法)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>MedicationAdministration.dosage.method</td><td>RXAにひもづくRXRを対象とする。</td></tr></table></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "type" ];
+       fhir:Extension.valueCode [ fhir:value "derived-from" ]
+     ];
+     fhir:Extension.url [ fhir:value "MedicationAdministration" ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "label" ];
+     fhir:Extension.valueString [ fhir:value "Segment OMP_12_RXA to MedicationAdministration.fsh" ]
+  ];
+  fhir:ConceptMap.url [ fhir:value "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-omp-12-rxa-to-medicationadministration"];
+  fhir:ConceptMap.version [ fhir:value "0.1.0"];
+  fhir:ConceptMap.name [ fhir:value "SegmentOMP_12_RXAtoMedicationAdministration"];
+  fhir:ConceptMap.status [ fhir:value "active"];
+  fhir:ConceptMap.experimental [ fhir:value "true"^^xsd:boolean];
+  fhir:ConceptMap.date [ fhir:value "2022-06-15"^^xsd:date];
+  fhir:ConceptMap.publisher [ fhir:value "swgssmix"];
+  fhir:ConceptMap.description [ fhir:value "この ConceptMap には OMP-12 RXA 薬剤／処置 投薬 から MedicationAdministration への変換を定義する。"];
+  fhir:ConceptMap.sourceUri [ fhir:value "OMP-12.RXA"];
+  fhir:ConceptMap.targetUri [ fhir:value "JP_MedicationAdministration_Injection"];
+  fhir:ConceptMap.group [
+     fhir:index 0;
+     fhir:ConceptMap.group.source [ fhir:value "OMP-12.RXA" ];
+     fhir:ConceptMap.group.target [ fhir:value "JP_MedicationAdministration_Injection" ];
+     fhir:ConceptMap.group.element [
+       fhir:index 0;
+       fhir:ConceptMap.group.element.code [ fhir:value "PID-3" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "患者ID リスト" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "MedicationAdministration.subject" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "Patientへの参照を設定する。" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ConceptMap.group.element.code [ fhir:value "RXE-2" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "与薬コード" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "relatedto" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "「JHSI 表 0002-注射種別」が設定されているため、マッピング先のリソース選定に使用する（要検討）。" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:ConceptMap.group.element.code [ fhir:value "RXA-0" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "セグメントID" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:ConceptMap.group.element.code [ fhir:value "RXA-1" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "与薬サブID" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:ConceptMap.group.element.code [ fhir:value "RXA-2" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "投薬サブID" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:ConceptMap.group.element.code [ fhir:value "RXA–3" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "投薬開始日時" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "MedicationAdministration.effectivePeriod.start" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:ConceptMap.group.element.code [ fhir:value "RXA-4" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "投薬終了日時" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "MedicationAdministration.effectivePeriod.end" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 7;
+       fhir:ConceptMap.group.element.code [ fhir:value "RXA-5" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "投薬コード" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "MedicationAdministration.medicationCodeableConcept" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 8;
+       fhir:ConceptMap.group.element.code [ fhir:value "RXA-6" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "投薬量" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "MedicationAdministration.dosage.dose.value" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 9;
+       fhir:ConceptMap.group.element.code [ fhir:value "RXA-7" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "投薬単位" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "MedicationAdministration.dosage.dose.code" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 10;
+       fhir:ConceptMap.group.element.code [ fhir:value "RXA-7" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "投薬単位" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "MedicationAdministration.dosage.dose.unit" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 11;
+       fhir:ConceptMap.group.element.code [ fhir:value "RXA-8" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "投薬剤形" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 12;
+       fhir:ConceptMap.group.element.code [ fhir:value "RXA-9" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "投薬注記" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "MedicationAdministration.note" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 13;
+       fhir:ConceptMap.group.element.code [ fhir:value "RXA-10" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "投薬者" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "MedicationAdministration.performer.actor" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 14;
+       fhir:ConceptMap.group.element.code [ fhir:value "RXA-11" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "投薬場所" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 15;
+       fhir:ConceptMap.group.element.code [ fhir:value "RXA-12" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "時間あたりの投薬" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "MedicationAdministration.dosage.rate" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 16;
+       fhir:ConceptMap.group.element.code [ fhir:value "RXA-13" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "投薬力価" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 17;
+       fhir:ConceptMap.group.element.code [ fhir:value "RXA-14" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "投薬力価単位" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 18;
+       fhir:ConceptMap.group.element.code [ fhir:value "RXA-15" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "薬剤ロット番号" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 19;
+       fhir:ConceptMap.group.element.code [ fhir:value "RXA-16" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "薬剤有効期限" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 20;
+       fhir:ConceptMap.group.element.code [ fhir:value "RXA-17" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "薬剤製造者名" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 21;
+       fhir:ConceptMap.group.element.code [ fhir:value "RXA-18" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "薬剤/治療拒否理由" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 22;
+       fhir:ConceptMap.group.element.code [ fhir:value "RXA-19" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "指示" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 23;
+       fhir:ConceptMap.group.element.code [ fhir:value "RXA-20" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "完了状態" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "MedicationAdministration.status" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 24;
+       fhir:ConceptMap.group.element.code [ fhir:value "RXA-21" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "アクションコード＿RXA" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 25;
+       fhir:ConceptMap.group.element.code [ fhir:value "RXA-22" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "システム入力日時" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 26;
+       fhir:ConceptMap.group.element.code [ fhir:value "RXA-23" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "投薬力価量" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 27;
+       fhir:ConceptMap.group.element.code [ fhir:value "RXA-24" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "投薬力価量単位" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 28;
+       fhir:ConceptMap.group.element.code [ fhir:value "RXA-25" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "投薬バーコード識別機能" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 29;
+       fhir:ConceptMap.group.element.code [ fhir:value "RXA-26" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "薬剤オーダタイプ" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 30;
+       fhir:ConceptMap.group.element.code [ fhir:value "RXR-1" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "経路" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "MedicationAdministration.dosage.route" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "RXAにひもづくRXRを対象とする。" ]
+       ]
+     ], [
+       fhir:index 31;
+       fhir:ConceptMap.group.element.code [ fhir:value "RXR-2" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "部位" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "MedicationAdministration.dosage.site" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "RXAにひもづくRXRを対象とする。" ]
+       ]
+     ], [
+       fhir:index 32;
+       fhir:ConceptMap.group.element.code [ fhir:value "RXR-3" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "投薬装置" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "MedicationAdministration.device" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "RXAにひもづくRXRを対象とする。" ]
+       ]
+     ], [
+       fhir:index 33;
+       fhir:ConceptMap.group.element.code [ fhir:value "RXR-4" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "投薬方法" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "MedicationAdministration.dosage.method" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "RXAにひもづくRXRを対象とする。" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-omp-12-rxa-to-medicationadministration.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

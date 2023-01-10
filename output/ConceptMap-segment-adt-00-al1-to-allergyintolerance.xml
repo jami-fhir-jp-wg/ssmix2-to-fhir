@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="segment-adt-00-al1-to-allergyintolerance"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>SegmentADT_00_AL1toAllergyIntolerance (http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-adt-00-al1-to-allergyintolerance)</h2><p>Mapping from ADT-00.IAM to JP_AllergyIntolerance</p><p>ACTIVE (not intended for production usage). Published on 2022-02-01 by swgssmix. </p><div><p>この ConceptMap には ADT-00 AL1  アレルギー情報 から AllergyIntolerance への変換を定義する。</p>
+</div><br/><p><b>Group 1</b>Mapping from <code>ADT-00.IAM</code> to <code>JP_AllergyIntolerance</code></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>PID-3 (患者ID リスト)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>AllergyIntolerance.patient</td><td>Patientへの参照を設定する。</td></tr><tr><td>AL1-0 (セグメントID)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>AL1-1 (セットID-AL1)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>AL1-2 (アレルゲン分類)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>AllergyIntolerance.category</td><td/></tr><tr><td>AL1-3 (アレルゲン情報)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>AllergyIntolerance.code</td><td/></tr></table></div>
+  </text>
+  <extension url="AllergyIntolerance">
+    <extension url="type">
+      <valueCode value="derived-from"/>
+    </extension>
+  </extension>
+  <extension url="label">
+    <valueString value="Segment ADT_00_AL1 to AllergyIntolerance.fsh"/>
+  </extension>
+  <url value="http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-adt-00-al1-to-allergyintolerance"/>
+  <version value="0.1.0"/>
+  <name value="SegmentADT_00_AL1toAllergyIntolerance"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-02-01"/>
+  <publisher value="swgssmix"/>
+  <description value="この ConceptMap には ADT-00 AL1  アレルギー情報 から AllergyIntolerance への変換を定義する。"/>
+  <sourceUri value="ADT-00.IAM"/>
+  <targetUri value="JP_AllergyIntolerance"/>
+  <group>
+    <source value="ADT-00.IAM"/>
+    <target value="JP_AllergyIntolerance"/>
+    <element>
+      <code value="PID-3"/>
+      <display value="患者ID リスト"/>
+      <target>
+        <code value="AllergyIntolerance.patient"/>
+        <equivalence value="equivalent"/>
+        <comment value="Patientへの参照を設定する。"/>
+      </target>
+    </element>
+    <element>
+      <code value="AL1-0"/>
+      <display value="セグメントID"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="AL1-1"/>
+      <display value="セットID-AL1"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="AL1-2"/>
+      <display value="アレルゲン分類"/>
+      <target>
+        <code value="AllergyIntolerance.category"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="AL1-3"/>
+      <display value="アレルゲン情報"/>
+      <target>
+        <code value="AllergyIntolerance.code"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

@@ -1,0 +1,391 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "segment-omp-12-rxa-to-medicationadministration",
+  "description": "この ConceptMap には OMP-12 RXA 薬剤／処置 投薬 から MedicationAdministration への変換を定義する。",
+  "version": "1.0",
+  "name": "SegmentOMP_12_RXAtoMedicationAdministration",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-06-15",
+  "publisher": "swgssmix",
+  "sourceUri": "OMP-12.RXA",
+  "targetUri": "JP_MedicationAdministration_Injection",
+  "group": [
+    {
+      "source": "OMP-12.RXA",
+      "target": "JP_MedicationAdministration_Injection",
+      "element": [
+        {
+          "code": "PID-3",
+          "display": "患者ID リスト",
+          "target": [
+            {
+              "code": "MedicationAdministration.subject",
+              "equivalence": "equivalent",
+              "comment": "Patientへの参照を設定する。"
+            }
+          ]
+        },
+        {
+          "code": "RXE-2",
+          "display": "与薬コード",
+          "target": [
+            {
+              "equivalence": "relatedto",
+              "comment": "「JHSI 表 0002-注射種別」が設定されているため、マッピング先のリソース選定に使用する（要検討）。"
+            }
+          ]
+        },
+        {
+          "code": "RXA-0",
+          "display": "セグメントID",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXA-1",
+          "display": "与薬サブID",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXA-2",
+          "display": "投薬サブID",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXA–3",
+          "display": "投薬開始日時",
+          "target": [
+            {
+              "code": "MedicationAdministration.effectivePeriod.start",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXA-4",
+          "display": "投薬終了日時",
+          "target": [
+            {
+              "code": "MedicationAdministration.effectivePeriod.end",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXA-5",
+          "display": "投薬コード",
+          "target": [
+            {
+              "code": "MedicationAdministration.medicationCodeableConcept",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXA-6",
+          "display": "投薬量",
+          "target": [
+            {
+              "code": "MedicationAdministration.dosage.dose.value",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXA-7",
+          "display": "投薬単位",
+          "target": [
+            {
+              "code": "MedicationAdministration.dosage.dose.code",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXA-7",
+          "display": "投薬単位",
+          "target": [
+            {
+              "code": "MedicationAdministration.dosage.dose.unit",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXA-8",
+          "display": "投薬剤形",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXA-9",
+          "display": "投薬注記",
+          "target": [
+            {
+              "code": "MedicationAdministration.note",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXA-10",
+          "display": "投薬者",
+          "target": [
+            {
+              "code": "MedicationAdministration.performer.actor",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXA-11",
+          "display": "投薬場所",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXA-12",
+          "display": "時間あたりの投薬",
+          "target": [
+            {
+              "code": "MedicationAdministration.dosage.rate",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXA-13",
+          "display": "投薬力価",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXA-14",
+          "display": "投薬力価単位",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXA-15",
+          "display": "薬剤ロット番号",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXA-16",
+          "display": "薬剤有効期限",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXA-17",
+          "display": "薬剤製造者名",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXA-18",
+          "display": "薬剤/治療拒否理由",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXA-19",
+          "display": "指示",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXA-20",
+          "display": "完了状態",
+          "target": [
+            {
+              "code": "MedicationAdministration.status",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXA-21",
+          "display": "アクションコード＿RXA",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXA-22",
+          "display": "システム入力日時",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXA-23",
+          "display": "投薬力価量",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXA-24",
+          "display": "投薬力価量単位",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXA-25",
+          "display": "投薬バーコード識別機能",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXA-26",
+          "display": "薬剤オーダタイプ",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXR-1",
+          "display": "経路",
+          "target": [
+            {
+              "code": "MedicationAdministration.dosage.route",
+              "equivalence": "equivalent",
+              "comment": "RXAにひもづくRXRを対象とする。"
+            }
+          ]
+        },
+        {
+          "code": "RXR-2",
+          "display": "部位",
+          "target": [
+            {
+              "code": "MedicationAdministration.dosage.site",
+              "equivalence": "equivalent",
+              "comment": "RXAにひもづくRXRを対象とする。"
+            }
+          ]
+        },
+        {
+          "code": "RXR-3",
+          "display": "投薬装置",
+          "target": [
+            {
+              "code": "MedicationAdministration.device",
+              "equivalence": "equivalent",
+              "comment": "RXAにひもづくRXRを対象とする。"
+            }
+          ]
+        },
+        {
+          "code": "RXR-4",
+          "display": "投薬方法",
+          "target": [
+            {
+              "code": "MedicationAdministration.dosage.method",
+              "equivalence": "equivalent",
+              "comment": "RXAにひもづくRXRを対象とする。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "MedicationAdministration",
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        }
+      ]
+    },
+    {
+      "url": "label",
+      "valueString": "Segment OMP_12_RXA to MedicationAdministration.fsh"
+    }
+  ]
+}

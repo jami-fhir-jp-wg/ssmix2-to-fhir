@@ -1,0 +1,59 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "table-v2-0465-to-iso-21090",
+  "version": "1.0",
+  "name": "Tablev2-0465toiso-21090",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-02-01",
+  "publisher": "swgssmix",
+  "sourceUri": "http://terminology.hl7.org/CodeSystem/v2-0465",
+  "targetUri": "iso-21090",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/v2-0465",
+      "target": "iso-21090",
+      "element": [
+        {
+          "code": "I",
+          "display": "表意文字(漢字)",
+          "target": [
+            {
+              "code": "IDE",
+              "display": "ideographic",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "P",
+          "display": "表音文字(ASCII,仮名)",
+          "target": [
+            {
+              "code": "SYL",
+              "display": "syllabic",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "iso-21090",
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        }
+      ]
+    },
+    {
+      "url": "label",
+      "valueString": "Table v2-0465 to iso-21090.fsh"
+    }
+  ]
+}

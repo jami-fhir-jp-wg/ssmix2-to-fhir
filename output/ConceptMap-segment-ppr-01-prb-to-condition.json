@@ -1,0 +1,382 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "segment-ppr-01-prb-to-condition",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SegmentPPR_01_PRBtoCondition (http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-ppr-01-prb-to-condition)</h2><p>Mapping from PPR-01.PRB to JP_Condition</p><p>ACTIVE (not intended for production usage). Published on 2022-02-01 by swgssmix. </p><div><p>この ConceptMap には PPR-01 PRB プロブレム詳細 から Condition への変換を定義する。</p>\n</div><br/><p><b>Group 1</b>Mapping from <code>PPR-01.PRB</code> to <code>JP_Condition</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>PID-3 (患者ID リスト)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Condition.subject</td><td>Patientへの参照を設定する。</td></tr><tr><td>ORC-12 (依頼者)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Condition.recorder</td><td>Practitionerへの参照を設定する。\r\nインラインのPractitionerリソースを生成し、参照してもよい。</td></tr><tr><td>PRB-0 (セグメントID)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>PRB-1 (アクションコード)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Condition.verificationStatus</td><td>DE: entered-in-error（誤入力）</td></tr><tr><td>PRB-2 (アクション日付／時刻)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>PRB-3 (プロブレムID)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Condition.code</td><td/></tr><tr><td>PRB-4 (プロブレムインスタンスID)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Condition.identifier</td><td/></tr><tr><td>PRB-5 (診療ID エピソード)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>PRB-6 (プロブレムリストの優先権)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>PRB-7 (プロブレム設定日付／時刻)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Condition.recordedDate</td><td/></tr><tr><td>PRB-8 (予想されるプロブレム解決日付／時刻)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>PRB-9 (実際のプロブレム解決日付／時刻)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Condition.abatementDateTime</td><td/></tr><tr><td>PRB-10 (プロブレムの分類)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Condition.code</td><td/></tr><tr><td>PRB-11 (プロブレムマネジメント職種)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>PRB-12 (プロブレムの長期化)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>PRB-13 (プロブレムの確認状態)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Condition.verificationStatus</td><td/></tr><tr><td>PRB-14 (プロブレムのライフサイクル状態)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Condition.hospitalization</td><td/></tr><tr><td>PRB-15 (プロブレムのライフサイクル状態の日付／時刻)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Condition.abatementDateTime</td><td/></tr><tr><td>PRB-15 (プロブレムのライフサイクル状態の日付／時刻)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Condition.clinicalStatus</td><td/></tr><tr><td>PRB-16 (プロブレムの発生日付)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Condition.onsetDateTime</td><td/></tr><tr><td>PRB-17 (プロブレムの発生テキスト)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Condition.text</td><td/></tr><tr><td>PRB-18 (プロブレムのランキング)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>PRB-19 (プロブレムの確実性)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>PRB-20 (プロブレムの確率（0-1）)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>PRB-21 (プロブレムの個々の認識)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>PRB-22 (プロブレムの予後)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>PRB-23 (予後についての患者個人の認識)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>PRB-24 (プロブレム／予後についての家族その他重要な関係者の認識)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>PRB-25 (セキュリティ／感受性)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>ZPR-1 (修飾語管理番号（接頭語）)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>ZPR-2 (病名管理番号)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>ZPR-3 (修飾語管理番号（接尾語）)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>ZPR-4 (修飾語交換用コード（接頭語）)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>ZPR-5 (病名交換用コード)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>ZPR-6 (修飾語交換用コード（接尾語）)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>ZPR-7 (コメント)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr></table></div>"
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        }
+      ],
+      "url": "Condition"
+    },
+    {
+      "url": "label",
+      "valueString": "Segment PPR_01_PRB to Condition.fsh"
+    }
+  ],
+  "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-ppr-01-prb-to-condition",
+  "version": "0.1.0",
+  "name": "SegmentPPR_01_PRBtoCondition",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-02-01",
+  "publisher": "swgssmix",
+  "description": "この ConceptMap には PPR-01 PRB プロブレム詳細 から Condition への変換を定義する。",
+  "sourceUri": "PPR-01.PRB",
+  "targetUri": "JP_Condition",
+  "group": [
+    {
+      "source": "PPR-01.PRB",
+      "target": "JP_Condition",
+      "element": [
+        {
+          "code": "PID-3",
+          "display": "患者ID リスト",
+          "target": [
+            {
+              "code": "Condition.subject",
+              "equivalence": "equivalent",
+              "comment": "Patientへの参照を設定する。"
+            }
+          ]
+        },
+        {
+          "code": "ORC-12",
+          "display": "依頼者",
+          "target": [
+            {
+              "code": "Condition.recorder",
+              "equivalence": "equivalent",
+              "comment": "Practitionerへの参照を設定する。\r\nインラインのPractitionerリソースを生成し、参照してもよい。"
+            }
+          ]
+        },
+        {
+          "code": "PRB-0",
+          "display": "セグメントID",
+          "target": [
+            {
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PRB-1",
+          "display": "アクションコード",
+          "target": [
+            {
+              "code": "Condition.verificationStatus",
+              "equivalence": "equivalent",
+              "comment": "DE: entered-in-error（誤入力）"
+            }
+          ]
+        },
+        {
+          "code": "PRB-2",
+          "display": "アクション日付／時刻",
+          "target": [
+            {
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PRB-3",
+          "display": "プロブレムID",
+          "target": [
+            {
+              "code": "Condition.code",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "PRB-4",
+          "display": "プロブレムインスタンスID",
+          "target": [
+            {
+              "code": "Condition.identifier",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PRB-5",
+          "display": "診療ID エピソード",
+          "target": [
+            {
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PRB-6",
+          "display": "プロブレムリストの優先権",
+          "target": [
+            {
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PRB-7",
+          "display": "プロブレム設定日付／時刻",
+          "target": [
+            {
+              "code": "Condition.recordedDate",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PRB-8",
+          "display": "予想されるプロブレム解決日付／時刻",
+          "target": [
+            {
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PRB-9",
+          "display": "実際のプロブレム解決日付／時刻",
+          "target": [
+            {
+              "code": "Condition.abatementDateTime",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PRB-10",
+          "display": "プロブレムの分類",
+          "target": [
+            {
+              "code": "Condition.code",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PRB-11",
+          "display": "プロブレムマネジメント職種",
+          "target": [
+            {
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PRB-12",
+          "display": "プロブレムの長期化",
+          "target": [
+            {
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PRB-13",
+          "display": "プロブレムの確認状態",
+          "target": [
+            {
+              "code": "Condition.verificationStatus",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PRB-14",
+          "display": "プロブレムのライフサイクル状態",
+          "target": [
+            {
+              "code": "Condition.hospitalization",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PRB-15",
+          "display": "プロブレムのライフサイクル状態の日付／時刻",
+          "target": [
+            {
+              "code": "Condition.abatementDateTime",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PRB-15",
+          "display": "プロブレムのライフサイクル状態の日付／時刻",
+          "target": [
+            {
+              "code": "Condition.clinicalStatus",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PRB-16",
+          "display": "プロブレムの発生日付",
+          "target": [
+            {
+              "code": "Condition.onsetDateTime",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PRB-17",
+          "display": "プロブレムの発生テキスト",
+          "target": [
+            {
+              "code": "Condition.text",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PRB-18",
+          "display": "プロブレムのランキング",
+          "target": [
+            {
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PRB-19",
+          "display": "プロブレムの確実性",
+          "target": [
+            {
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PRB-20",
+          "display": "プロブレムの確率（0-1）",
+          "target": [
+            {
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PRB-21",
+          "display": "プロブレムの個々の認識",
+          "target": [
+            {
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PRB-22",
+          "display": "プロブレムの予後",
+          "target": [
+            {
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PRB-23",
+          "display": "予後についての患者個人の認識",
+          "target": [
+            {
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PRB-24",
+          "display": "プロブレム／予後についての家族その他重要な関係者の認識",
+          "target": [
+            {
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PRB-25",
+          "display": "セキュリティ／感受性",
+          "target": [
+            {
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ZPR-1",
+          "display": "修飾語管理番号（接頭語）",
+          "target": [
+            {
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ZPR-2",
+          "display": "病名管理番号",
+          "target": [
+            {
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ZPR-3",
+          "display": "修飾語管理番号（接尾語）",
+          "target": [
+            {
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ZPR-4",
+          "display": "修飾語交換用コード（接頭語）",
+          "target": [
+            {
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ZPR-5",
+          "display": "病名交換用コード",
+          "target": [
+            {
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ZPR-6",
+          "display": "修飾語交換用コード（接尾語）",
+          "target": [
+            {
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ZPR-7",
+          "display": "コメント",
+          "target": [
+            {
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

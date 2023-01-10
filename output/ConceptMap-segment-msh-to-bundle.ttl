@@ -1,0 +1,81 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-msh-to-bundle> a fhir:ConceptMap;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "segment-msh-to-bundle"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SegmentMSHtoBundle (http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-msh-to-bundle)</h2><p>Mapping from MSH to <a href=\"http://hl7.org/fhir/R4/bundle.html\">Bundle</a></p><p>ACTIVE (not intended for production usage). Published on 2022-02-01 by swgssmix. </p><div><p>この ConceptMap には 共通 MSH メッセージヘッダ Bundle から Bundle への変換を定義する。</p>\n</div><br/><p><b>Group 1</b>Mapping from <code>MSH</code> to <a href=\"http://hl7.org/fhir/R4/bundle.html\">Bundle</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>MSH-7 (メッセージ日時)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#disjoint\" title=\"disjoint\">is not related to</a></td><td>Bundle.timestamp</td><td>メッセージの送信日時を設定する。SS-MIX2のMSH-7は標準化ストレージやトランザクションストレージの作成タイミングであるため、FHIRサーバへの送信日時やファイル出力日時を設定する。</td></tr><tr><td>MSH-9 (メッセージ型)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Bundle.entry.resource.meta.profile</td><td>プロファイルを明示する場合、設定する。プロファイルはメッセージ型およびセグメントIDから決定する。</td></tr><tr><td>MSH-10 (メッセージ制御ID)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Bundle.id</td><td>Bundleの場合、ロジカルIDとしての採用も考えられる。</td></tr></table></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "type" ];
+       fhir:Extension.valueCode [ fhir:value "derived-from" ]
+     ];
+     fhir:Extension.url [ fhir:value "Bundle" ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "label" ];
+     fhir:Extension.valueString [ fhir:value "Segment MSH to Bundle.fsh" ]
+  ];
+  fhir:ConceptMap.url [ fhir:value "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-msh-to-bundle"];
+  fhir:ConceptMap.version [ fhir:value "0.1.0"];
+  fhir:ConceptMap.name [ fhir:value "SegmentMSHtoBundle"];
+  fhir:ConceptMap.status [ fhir:value "active"];
+  fhir:ConceptMap.experimental [ fhir:value "true"^^xsd:boolean];
+  fhir:ConceptMap.date [ fhir:value "2022-02-01"^^xsd:date];
+  fhir:ConceptMap.publisher [ fhir:value "swgssmix"];
+  fhir:ConceptMap.description [ fhir:value "この ConceptMap には 共通 MSH メッセージヘッダ Bundle から Bundle への変換を定義する。"];
+  fhir:ConceptMap.sourceUri [ fhir:value "MSH"];
+  fhir:ConceptMap.targetUri [ fhir:value "Bundle"];
+  fhir:ConceptMap.group [
+     fhir:index 0;
+     fhir:ConceptMap.group.source [ fhir:value "MSH" ];
+     fhir:ConceptMap.group.target [ fhir:value "Bundle" ];
+     fhir:ConceptMap.group.element [
+       fhir:index 0;
+       fhir:ConceptMap.group.element.code [ fhir:value "MSH-7" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "メッセージ日時" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Bundle.timestamp" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "disjoint" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "メッセージの送信日時を設定する。SS-MIX2のMSH-7は標準化ストレージやトランザクションストレージの作成タイミングであるため、FHIRサーバへの送信日時やファイル出力日時を設定する。" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ConceptMap.group.element.code [ fhir:value "MSH-9" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "メッセージ型" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Bundle.entry.resource.meta.profile" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "プロファイルを明示する場合、設定する。プロファイルはメッセージ型およびセグメントIDから決定する。" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:ConceptMap.group.element.code [ fhir:value "MSH-10" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "メッセージ制御ID" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Bundle.id" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "Bundleの場合、ロジカルIDとしての採用も考えられる。" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-msh-to-bundle.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

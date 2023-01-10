@@ -1,0 +1,250 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "segment-adt-61-iam-to-allergyintolerance",
+  "description": "この ConceptMap には ADT-61 IAM アレルギー情報 から AllergyIntolerance への変換を定義する。",
+  "version": "1.0",
+  "name": "SegmentADT_61_IAMtoAllergyIntolerance",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-02-01",
+  "publisher": "swgssmix",
+  "sourceUri": "ADT-61.IAM",
+  "targetUri": "JP_AllergyIntolerance",
+  "group": [
+    {
+      "source": "ADT-61.IAM",
+      "target": "JP_AllergyIntolerance",
+      "element": [
+        {
+          "code": "PID-3",
+          "display": "患者ID リスト",
+          "target": [
+            {
+              "code": "AllergyIntolerance.patient",
+              "equivalence": "equivalent",
+              "comment": "Patientへの参照を設定する。"
+            }
+          ]
+        },
+        {
+          "code": "IAM-0",
+          "display": "セグメントID",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "IAM-1",
+          "display": "セットID-IAM",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "IAM-2",
+          "display": "アレルゲン分類",
+          "target": [
+            {
+              "code": "AllergyIntolerance.category",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "IAM-3",
+          "display": "アレルゲン情報",
+          "target": [
+            {
+              "code": "AllergyIntolerance.code",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "IAM-4",
+          "display": "アレルギー重症度",
+          "target": [
+            {
+              "code": "AllergyIntolerance.reaction.severity",
+              "equivalence": "relatedto",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "IAM-5",
+          "display": "アレルギー反応情報",
+          "target": [
+            {
+              "code": "AllergyIntolerance.reaction.description",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "IAM-5",
+          "display": "アレルギー反応情報",
+          "target": [
+            {
+              "code": "AllergyIntolerance.reaction.manifestation",
+              "equivalence": "equivalent",
+              "comment": "コード化できない場合、テキストのみ設定。欠損値として「アレルギー反応情報なし」などを設定する。"
+            }
+          ]
+        },
+        {
+          "code": "IAM-6",
+          "display": "アレルギーアクションコード",
+          "target": [
+            {
+              "code": "AllergyIntolerance.clinicalStatus",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "IAM-9",
+          "display": "アレルギー物質に対する感受性",
+          "target": [
+            {
+              "code": "AllergyIntolerance.type",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "IAM-11",
+          "display": "アレルギー発症日",
+          "target": [
+            {
+              "code": "AllergyIntolerance.onsetDateTime",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "IAM-12",
+          "display": "副作用情報 アレルギー発症時期",
+          "target": [
+            {
+              "code": "AllergyIntolerance.onsetString",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "IAM-13",
+          "display": "副作用情報 情報提供日時",
+          "target": [
+            {
+              "code": "AllergyIntolerance.recordedDate",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "IAM-14",
+          "display": "情報提供者",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "IAM-15",
+          "display": "情報提供者と患者の続柄",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "IAM-17",
+          "display": "アレルギー臨床確認状況",
+          "target": [
+            {
+              "code": "AllergyIntolerance.verificationStatus",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "IAM-18",
+          "display": "確認者",
+          "target": [
+            {
+              "code": "AllergyIntolerance.assester",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "IAM-17",
+          "display": "アレルギー臨床確認状況",
+          "target": [
+            {
+              "code": "AllergyIntolerance.verificationStatus",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "IAM-19",
+          "display": "確認機関",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "IAM-20",
+          "display": "確認日時",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "AllergyIntolerance",
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        }
+      ]
+    },
+    {
+      "url": "label",
+      "valueString": "Segment ADT_61_IAM to AllergyIntolerance.fsh"
+    }
+  ]
+}

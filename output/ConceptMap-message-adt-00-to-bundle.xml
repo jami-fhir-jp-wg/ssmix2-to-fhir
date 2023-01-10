@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="message-adt-00-to-bundle"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>MessageADT_00toBundle (http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/message-adt-00-to-bundle)</h2><p>Mapping from ADT-00 to <a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></p><p>ACTIVE (not intended for production usage). Published on 2022-02-01 by swgssmix. </p><div><p>この ConceptMap には ADT-00 患者基本情報 から Message Bundle への変換を定義する。</p>
+</div><br/><p><b>Group 1</b>Mapping from <code>ADT-00</code> to <a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>ADT_A08.MSH (メッセージヘッダ)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>MessageHeader (メッセージヘッダ)</td><td/></tr><tr><td>ADT_A08.PID (患者識別)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>JP_Patient (患者)</td><td/></tr><tr><td>ADT_A08.PV1 (来院情報)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Encounter (来院情報)</td><td/></tr><tr><td>ADT_A08.DB1 (身体障害)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>JP_Patient (患者)</td><td>http://hl7.org/fhir/R4/extension-patient-disability.html</td></tr><tr><td>ADT_A08.OBSERVATION.OBX (検査結果)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>JP_Observation_Common (検査（共通）)</td><td/></tr><tr><td>ADT_A08.AL1 (アレルギー情報)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>JP_AllergyIntolerance (アレルギー・不耐症)</td><td/></tr><tr><td>ADT_A08.INSURANCE.IN1 (保険)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>JP_Coverage (保険・公費)</td><td/></tr><tr><td>ADT_A08.NK1 (近親者情報)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#relatedto" title="relatedto">is related to</a></td><td>JP_Patient (患者)</td><td>Patient.contact にマッピングする。詳細は[Segment PID to Patient](ConceptMap-segment-pid-to-patient.html)を参照のこと。</td></tr></table></div>
+  </text>
+  <extension url="Bundle">
+    <extension url="type">
+      <valueCode value="derived-from"/>
+    </extension>
+  </extension>
+  <extension url="label">
+    <valueString value="Message ADT_00 to Bundle.fsh"/>
+  </extension>
+  <url value="http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/message-adt-00-to-bundle"/>
+  <version value="0.1.0"/>
+  <name value="MessageADT_00toBundle"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-02-01"/>
+  <publisher value="swgssmix"/>
+  <description value="この ConceptMap には ADT-00 患者基本情報 から Message Bundle への変換を定義する。"/>
+  <sourceUri value="ADT-00"/>
+  <targetUri value="Bundle"/>
+  <group>
+    <source value="ADT-00"/>
+    <target value="Bundle"/>
+    <element>
+      <code value="ADT_A08.MSH"/>
+      <display value="メッセージヘッダ"/>
+      <target>
+        <code value="MessageHeader"/>
+        <display value="メッセージヘッダ"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="ADT_A08.PID"/>
+      <display value="患者識別"/>
+      <target>
+        <code value="JP_Patient"/>
+        <display value="患者"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="ADT_A08.PV1"/>
+      <display value="来院情報"/>
+      <target>
+        <code value="Encounter"/>
+        <display value="来院情報"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="ADT_A08.DB1"/>
+      <display value="身体障害"/>
+      <target>
+        <code value="JP_Patient"/>
+        <display value="患者"/>
+        <equivalence value="equivalent"/>
+        <comment value="http://hl7.org/fhir/R4/extension-patient-disability.html"/>
+      </target>
+    </element>
+    <element>
+      <code value="ADT_A08.OBSERVATION.OBX"/>
+      <display value="検査結果"/>
+      <target>
+        <code value="JP_Observation_Common"/>
+        <display value="検査（共通）"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="ADT_A08.AL1"/>
+      <display value="アレルギー情報"/>
+      <target>
+        <code value="JP_AllergyIntolerance"/>
+        <display value="アレルギー・不耐症"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="ADT_A08.INSURANCE.IN1"/>
+      <display value="保険"/>
+      <target>
+        <code value="JP_Coverage"/>
+        <display value="保険・公費"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="ADT_A08.NK1"/>
+      <display value="近親者情報"/>
+      <target>
+        <code value="JP_Patient"/>
+        <display value="患者"/>
+        <equivalence value="relatedto"/>
+        <comment value="Patient.contact にマッピングする。詳細は[Segment PID to Patient](ConceptMap-segment-pid-to-patient.html)を参照のこと。"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

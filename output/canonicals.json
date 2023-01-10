@@ -1,0 +1,226 @@
+[
+  {
+    "id": "message-adt-00-to-bundle",
+    "type": "ConceptMap",
+    "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/message-adt-00-to-bundle",
+    "version": "0.1.0",
+    "name": "MessageADT_00toBundle"
+  },
+  {
+    "id": "message-adt-22-to-bundle",
+    "type": "ConceptMap",
+    "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/message-adt-22-to-bundle",
+    "version": "0.1.0",
+    "name": "MessageADT_22toBundle"
+  },
+  {
+    "id": "message-adt-61-to-bundle",
+    "type": "ConceptMap",
+    "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/message-adt-61-to-bundle",
+    "version": "0.1.0",
+    "name": "MessageADT_61toBundle"
+  },
+  {
+    "id": "message-oml-11-to-bundle",
+    "type": "ConceptMap",
+    "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/message-oml-11-to-bundle",
+    "version": "0.1.0",
+    "name": "MessageOML_11toBundle"
+  },
+  {
+    "id": "message-omp-01-to-bundle",
+    "type": "ConceptMap",
+    "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/message-omp-01-to-bundle",
+    "version": "0.1.0",
+    "name": "MessageOMP_01toBundle"
+  },
+  {
+    "id": "message-omp-12-to-bundle",
+    "type": "ConceptMap",
+    "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/message-omp-12-to-bundle",
+    "version": "0.1.0",
+    "name": "MessageOMP_12toBundle"
+  },
+  {
+    "id": "message-ppr-01-to-bundle",
+    "type": "ConceptMap",
+    "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/message-ppr-01-to-bundle",
+    "version": "0.1.0",
+    "name": "MessagePPR_01toBundle"
+  },
+  {
+    "id": "segment-adt-00-al1-to-allergyintolerance",
+    "type": "ConceptMap",
+    "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-adt-00-al1-to-allergyintolerance",
+    "version": "0.1.0",
+    "name": "SegmentADT_00_AL1toAllergyIntolerance"
+  },
+  {
+    "id": "segment-adt-00-in1-to-coverage",
+    "type": "ConceptMap",
+    "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-adt-00-in1-to-coverage",
+    "version": "0.1.0",
+    "name": "SegmentADT_00_IN1toCoverage"
+  },
+  {
+    "id": "segment-adt-00-obx-to-observation",
+    "type": "ConceptMap",
+    "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-adt-00-obx-to-observation",
+    "version": "0.1.0",
+    "name": "SegmentADT_00_OBXtoObservation"
+  },
+  {
+    "id": "segment-adt-61-iam-to-allergyintolerance",
+    "type": "ConceptMap",
+    "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-adt-61-iam-to-allergyintolerance",
+    "version": "0.1.0",
+    "name": "SegmentADT_61_IAMtoAllergyIntolerance"
+  },
+  {
+    "id": "segment-adt-xx-pv1-to-encounter",
+    "type": "ConceptMap",
+    "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-adt-xx-pv1-to-encounter",
+    "version": "0.1.0",
+    "name": "SegmentADT_XX_PV1toEncounter"
+  },
+  {
+    "id": "segment-msh-to-bundle",
+    "type": "ConceptMap",
+    "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-msh-to-bundle",
+    "version": "0.1.0",
+    "name": "SegmentMSHtoBundle"
+  },
+  {
+    "id": "segment-msh-to-messageheader",
+    "type": "ConceptMap",
+    "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-msh-to-messageheader",
+    "version": "0.1.0",
+    "name": "SegmentMSHtoMessageHeader"
+  },
+  {
+    "id": "segment-oml-11-obr-to-diagnosticreport",
+    "type": "ConceptMap",
+    "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-oml-11-obr-to-diagnosticreport",
+    "version": "0.1.0",
+    "name": "SegmentOML_11_OBRtoDiagnosticReport"
+  },
+  {
+    "id": "segment-oml-11-obx-to-observation",
+    "type": "ConceptMap",
+    "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-oml-11-obx-to-observation",
+    "version": "0.1.0",
+    "name": "SegmentOML_11_OBXtoObservation"
+  },
+  {
+    "id": "segment-oml-11-orc-to-servicerequest",
+    "type": "ConceptMap",
+    "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-oml-11-orc-to-servicerequest",
+    "version": "0.1.0",
+    "name": "SegmentOML_11_ORCtoServiceRequest"
+  },
+  {
+    "id": "segment-oml-11-spm-to-specimen",
+    "type": "ConceptMap",
+    "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-oml-11-spm-to-specimen",
+    "version": "0.1.0",
+    "name": "SegmentOML_11_SPMtoSpecimen"
+  },
+  {
+    "id": "segment-omp-01-rxe-to-medicationrequest",
+    "type": "ConceptMap",
+    "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-omp-01-rxe-to-medicationrequest",
+    "version": "0.1.0",
+    "name": "SegmentOMP_01_RXEtoMedicationRequest"
+  },
+  {
+    "id": "segment-omp-12-rxa-to-medicationadministration",
+    "type": "ConceptMap",
+    "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-omp-12-rxa-to-medicationadministration",
+    "version": "0.1.0",
+    "name": "SegmentOMP_12_RXAtoMedicationAdministration"
+  },
+  {
+    "id": "segment-pid-to-patient",
+    "type": "ConceptMap",
+    "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-pid-to-patient",
+    "version": "0.1.0",
+    "name": "SegmentPIDtoPatient"
+  },
+  {
+    "id": "segment-ppr-01-prb-to-condition",
+    "type": "ConceptMap",
+    "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-ppr-01-prb-to-condition",
+    "version": "0.1.0",
+    "name": "SegmentPPR_01_PRBtoCondition"
+  },
+  {
+    "id": "segment-pv1-to-encounter",
+    "type": "ConceptMap",
+    "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-pv1-to-encounter",
+    "version": "0.1.0",
+    "name": "SegmentPV1toEncounter"
+  },
+  {
+    "id": "table-v2-0001-to-administrativegender",
+    "type": "ConceptMap",
+    "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/table-v2-0001-to-administrativegender",
+    "version": "0.1.0",
+    "name": "Tablev2-0001toAdministrativeGender"
+  },
+  {
+    "id": "table-v2-0003-to-encounterlocationstatus",
+    "type": "ConceptMap",
+    "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/table-v2-0003-to-encounterlocationstatus",
+    "version": "0.1.0",
+    "name": "Tablev2-0003toEncounterLocationStatus"
+  },
+  {
+    "id": "table-v2-0003-to-encounterstatus",
+    "type": "ConceptMap",
+    "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/table-v2-0003-to-encounterstatus",
+    "version": "0.1.0",
+    "name": "Tablev2-0003toEncounterStatus"
+  },
+  {
+    "id": "table-v2-0004-to-v3-actcode",
+    "type": "ConceptMap",
+    "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/table-v2-0004-to-v3-actcode",
+    "version": "0.1.0",
+    "name": "Tablev2-0004tov3-ActCode"
+  },
+  {
+    "id": "table-v2-0127-to-allergyintolerancecategory",
+    "type": "ConceptMap",
+    "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/table-v2-0127-to-allergyintolerancecategory",
+    "version": "0.1.0",
+    "name": "Tablev2-0127toAllergyIntoleranceCategory"
+  },
+  {
+    "id": "table-v2-0128-to-reactioneventseverity",
+    "type": "ConceptMap",
+    "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/table-v2-0128-to-reactioneventseverity",
+    "version": "0.1.0",
+    "name": "Tablev2-0128toReactionEventSeverity"
+  },
+  {
+    "id": "table-v2-0201-to-contactpointuse",
+    "type": "ConceptMap",
+    "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/table-v2-0201-to-contactpointuse",
+    "version": "0.1.0",
+    "name": "Tablev2-0201toContactPointUse"
+  },
+  {
+    "id": "table-v2-0465-to-iso-21090",
+    "type": "ConceptMap",
+    "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/table-v2-0465-to-iso-21090",
+    "version": "0.1.0",
+    "name": "Tablev2-0465toiso-21090"
+  },
+  {
+    "id": "ssmix2.fhir.mappings",
+    "type": "ImplementationGuide",
+    "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ImplementationGuide/ssmix2.fhir.mappings",
+    "version": "0.1.0",
+    "name": "ImplementationGuideSSMIX2FHIRMappings"
+  }
+]

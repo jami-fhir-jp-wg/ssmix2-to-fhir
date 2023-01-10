@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="message-adt-61-to-bundle"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>MessageADT_61toBundle (http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/message-adt-61-to-bundle)</h2><p>Mapping from ADT-61 to <a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></p><p>ACTIVE (not intended for production usage). Published on 2022-02-01 by swgssmix. </p><div><p>この ConceptMap には ADT-61 アレルギー情報 から Message Bundle への変換を定義する。</p>
+</div><br/><p><b>Group 1</b>Mapping from <code>ADT-61</code> to <a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>ADT_A60.MSH (メッセージヘッダ)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>MessageHeader (メッセージヘッダ)</td></tr><tr><td>ADT_A60.PID (患者識別)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>JP_Patient (患者)</td></tr><tr><td>ADT_A60.IAM (アレルギー情報)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>JP_AllergyIntolerance (アレルギー情報)</td></tr></table></div>
+  </text>
+  <extension url="Bundle">
+    <extension url="type">
+      <valueCode value="derived-from"/>
+    </extension>
+  </extension>
+  <extension url="label">
+    <valueString value="Message ADT_61 to Bundle.fsh"/>
+  </extension>
+  <url value="http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/message-adt-61-to-bundle"/>
+  <version value="0.1.0"/>
+  <name value="MessageADT_61toBundle"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-02-01"/>
+  <publisher value="swgssmix"/>
+  <description value="この ConceptMap には ADT-61 アレルギー情報 から Message Bundle への変換を定義する。"/>
+  <sourceUri value="ADT-61"/>
+  <targetUri value="Bundle"/>
+  <group>
+    <source value="ADT-61"/>
+    <target value="Bundle"/>
+    <element>
+      <code value="ADT_A60.MSH"/>
+      <display value="メッセージヘッダ"/>
+      <target>
+        <code value="MessageHeader"/>
+        <display value="メッセージヘッダ"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="ADT_A60.PID"/>
+      <display value="患者識別"/>
+      <target>
+        <code value="JP_Patient"/>
+        <display value="患者"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="ADT_A60.IAM"/>
+      <display value="アレルギー情報"/>
+      <target>
+        <code value="JP_AllergyIntolerance"/>
+        <display value="アレルギー情報"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

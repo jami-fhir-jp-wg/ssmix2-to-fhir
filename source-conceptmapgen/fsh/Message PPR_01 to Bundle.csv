@@ -1,0 +1,5 @@
+管理番号,変換前コード,変換前表記,変換後コード,変換後表記,等価性,コメント,自由記載欄
+,PPR_ZD1.MSH,メッセージヘッダ,MessageHeader,メッセージヘッダ,equivalent,,
+,PPR_ZD1.PID,患者識別,JP_Patient,患者,equivalent,,
+,PPR_ZD1.PRB ,プロブレム詳細,JP_Condition,状態,equivalent,,
+,PPR_ZD1.ZPR,プロブレム拡張情報,JP_Condition,状態,relatedto,,

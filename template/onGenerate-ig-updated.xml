@@ -1,0 +1,593 @@
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+    <id value="clinical-core-set"/>
+    <text>
+        <status value="extensions"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <h2>HL7Japan_JAMIccsImplementationGuide</h2>
+            <p>The official URL for this implementation guide is: </p>
+            <pre>http://jpfhir.jp/fhir/ccs/ImplementationGuide/clinical-core-set</pre>
+            <div>
+                <p>HL7 Japan-JAMI ccs ImplementationGuide</p>
+                
+            </div>
+        </div>
+    </text>
+    <url value="http://jpfhir.jp/fhir/ccs/ImplementationGuide/clinical-core-set"/>
+    <version value="0.1.0"/>
+    <name value="HL7Japan_JAMIccsImplementationGuide"/>
+    <title value="HL7 Japan-JAMI ccs ImplementationGuide"/>
+    <status value="draft"/>
+    <date value="2022-12-16"/>
+    <publisher value="Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo"/>
+    <contact>
+        <name value="Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://jpfhir.jp"/>
+        </telecom>
+        <telecom>
+            <system value="email"/>
+            <value value="office@hlfhir.jp"/>
+        </telecom>
+    </contact>
+    <description value="HL7 Japan-JAMI ccs ImplementationGuide"/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166-2"/>
+            <code value="JP"/>
+        </coding>
+    </jurisdiction>
+    <copyright value="Copyright JAMI+JAHIS+HL7Japan+PMDA+etc. SS-MIX2-Specification Maintenance TaskForce, CC(Creative Commons license) BY-ND CC表示・改変禁止"/>
+    <packageId value="clinical-core-set"/>
+    <license value="CC0-1.0"/>
+    <fhirVersion value="4.0.1"/>
+    <dependsOn id="hl7tx">
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+            <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+        </extension>
+        <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+        <packageId value="hl7.terminology.r4"/>
+        <version value="5.0.0"/>
+    </dependsOn>
+    <dependsOn id="jp_core_r4">
+        <uri value="http://jpfhir.jp/fhir/core/ImplementationGuide/jp-core.r4"/>
+        <packageId value="jp-core.r4"/>
+        <version value="1.1.1-snap"/>
+    </dependsOn>
+    <definition>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+            <extension url="code">
+                <valueString value="copyrightyear"/>
+            </extension>
+            <extension url="value">
+                <valueString value="2022+"/>
+            </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+            <extension url="code">
+                <valueString value="releaselabel"/>
+            </extension>
+            <extension url="value">
+                <valueString value="draft"/>
+            </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+            <extension url="code">
+                <valueString value="path-expansion-params"/>
+            </extension>
+            <extension url="value">
+                <valueString value="../../input/_resources/exp-params.json"/>
+            </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+            <extension url="code">
+                <valueString value="active-tables"/>
+            </extension>
+            <extension url="value">
+                <valueString value="false"/>
+            </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+            <extension url="code">
+                <valueString value="apply-version"/>
+            </extension>
+            <extension url="value">
+                <valueString value="true"/>
+            </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+            <extension url="code">
+                <valueString value="apply-copyright"/>
+            </extension>
+            <extension url="value">
+                <valueString value="true"/>
+            </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+            <extension url="code">
+                <valueString value="apply-publisher"/>
+            </extension>
+            <extension url="value">
+                <valueString value="true"/>
+            </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+            <extension url="code">
+                <valueString value="apply-contact"/>
+            </extension>
+            <extension url="value">
+                <valueString value="true"/>
+            </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+            <extension url="code">
+                <valueString value="apply-licese"/>
+            </extension>
+            <extension url="value">
+                <valueString value="true"/>
+            </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+            <extension url="code">
+                <valueString value="apply-jurisdiction"/>
+            </extension>
+            <extension url="value">
+                <valueString value="true"/>
+            </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+            <extension url="code">
+                <valueString value="show-inherited-invariants"/>
+            </extension>
+            <extension url="value">
+                <valueString value="true"/>
+            </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+            <extension url="code">
+                <valueString value="usage-stats-opt-out"/>
+            </extension>
+            <extension url="value">
+                <valueString value="true"/>
+            </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+            <extension url="code">
+                <valueString value="excludexml"/>
+            </extension>
+            <extension url="value">
+                <valueString value="true"/>
+            </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+            <extension url="code">
+                <valueString value="excludejsn"/>
+            </extension>
+            <extension url="value">
+                <valueString value="false"/>
+            </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+            <extension url="code">
+                <valueString value="excludettl"/>
+            </extension>
+            <extension url="value">
+                <valueString value="true"/>
+            </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+            <extension url="code">
+                <valueString value="excludemap"/>
+            </extension>
+            <extension url="value">
+                <valueString value="false"/>
+            </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+            <extension url="code">
+                <valueString value="excludeexample"/>
+            </extension>
+            <extension url="value">
+                <valueString value="false"/>
+            </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+            <extension url="code">
+                <valueString value="generate"/>
+            </extension>
+            <extension url="value">
+                <valueString value="json"/>
+            </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+            <extension url="code">
+                <valueString value="no-validate"/>
+            </extension>
+            <extension url="value">
+                <valueString value="*/hl7.fhir.jp.core"/>
+            </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+            <extension url="code">
+                <valueString value="autoload-resources"/>
+            </extension>
+            <extension url="value">
+                <valueString value="true"/>
+            </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+            <extension url="code">
+                <valueString value="path-liquid"/>
+            </extension>
+            <extension url="value">
+                <valueString value="template/liquid"/>
+            </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+            <extension url="code">
+                <valueString value="path-liquid"/>
+            </extension>
+            <extension url="value">
+                <valueString value="input/liquid"/>
+            </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+            <extension url="code">
+                <valueString value="path-qa"/>
+            </extension>
+            <extension url="value">
+                <valueString value="temp/qa"/>
+            </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+            <extension url="code">
+                <valueString value="path-temp"/>
+            </extension>
+            <extension url="value">
+                <valueString value="temp/pages"/>
+            </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+            <extension url="code">
+                <valueString value="path-output"/>
+            </extension>
+            <extension url="value">
+                <valueString value="output"/>
+            </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+            <extension url="code">
+                <valueString value="path-suppressed-warnings"/>
+            </extension>
+            <extension url="value">
+                <valueString value="input/ignoreWarnings.txt"/>
+            </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+            <extension url="code">
+                <valueString value="path-history"/>
+            </extension>
+            <extension url="value">
+                <valueString value="http://jpfhir.jp/fhir/ccs/history.html"/>
+            </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+            <extension url="code">
+                <valueString value="template-html"/>
+            </extension>
+            <extension url="value">
+                <valueString value="template-page.html"/>
+            </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+            <extension url="code">
+                <valueString value="template-md"/>
+            </extension>
+            <extension url="value">
+                <valueString value="template-page-md.html"/>
+            </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+            <extension url="code">
+                <valueString value="apply-context"/>
+            </extension>
+            <extension url="value">
+                <valueString value="true"/>
+            </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+            <extension url="code">
+                <valueString value="apply-license"/>
+            </extension>
+            <extension url="value">
+                <valueString value="true"/>
+            </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+            <extension url="code">
+                <valueString value="fmm-definition"/>
+            </extension>
+            <extension url="value">
+                <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+            </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+            <extension url="code">
+                <valueString value="propagate-status"/>
+            </extension>
+            <extension url="value">
+                <valueString value="true"/>
+            </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+            <extension url="code">
+                <valueString value="excludelogbinaryformat"/>
+            </extension>
+            <extension url="value">
+                <valueString value="true"/>
+            </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+            <extension url="code">
+                <valueString value="tabbed-snapshots"/>
+            </extension>
+            <extension url="value">
+                <valueString value="true"/>
+            </extension>
+        </extension>
+        
+        <grouping id="-str-profile">
+              
+            <name value="Structures: Resource Profiles"/>
+              
+            <description value="これらは、この実装ガイドに準拠するシステムでの、FHIRリソースに対する制約を定義します。"/>
+            
+        </grouping>
+        
+        <resource>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+                <valueString value="StructureDefinition:resource"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+                <valueUri value="StructureDefinition-JP-Patient-ccs.html"/>
+            </extension>
+            <reference>
+                <reference value="StructureDefinition/JP-Patient-ccs"/>
+            </reference>
+            <name value="JP_Patient_ccs"/>
+            <description value="対象患者のPatientプロファイル　JP_Patientの派生プロファイル"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="-str-profile"/>
+        </resource>
+        <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+                <valueUrl value="toc.html"/>
+            </extension>
+            <nameUrl value="toc.html"/>
+            <title value="Table of Contents"/>
+            <generation value="html"/>
+            <page>
+                <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+                    <valueUrl value="index.html"/>
+                </extension>
+                <nameUrl value="index.html"/>
+                <title value="ClinicalCoreSet FHIRコアリソース取得基本仕様（仮称）"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="artifacts.html"/>
+                <title value="Artifacts Summary"/>
+                <generation value="html"/>
+                <page>
+                    <nameUrl value="StructureDefinition-JP-Patient-ccs.html"/>
+                    <title value="JP_Patient_ccs"/>
+                    <generation value="generated"/>
+                </page>
+            </page>
+        </page>
+        <parameter>
+            <code value="path-resource"/>
+            <value value="input/resources"/>
+        </parameter>
+        <parameter>
+            <code value="path-resource"/>
+            <value value="fsh-generated/resources"/>
+        </parameter>
+        <parameter>
+            <code value="path-pages"/>
+            <value value="input/pagecontent"/>
+        </parameter>
+        <parameter>
+            <code value="path-pages"/>
+            <value value="fsh-generated/includes"/>
+        </parameter>
+        <parameter>
+            <code value="path-resource"/>
+            <value value="input/capabilities"/>
+        </parameter>
+        <parameter>
+            <code value="path-resource"/>
+            <value value="input/examples"/>
+        </parameter>
+        <parameter>
+            <code value="path-resource"/>
+            <value value="input/extensions"/>
+        </parameter>
+        <parameter>
+            <code value="path-resource"/>
+            <value value="input/models"/>
+        </parameter>
+        <parameter>
+            <code value="path-resource"/>
+            <value value="input/operations"/>
+        </parameter>
+        <parameter>
+            <code value="path-resource"/>
+            <value value="input/profiles"/>
+        </parameter>
+        <parameter>
+            <code value="path-resource"/>
+            <value value="input/vocabulary"/>
+        </parameter>
+        <parameter>
+            <code value="path-resource"/>
+            <value value="input/testing"/>
+        </parameter>
+        <parameter>
+            <code value="path-resource"/>
+            <value value="input/history"/>
+        </parameter>
+        <parameter>
+            <code value="path-pages"/>
+            <value value="template/config"/>
+        </parameter>
+        <parameter>
+            <code value="path-pages"/>
+            <value value="input/images"/>
+        </parameter>
+        <parameter>
+            <code value="path-tx-cache"/>
+            <value value="input-cache/txcache"/>
+        </parameter>
+        <parameter>
+            <code value="copyrightyear"/>
+            <value value="2022+"/>
+        </parameter>
+        <parameter>
+            <code value="releaselabel"/>
+            <value value="draft"/>
+        </parameter>
+        <parameter>
+            <code value="path-expansion-params"/>
+            <value value="../../input/_resources/exp-params.json"/>
+        </parameter>
+        <parameter>
+            <code value="active-tables"/>
+            <value value="false"/>
+        </parameter>
+        <parameter>
+            <code value="apply-version"/>
+            <value value="true"/>
+        </parameter>
+        <parameter>
+            <code value="apply-copyright"/>
+            <value value="true"/>
+        </parameter>
+        <parameter>
+            <code value="apply-publisher"/>
+            <value value="true"/>
+        </parameter>
+        <parameter>
+            <code value="apply-contact"/>
+            <value value="true"/>
+        </parameter>
+        <parameter>
+            <code value="apply-licese"/>
+            <value value="true"/>
+        </parameter>
+        <parameter>
+            <code value="apply-jurisdiction"/>
+            <value value="true"/>
+        </parameter>
+        <parameter>
+            <code value="show-inherited-invariants"/>
+            <value value="true"/>
+        </parameter>
+        <parameter>
+            <code value="usage-stats-opt-out"/>
+            <value value="true"/>
+        </parameter>
+        <parameter>
+            <code value="excludexml"/>
+            <value value="true"/>
+        </parameter>
+        <parameter>
+            <code value="excludejsn"/>
+            <value value="false"/>
+        </parameter>
+        <parameter>
+            <code value="excludettl"/>
+            <value value="true"/>
+        </parameter>
+        <parameter>
+            <code value="excludemap"/>
+            <value value="false"/>
+        </parameter>
+        <parameter>
+            <code value="excludeexample"/>
+            <value value="false"/>
+        </parameter>
+        <parameter>
+            <code value="generate"/>
+            <value value="json"/>
+        </parameter>
+        <parameter>
+            <code value="no-validate"/>
+            <value value="*/hl7.fhir.jp.core"/>
+        </parameter>
+        <parameter>
+            <code value="autoload-resources"/>
+            <value value="true"/>
+        </parameter>
+        <parameter>
+            <code value="path-liquid"/>
+            <value value="template/liquid"/>
+        </parameter>
+        <parameter>
+            <code value="path-liquid"/>
+            <value value="input/liquid"/>
+        </parameter>
+        <parameter>
+            <code value="path-qa"/>
+            <value value="temp/qa"/>
+        </parameter>
+        <parameter>
+            <code value="path-temp"/>
+            <value value="temp/pages"/>
+        </parameter>
+        <parameter>
+            <code value="path-output"/>
+            <value value="output"/>
+        </parameter>
+        <parameter>
+            <code value="path-suppressed-warnings"/>
+            <value value="input/ignoreWarnings.txt"/>
+        </parameter>
+        <parameter>
+            <code value="path-history"/>
+            <value value="http://jpfhir.jp/fhir/ccs/history.html"/>
+        </parameter>
+        <parameter>
+            <code value="template-html"/>
+            <value value="template-page.html"/>
+        </parameter>
+        <parameter>
+            <code value="template-md"/>
+            <value value="template-page-md.html"/>
+        </parameter>
+        <parameter>
+            <code value="apply-context"/>
+            <value value="true"/>
+        </parameter>
+        <parameter>
+            <code value="apply-license"/>
+            <value value="true"/>
+        </parameter>
+        <parameter>
+            <code value="fmm-definition"/>
+            <value value="http://hl7.org/fhir/versions.html#maturity"/>
+        </parameter>
+        <parameter>
+            <code value="propagate-status"/>
+            <value value="true"/>
+        </parameter>
+        <parameter>
+            <code value="excludelogbinaryformat"/>
+            <value value="true"/>
+        </parameter>
+        <parameter>
+            <code value="tabbed-snapshots"/>
+            <value value="true"/>
+        </parameter>
+    </definition>
+</ImplementationGuide>

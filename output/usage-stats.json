@@ -1,0 +1,88 @@
+{
+  "package": "ssmix2.fhir.mappings",
+  "version": "0.1.0",
+  "fhirVersion": "4.0.1",
+  "extensions": [],
+  "profiles": {},
+  "usage": {
+    "AdministrativeGender": [
+      "ConceptMap"
+    ],
+    "AllergyIntolerance": [
+      "ConceptMap"
+    ],
+    "AllergyIntoleranceCategory": [
+      "ConceptMap"
+    ],
+    "Bundle": [
+      "ConceptMap"
+    ],
+    "Condition": [
+      "ConceptMap"
+    ],
+    "ContactPointUse": [
+      "ConceptMap"
+    ],
+    "Coverage": [
+      "ConceptMap"
+    ],
+    "DiagnosticReport": [
+      "ConceptMap"
+    ],
+    "Encounter": [
+      "ConceptMap"
+    ],
+    "EncounterLocationStatus": [
+      "ConceptMap"
+    ],
+    "EncounterStatus": [
+      "ConceptMap"
+    ],
+    "MedicationAdministration": [
+      "ConceptMap"
+    ],
+    "MedicationRequest": [
+      "ConceptMap"
+    ],
+    "MessageHeader": [
+      "ConceptMap"
+    ],
+    "Observation": [
+      "ConceptMap"
+    ],
+    "Patient": [
+      "ConceptMap"
+    ],
+    "ReactionEventSeverity": [
+      "ConceptMap"
+    ],
+    "ServiceRequest": [
+      "ConceptMap"
+    ],
+    "Specimen": [
+      "ConceptMap"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "iso-21090": [
+      "ConceptMap"
+    ],
+    "label": [
+      "ConceptMap"
+    ],
+    "v3-ActCode": [
+      "ConceptMap"
+    ]
+  }
+}

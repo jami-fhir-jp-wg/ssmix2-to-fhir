@@ -1,0 +1,25 @@
+管理番号,変換前コード,変換前表記,変換後コード,変換後表記,等価性,コメント,自由記載欄
+,PID-3,患者ID リスト,ServiceRequest.subject,,equivalent,Patientへの参照を設定する。,
+,ORC-0,セグメントID,,,equivalent,,
+,ORC-1,オーダ制御,,,equivalent,インタラクションの決定に使用する,
+,ORC-2,依頼者オーダ番号,ServiceRequest.identifier,,equivalent,,
+,ORC-3,実施者オーダ番号,ServiceRequest.identifier,,equivalent,,
+,ORC-4,依頼者グループ番号,ServiceRequest.identifier,,equivalent,,
+,ORC-5,オーダ状態,ServiceRequest.status,,equivalent,,
+,ORC-9,トランザクション日時,,,equivalent,,
+,ORC-10,入力者,,,equivalent,requester の Card. が 0..1 であるため注意,
+,ORC-12,依頼者,ServiceRequest.requester,,equivalent,"Practitionerへの参照を設定する。
+インラインのPractitionerリソースを生成し、参照してもよい。",
+,ORC-13,入力場所,,,equivalent,,ServiceRequest.locationCode は「サービスを実施する場所」
+,ORC-15,オーダ制御コードの理由,ServiceRequest.reasonCode,,equivalent,,
+,ORC-17,入力組織,,,equivalent,,
+,ORC-18,入力装置,,,equivalent,,
+,ORC-21,オーダ施設名,,,equivalent,,
+,ORC-22,オーダ施設住所,,,equivalent,,
+,ORC-23,オーダ施設電話番号,,,equivalent,,
+,ORC-29,オーダタイプ,,,disjoint,オーダが入院患者オーダか外来患者オーダかを示す。PV1（Encounter）を参照,
+,OBR-4,検査項目ID,ServiceRequest.code,,equivalent,,
+,OBR-7,検査/採取日時,ServiceRequest.occurrencePeriod.start,,equivalent,,
+,OBR-8,検査/採取終了日時,ServiceRequest.occurrencePeriod.end,,equivalent,,
+,OBR-16,依頼者,ServiceRequest.requester,,equivalent,"Practitionerへの参照を設定する。
+インラインのPractitionerリソースを生成し、参照してもよい。",

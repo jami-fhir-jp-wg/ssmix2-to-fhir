@@ -1,0 +1,596 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "segment-omp-01-rxe-to-medicationrequest",
+  "description": "この ConceptMap には OMP-01 RXE 薬剤／処置 コード化されたオーダ から MedicationRequest への変換を定義する。",
+  "version": "1.0",
+  "name": "SegmentOMP_01_RXEtoMedicationRequest",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-02-01",
+  "publisher": "swgssmix",
+  "sourceUri": "OMP-01.RXE",
+  "targetUri": "JP_MedicationRequest",
+  "group": [
+    {
+      "source": "OMP-01.RXE",
+      "target": "JP_MedicationRequest",
+      "element": [
+        {
+          "code": "PID-3",
+          "display": "患者ID リスト",
+          "target": [
+            {
+              "code": "MedicationRequest.subject",
+              "equivalence": "equivalent",
+              "comment": "Patientへの参照を設定する。"
+            }
+          ]
+        },
+        {
+          "code": "ORC-2",
+          "display": "依頼者オーダ番号",
+          "target": [
+            {
+              "code": "MedicationRequest.identifier:RequestIdentifier",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "ORC-4",
+          "display": "依頼者グループ番号",
+          "target": [
+            {
+              "code": "MedicationRequest.identifier:RpNumber",
+              "equivalence": "equivalent",
+              "comment": "ORC-4から、Rp番号を抽出し設定する。"
+            }
+          ]
+        },
+        {
+          "code": "ORC-4",
+          "display": "依頼者グループ番号",
+          "target": [
+            {
+              "code": "MedicationRequest.identifier:OrderInRp",
+              "equivalence": "relatedto",
+              "comment": "同一RP番号での薬剤の表記順を指定する。"
+            }
+          ]
+        },
+        {
+          "code": "ORC-10",
+          "display": "入力者",
+          "target": [
+            {
+              "code": "MedicationRequest.recorder",
+              "equivalence": "equivalent",
+              "comment": "Practitionerへの参照を設定する。\r\nインラインのPractitionerリソースを生成し、参照してもよい。"
+            }
+          ]
+        },
+        {
+          "code": "ORC-12",
+          "display": "依頼者",
+          "target": [
+            {
+              "code": "MedicationRequest.requester",
+              "equivalence": "equivalent",
+              "comment": "Practitionerへの参照を設定する。\r\nインラインのPractitionerリソースを生成し、参照してもよい。"
+            }
+          ]
+        },
+        {
+          "code": "RXE-0",
+          "display": "セグメントID",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXE-2",
+          "display": "与薬コード",
+          "target": [
+            {
+              "code": "MedicationRequest.medicationCodeableConcept",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXE-3",
+          "display": "与薬量－最小",
+          "target": [
+            {
+              "code": "MedicationRequest.dosageInstruction.doseAndRate.doseQuantity.value",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXE-4",
+          "display": "与薬量－最大",
+          "target": [
+            {
+              "code": "MedicationRequest.dosageInstruction.doseAndRate.doseQuantity.value",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXE-5",
+          "display": "与薬単位",
+          "target": [
+            {
+              "code": "MedicationRequest.dosageInstruction.doseAndRate.doseQuantity.code",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXE-5",
+          "display": "与薬単位",
+          "target": [
+            {
+              "code": "MedicationRequest.dosageInstruction.doseAndRate.doseQuantity.unit",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXE-6",
+          "display": "与薬剤形",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXE-7",
+          "display": "依頼者の投薬指示",
+          "target": [
+            {
+              "code": "MedicationRequest.dispenseRequest.extension.valueCodeableConcept",
+              "equivalence": "equivalent",
+              "comment": "JP_MedicationRequest-DispenseRequest-InstructionForDispense"
+            }
+          ]
+        },
+        {
+          "code": "RXE-10",
+          "display": "調剤量",
+          "target": [
+            {
+              "code": "MedicationRequest.dispenseRequest.quantity.value",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXE-11",
+          "display": "調剤単位",
+          "target": [
+            {
+              "code": "MedicationRequest.dispenseRequest.quantity.code",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXE-11",
+          "display": "調剤単位",
+          "target": [
+            {
+              "code": "MedicationRequest.dispenseRequest.quantity.unit",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXE-12",
+          "display": "同一薬発行数",
+          "target": [
+            {
+              "code": "MedicationRequest.dispenseRequest.numberOfRepeatsAllowed",
+              "equivalence": "equivalent",
+              "comment": "Ver. 1.2h以降"
+            }
+          ]
+        },
+        {
+          "code": "RXE-13",
+          "display": "オーダ発行者のDEA 番号",
+          "target": [
+            {
+              "code": "MedicationRequest.requester",
+              "equivalence": "equivalent",
+              "comment": "Practitioner.qualification"
+            }
+          ]
+        },
+        {
+          "code": "RXE-14",
+          "display": "薬剤師/治療提供者の検証ID",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXE-15",
+          "display": "処方箋番号",
+          "target": [
+            {
+              "code": "MedicationRequest.identifier",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXE-16",
+          "display": "薬剤残数",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXE-17",
+          "display": "調剤済薬品数または投与数",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXE-18",
+          "display": "調剤済薬品数または投与数の最新\r\r\n日時",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXE-19",
+          "display": "1日あたりの総投与量",
+          "target": [
+            {
+              "code": "MedicationRequest.dosageInstruction.doseAndRate.rateRatio",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXE-21",
+          "display": "薬剤部門/治療部門による特別な指示",
+          "target": [
+            {
+              "code": "MedicationRequest.category",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXE-21",
+          "display": "薬剤部門/治療部門による特別な指示",
+          "target": [
+            {
+              "code": "MedicationRequest.dispenseRequest.extension.valueCodeableConcept",
+              "equivalence": "equivalent",
+              "comment": "JP_MedicationRequest-DispenseRequest-InstructionForDispense"
+            }
+          ]
+        },
+        {
+          "code": "RXE-25",
+          "display": "与薬力価",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXE-26",
+          "display": "与薬力価単位と結合して使用される力価の数値部分で",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXE-27",
+          "display": "与薬指示",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXE-28",
+          "display": "調剤パッケージサイズ",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXE-29",
+          "display": "調剤パッケージサイズの単位",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXE-30",
+          "display": "調剤パッケージ方法",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXE-31",
+          "display": "補足コード",
+          "target": [
+            {
+              "code": "MedicationRequest.medicationCodeableConcept",
+              "equivalence": "equivalent",
+              "comment": "Ver. 1.2g以降"
+            }
+          ]
+        },
+        {
+          "code": "RXE-32",
+          "display": "当初のオーダ日/時間",
+          "target": [
+            {
+              "code": "MedicationRequest.authoredOn",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXE-33",
+          "display": "与薬力価量",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXE-34",
+          "display": "与薬力価量単位",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXE-33",
+          "display": "与薬力価量に関連した量単位を提示する。",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXE-35",
+          "display": "薬物コントロールスケジュール",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXE-36",
+          "display": "処方集ステータス",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXE-37",
+          "display": "薬物代替え",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXE-38",
+          "display": "最新の与薬の薬剤部",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXE-39",
+          "display": "最初の調剤量",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXE-40",
+          "display": "調剤薬剤部",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXE-41",
+          "display": "調剤薬剤部の住所",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "TQ1-3",
+          "display": "繰返しパターン",
+          "target": [
+            {
+              "code": "MedicationRequest.dosageInstruction.timing.code",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "TQ1-3",
+          "display": "繰返しパターン",
+          "target": [
+            {
+              "code": "MedicationRequest.dosageInstruction.additionalInstruction",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "TQ1-7",
+          "display": "開始日時",
+          "target": [
+            {
+              "code": "MedicationRequest.dosageInstruction.extension.valuePeriod.start",
+              "equivalence": "equivalent",
+              "comment": "JP_MedicationRequest-DosageInstruction-PeriodOfUse"
+            }
+          ]
+        },
+        {
+          "code": "TQ1-8",
+          "display": "終了日時",
+          "target": [
+            {
+              "code": "MedicationRequest.dosageInstruction.extension.valuePeriod.end",
+              "equivalence": "equivalent",
+              "comment": "JP_MedicationRequest-DosageInstruction-PeriodOfUse"
+            }
+          ]
+        },
+        {
+          "code": "RXR-1",
+          "display": "経路",
+          "target": [
+            {
+              "code": "MedicationRequest.dosageInstruction.route",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXR-2",
+          "display": "部位",
+          "target": [
+            {
+              "code": "MedicationRequest.dosageInstruction.site",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXR-3",
+          "display": "投薬装置",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "RXR-4",
+          "display": "投薬方法",
+          "target": [
+            {
+              "code": "MedicationRequest.dosageInstruction.method",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "MedicationRequest",
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        }
+      ]
+    },
+    {
+      "url": "label",
+      "valueString": "Segment OMP_01_RXE to MedicationRequest.fsh"
+    }
+  ]
+}

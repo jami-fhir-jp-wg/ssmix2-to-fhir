@@ -1,0 +1,267 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "segment-oml-11-orc-to-servicerequest",
+  "description": "この ConceptMap には OML-11 ORC 共通オーダ から ServiceRequest への変換を定義する。",
+  "version": "1.0",
+  "name": "SegmentOML_11_ORCtoServiceRequest",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-02-01",
+  "publisher": "swgssmix",
+  "sourceUri": "OML-11.ORC",
+  "targetUri": "ServiceRequest",
+  "group": [
+    {
+      "source": "OML-11.ORC",
+      "target": "ServiceRequest",
+      "element": [
+        {
+          "code": "PID-3",
+          "display": "患者ID リスト",
+          "target": [
+            {
+              "code": "ServiceRequest.subject",
+              "equivalence": "equivalent",
+              "comment": "Patientへの参照を設定する。"
+            }
+          ]
+        },
+        {
+          "code": "ORC-0",
+          "display": "セグメントID",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "ORC-1",
+          "display": "オーダ制御",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": "インタラクションの決定に使用する"
+            }
+          ]
+        },
+        {
+          "code": "ORC-2",
+          "display": "依頼者オーダ番号",
+          "target": [
+            {
+              "code": "ServiceRequest.identifier",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "ORC-3",
+          "display": "実施者オーダ番号",
+          "target": [
+            {
+              "code": "ServiceRequest.identifier",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "ORC-4",
+          "display": "依頼者グループ番号",
+          "target": [
+            {
+              "code": "ServiceRequest.identifier",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "ORC-5",
+          "display": "オーダ状態",
+          "target": [
+            {
+              "code": "ServiceRequest.status",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "ORC-9",
+          "display": "トランザクション日時",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "ORC-10",
+          "display": "入力者",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": "requester の Card. が 0..1 であるため注意"
+            }
+          ]
+        },
+        {
+          "code": "ORC-12",
+          "display": "依頼者",
+          "target": [
+            {
+              "code": "ServiceRequest.requester",
+              "equivalence": "equivalent",
+              "comment": "Practitionerへの参照を設定する。\r\nインラインのPractitionerリソースを生成し、参照してもよい。"
+            }
+          ]
+        },
+        {
+          "code": "ORC-13",
+          "display": "入力場所",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "ORC-15",
+          "display": "オーダ制御コードの理由",
+          "target": [
+            {
+              "code": "ServiceRequest.reasonCode",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "ORC-17",
+          "display": "入力組織",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "ORC-18",
+          "display": "入力装置",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "ORC-21",
+          "display": "オーダ施設名",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "ORC-22",
+          "display": "オーダ施設住所",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "ORC-23",
+          "display": "オーダ施設電話番号",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "ORC-29",
+          "display": "オーダタイプ",
+          "target": [
+            {
+              "equivalence": "disjoint",
+              "comment": "オーダが入院患者オーダか外来患者オーダかを示す。PV1（Encounter）を参照"
+            }
+          ]
+        },
+        {
+          "code": "OBR-4",
+          "display": "検査項目ID",
+          "target": [
+            {
+              "code": "ServiceRequest.code",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "OBR-7",
+          "display": "検査/採取日時",
+          "target": [
+            {
+              "code": "ServiceRequest.occurrencePeriod.start",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "OBR-8",
+          "display": "検査/採取終了日時",
+          "target": [
+            {
+              "code": "ServiceRequest.occurrencePeriod.end",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "OBR-16",
+          "display": "依頼者",
+          "target": [
+            {
+              "code": "ServiceRequest.requester",
+              "equivalence": "equivalent",
+              "comment": "Practitionerへの参照を設定する。\r\nインラインのPractitionerリソースを生成し、参照してもよい。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "ServiceRequest",
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        }
+      ]
+    },
+    {
+      "url": "label",
+      "valueString": "Segment OML_11_ORC to ServiceRequest.fsh"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/message-omp-01-to-bundle> a fhir:ConceptMap;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "message-omp-01-to-bundle"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MessageOMP_01toBundle (http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/message-omp-01-to-bundle)</h2><p>Mapping from OMP-01 to <a href=\"http://hl7.org/fhir/R4/bundle.html\">Bundle</a></p><p>ACTIVE (not intended for production usage). Published on 2022-02-01 by swgssmix. </p><div><p>この ConceptMap には OMP-01 処方オーダ から Message Bundle への変換を定義する。</p>\n</div><br/><p><b>Group 1</b>Mapping from <code>OMP-01</code> to <a href=\"http://hl7.org/fhir/R4/bundle.html\">Bundle</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>RDE_O11.MSH (メッセージヘッダ)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>MessageHeader (メッセージヘッダ)</td><td/></tr><tr><td>RDE_O11.PID (患者識別)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>JP_Patient (患者)</td><td/></tr><tr><td>RDE_O11.PV1 (来院情報)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Encounter (来院情報)</td><td/></tr><tr><td>RDE_O11.ORC (薬剤／処置 コード化されたオーダ)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>JP_MedicationRequest (内服・外用薬剤処方)</td><td>RXEから変換した JP_MedicationRequest の要素として設定する。ORCからは identifier などを取得する。</td></tr><tr><td>RDE_O11.AL1 (アレルギー情報)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>JP_AllergyIntolerance (アレルギー情報・不耐性)</td><td/></tr><tr><td>RDE_O11.RXE (薬剤／処置 コード化されたオーダ)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>JP_MedicationRequest (内服・外用薬剤処方)</td><td/></tr><tr><td>RDE_O11.TQ1 (タイミング／数量)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>JP_MedicationRequest (内服・外用薬剤処方)</td><td>RXEから変換した JP_MedicationRequest の要素として設定する。</td></tr><tr><td>RDE_O11.RXR (投薬経路)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>JP_MedicationRequest (内服・外用薬剤処方)</td><td>RXEから変換した JP_MedicationRequest の要素として設定する。</td></tr></table></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "type" ];
+       fhir:Extension.valueCode [ fhir:value "derived-from" ]
+     ];
+     fhir:Extension.url [ fhir:value "Bundle" ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "label" ];
+     fhir:Extension.valueString [ fhir:value "Message OMP_01 to Bundle.fsh" ]
+  ];
+  fhir:ConceptMap.url [ fhir:value "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/message-omp-01-to-bundle"];
+  fhir:ConceptMap.version [ fhir:value "0.1.0"];
+  fhir:ConceptMap.name [ fhir:value "MessageOMP_01toBundle"];
+  fhir:ConceptMap.status [ fhir:value "active"];
+  fhir:ConceptMap.experimental [ fhir:value "true"^^xsd:boolean];
+  fhir:ConceptMap.date [ fhir:value "2022-02-01"^^xsd:date];
+  fhir:ConceptMap.publisher [ fhir:value "swgssmix"];
+  fhir:ConceptMap.description [ fhir:value "この ConceptMap には OMP-01 処方オーダ から Message Bundle への変換を定義する。"];
+  fhir:ConceptMap.sourceUri [ fhir:value "OMP-01"];
+  fhir:ConceptMap.targetUri [ fhir:value "Bundle"];
+  fhir:ConceptMap.group [
+     fhir:index 0;
+     fhir:ConceptMap.group.source [ fhir:value "OMP-01" ];
+     fhir:ConceptMap.group.target [ fhir:value "Bundle" ];
+     fhir:ConceptMap.group.element [
+       fhir:index 0;
+       fhir:ConceptMap.group.element.code [ fhir:value "RDE_O11.MSH" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "メッセージヘッダ" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "MessageHeader" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "メッセージヘッダ" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ConceptMap.group.element.code [ fhir:value "RDE_O11.PID" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "患者識別" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "JP_Patient" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "患者" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:ConceptMap.group.element.code [ fhir:value "RDE_O11.PV1" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "来院情報" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Encounter" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "来院情報" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:ConceptMap.group.element.code [ fhir:value "RDE_O11.ORC" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "薬剤／処置 コード化されたオーダ" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "JP_MedicationRequest" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "内服・外用薬剤処方" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "relatedto" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "RXEから変換した JP_MedicationRequest の要素として設定する。ORCからは identifier などを取得する。" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:ConceptMap.group.element.code [ fhir:value "RDE_O11.AL1" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "アレルギー情報" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "JP_AllergyIntolerance" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "アレルギー情報・不耐性" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:ConceptMap.group.element.code [ fhir:value "RDE_O11.RXE" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "薬剤／処置 コード化されたオーダ" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "JP_MedicationRequest" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "内服・外用薬剤処方" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:ConceptMap.group.element.code [ fhir:value "RDE_O11.TQ1" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "タイミング／数量" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "JP_MedicationRequest" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "内服・外用薬剤処方" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "relatedto" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "RXEから変換した JP_MedicationRequest の要素として設定する。" ]
+       ]
+     ], [
+       fhir:index 7;
+       fhir:ConceptMap.group.element.code [ fhir:value "RDE_O11.RXR" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "投薬経路" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "JP_MedicationRequest" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "内服・外用薬剤処方" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "relatedto" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "RXEから変換した JP_MedicationRequest の要素として設定する。" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/message-omp-01-to-bundle.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

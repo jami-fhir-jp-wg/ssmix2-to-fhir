@@ -1,0 +1,11 @@
+管理番号,変換前コード,変換前表記,変換後コード,変換後表記,等価性,コメント,自由記載欄
+,ORU_R01.MSH,メッセージヘッダ,MessageHeader,メッセージヘッダ,equivalent,,
+,ORU_R01.PID,患者識別,JP_Patient,患者,equivalent,,
+,ORU_R01.PV1,来院情報,Encounter,来院情報,equivalent,,
+,ORU_R01.SPECIMEN.SPM,検体,Specimen,検体,equivalent,,
+,ORU_R01.SPECIMEN.ORDER.OBR,検査要求,JP_Observation_LabResult,検体検査結果（グループ）,equivalent,基本的に1件のOBRから1件のObservation（検査種別：生化学・尿検査など）を作成する。Observation（検査項目）を明示的にObservation（検査種別）でグルーピングする目的で作成する。Observation（検査項目）をObservation（検査種別）.hasMenberから参照する。,
+,ORU_R01.SPECIMEN.ORDER.OBR,検査要求,JP_DiagnosticReport_LabResult,検体検査レポート用プロファイル,equivalent,（Observationを採用するか検討、グループ化する単位を検討）基本的に1件のOBRから1件のDiagnosticReportを作成する。Observationを明示的に検査種別や検査材料でグルーピングする目的で作成する。,
+,ORU_R01.SPECIMEN.ORDER.OBR,検査要求,ServiceRequest,サービス要求,relatedto,ORCから変換した ServiceRequest の要素として設定する。,
+,ORU_R01.SPECIMEN.ORDER.ORC,共通オーダ,ServiceRequest,サービス要求,equivalent,,
+,ORU_R01.SPECIMEN.ORDER.ORC,共通オーダ,JP_Observation_LabResult,検体検査結果,relatedto,OBXから変換した JP_Observation_LabResult 要素として設定する。,
+,ORU_R01.SPECIMEN.ORDER.RESULT.OBX,検査結果,JP_Observation_LabResult,検体検査結果,equivalent,,

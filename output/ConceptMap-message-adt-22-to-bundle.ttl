@@ -1,0 +1,101 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/message-adt-22-to-bundle> a fhir:ConceptMap;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "message-adt-22-to-bundle"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MessageADT_22toBundle (http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/message-adt-22-to-bundle)</h2><p>Mapping from ADT-22 to <a href=\"http://hl7.org/fhir/R4/bundle.html\">Bundle</a></p><p>ACTIVE (not intended for production usage). Published on 2022-07-20 by swgssmix. </p><div><p>この ConceptMap には ADT-22 入院実施 から Message Bundle への変換を定義する。</p>\n</div><br/><p><b>Group 1</b>Mapping from <code>ADT-22</code> to <a href=\"http://hl7.org/fhir/R4/bundle.html\">Bundle</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>ADT_A01.MSH (メッセージヘッダ)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>MessageHeader (メッセージヘッダ)</td></tr><tr><td>ADT_A01.EVN (事象型)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Encounter (来院情報)</td></tr><tr><td>ADT_A01.PID (患者識別)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>JP_Patient (患者)</td></tr><tr><td>ADT_A01.PV1 (来院情報)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Encounter (来院情報)</td></tr><tr><td>ADT_A01.PV2 (来院補足情報)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Encounter (来院情報)</td></tr></table></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "type" ];
+       fhir:Extension.valueCode [ fhir:value "derived-from" ]
+     ];
+     fhir:Extension.url [ fhir:value "Bundle" ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "label" ];
+     fhir:Extension.valueString [ fhir:value "Message ADT_22 to Bundle.fsh" ]
+  ];
+  fhir:ConceptMap.url [ fhir:value "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/message-adt-22-to-bundle"];
+  fhir:ConceptMap.version [ fhir:value "0.1.0"];
+  fhir:ConceptMap.name [ fhir:value "MessageADT_22toBundle"];
+  fhir:ConceptMap.status [ fhir:value "active"];
+  fhir:ConceptMap.experimental [ fhir:value "true"^^xsd:boolean];
+  fhir:ConceptMap.date [ fhir:value "2022-07-20"^^xsd:date];
+  fhir:ConceptMap.publisher [ fhir:value "swgssmix"];
+  fhir:ConceptMap.description [ fhir:value "この ConceptMap には ADT-22 入院実施 から Message Bundle への変換を定義する。"];
+  fhir:ConceptMap.sourceUri [ fhir:value "ADT-22"];
+  fhir:ConceptMap.targetUri [ fhir:value "Bundle"];
+  fhir:ConceptMap.group [
+     fhir:index 0;
+     fhir:ConceptMap.group.source [ fhir:value "ADT-22" ];
+     fhir:ConceptMap.group.target [ fhir:value "Bundle" ];
+     fhir:ConceptMap.group.element [
+       fhir:index 0;
+       fhir:ConceptMap.group.element.code [ fhir:value "ADT_A01.MSH" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "メッセージヘッダ" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "MessageHeader" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "メッセージヘッダ" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ConceptMap.group.element.code [ fhir:value "ADT_A01.EVN" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "事象型" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Encounter" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "来院情報" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "relatedto" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:ConceptMap.group.element.code [ fhir:value "ADT_A01.PID" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "患者識別" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "JP_Patient" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "患者" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:ConceptMap.group.element.code [ fhir:value "ADT_A01.PV1" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "来院情報" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Encounter" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "来院情報" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:ConceptMap.group.element.code [ fhir:value "ADT_A01.PV2" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "来院補足情報" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Encounter" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "来院情報" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "relatedto" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/message-adt-22-to-bundle.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

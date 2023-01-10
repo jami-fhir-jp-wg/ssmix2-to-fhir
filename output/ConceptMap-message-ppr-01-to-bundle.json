@@ -1,0 +1,85 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "message-ppr-01-to-bundle",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MessagePPR_01toBundle (http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/message-ppr-01-to-bundle)</h2><p>Mapping from PPR-01 to <a href=\"http://hl7.org/fhir/R4/bundle.html\">Bundle</a></p><p>ACTIVE (not intended for production usage). Published on 2022-02-01 by swgssmix. </p><div><p>この ConceptMap には PPR-01 病名（歴）情報 から Message Bundle への変換を定義する。</p>\n</div><br/><p><b>Group 1</b>Mapping from <code>PPR-01</code> to <a href=\"http://hl7.org/fhir/R4/bundle.html\">Bundle</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>PPR_ZD1.MSH (メッセージヘッダ)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>MessageHeader (メッセージヘッダ)</td></tr><tr><td>PPR_ZD1.PID (患者識別)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>JP_Patient (患者)</td></tr><tr><td>PPR_ZD1.PRB (プロブレム詳細)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>JP_Condition (状態)</td></tr><tr><td>PPR_ZD1.ZPR (プロブレム拡張情報)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>JP_Condition (状態)</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        }
+      ],
+      "url": "Bundle"
+    },
+    {
+      "url": "label",
+      "valueString": "Message PPR_01 to Bundle.fsh"
+    }
+  ],
+  "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/message-ppr-01-to-bundle",
+  "version": "0.1.0",
+  "name": "MessagePPR_01toBundle",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-02-01",
+  "publisher": "swgssmix",
+  "description": "この ConceptMap には PPR-01 病名（歴）情報 から Message Bundle への変換を定義する。",
+  "sourceUri": "PPR-01",
+  "targetUri": "Bundle",
+  "group": [
+    {
+      "source": "PPR-01",
+      "target": "Bundle",
+      "element": [
+        {
+          "code": "PPR_ZD1.MSH",
+          "display": "メッセージヘッダ",
+          "target": [
+            {
+              "code": "MessageHeader",
+              "display": "メッセージヘッダ",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PPR_ZD1.PID",
+          "display": "患者識別",
+          "target": [
+            {
+              "code": "JP_Patient",
+              "display": "患者",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PPR_ZD1.PRB",
+          "display": "プロブレム詳細",
+          "target": [
+            {
+              "code": "JP_Condition",
+              "display": "状態",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PPR_ZD1.ZPR",
+          "display": "プロブレム拡張情報",
+          "target": [
+            {
+              "code": "JP_Condition",
+              "display": "状態",
+              "equivalence": "relatedto"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

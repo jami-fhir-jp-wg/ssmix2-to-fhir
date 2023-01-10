@@ -1,0 +1,58 @@
+管理番号,区分,gid,name,表記,編集日,sourceUri,targetUri
+,md,,,このセクションでは、セグメントレベルのマッピングを説明する。,,,
+,md,,,,,,
+,md,,,### メッセージレベルマッピング仕様,,,
+,md,,, * セグメントレベルのマッピングはSS-MIX2の各データ種別配下のセグメント単位で定義する。,,,
+,md,,,個々のセグメントに対応する内容はこのページの下部にある[セグメント一覧](#セグメント一覧)のリンク先で説明する。,,,
+,md,,,ユースケースについては [ユースケース](040_usecases.html) を参照のこと。<br/>,,,
+,md,,, * SS-MIX仕様書において、「JAHIS」項目オプション指定が「対象のトリガイベントでは使用されない（X）」「通常使用しない（N）」ものは設定（ [ConceptMap.group]({{site.data.fhir.path}}conceptmap-definitions.html#ConceptMap.group) ）に含めない。<br/>,,,
+,md,,, * マッピング定義は複数のセグメントを Source Code として含む場合がある。<br/>,,,
+,md,,, * Bundle-message にマッピングする場合、MessageHeader.focus に Bundle.entryに格納したリソースの参照を指定すること。<br/>,,,
+,md,,,<br/><br/>,,,
+,md,,,,,,
+,md,,,### セグメント一覧,,,
+Common,md,,,#### 共通項目,,,
+MSH,fsh,1100376962,Segment MSH to Bundle,共通 MSH メッセージヘッダ Bundle,2022-02-01,MSH,Bundle
+MSH,fsh,1475254196,Segment MSH to MessageHeader,共通 MSH メッセージヘッダ MessageHeader,2022-02-01,MSH,MessageHeader
+PID,fsh,410815540,Segment PID to Patient,共通 PID 患者識別,2022-02-01,PID,JP_Patient
+PV1,fsh,2075305795,Segment PV1 to Encounter,共通 PV1 来院情報,2022-02-01,PV1,Encounter
+,md,,,<br/>,,,
+,md,,,,,,
+ADT_00,md,,,#### ADT-00 患者基本情報,,,
+ADT_00_AL1,fsh,832449419,Segment ADT_00_AL1 to AllergyIntolerance,ADT-00 AL1  アレルギー情報,2022-02-01,ADT-00.IAM,JP_AllergyIntolerance
+ADT_00_OBX,fsh,1277524024,Segment ADT_00_OBX to Observation,ADT-00 OBX  検査結果,2022-02-01,ADT-00.OBX,JP_Observation_Common
+ADT_00_IN1,fsh,874932872,Segment ADT_00_IN1 to Coverage,ADT-00 IN1  保険,2022-02-01,ADT-00.IN1,JP_Coverage
+,md,,,<br/>,,,
+,md,,,,,,
+ADT_12,md,,,#### ADT-12 外来診察の受付,,,
+ADT_XX_PV1,fsh,2075305795,Segment ADT_XX_PV1 to Encounter,ADT-12 PV1 来院情報（検討中）,2022-07-20,ADT-XX.PV1,Encounter
+,md,,,<br/>,,,
+,md,,,,,,
+ADT_21,md,,,#### ADT-XX 入退院・転送・外出泊・帰院,,,
+ADT_XX_PV1,fsh,2075305795,Segment ADT_XX_PV1 to Encounter,ADT PV1 来院情報,2022-07-20,ADT-XX.PV1,Encounter
+,md,,,<br/>,,,
+,md,,,,,,
+ADT_61,md,,,#### ADT-61 アレルギー情報,,,
+ADT_61_IAM,fsh,1624517608,Segment ADT_61_IAM to AllergyIntolerance,ADT-61 IAM アレルギー情報,2022-02-01,ADT-61.IAM,JP_AllergyIntolerance
+,md,,,<br/>,,,
+,md,,,,,,
+PPR_01,md,,,#### PPR-01 病名（歴）情報,,,
+PPR_01_PRB,fsh,1126820358,Segment PPR_01_PRB to Condition,PPR-01 PRB プロブレム詳細,2022-02-01,PPR-01.PRB,JP_Condition
+,md,,,<br/>,,,
+,md,,,,,,
+OMP_01,md,,,#### OMP-01 処方オーダ,,,
+OMP_01_RXE,fsh,468547254,Segment OMP_01_RXE to MedicationRequest,OMP-01 RXE 薬剤／処置 コード化されたオーダ,2022-02-01,OMP-01.RXE,JP_MedicationRequest
+,md,,,<br/>,,,
+,md,,,,,,
+OMP_12,md,,,#### OMP-12 注射実施,,,
+OMP_12_RXA,fsh,1242564496,Segment OMP_12_RXA to MedicationAdministration,OMP-12 RXA 薬剤／処置 投薬,2022-06-15,OMP-12.RXA,JP_MedicationAdministration_Injection
+OMP_12_RXA,md,,Segment OMP_12_RXA to Immunization,OMP-12 RXA 薬剤／処置 投薬（予防接種）,2022-06-15,OMP-12.RXA,Immunization
+,md,,,<br/>,,,
+,md,,,,,,
+OML_11,md,,,#### OML-11 検体検査結果,,,
+OML_11_SPM,fsh,1351713825,Segment OML_11_SPM to Specimen,OML-11 SPM 検体,2022-02-01,OML-11.SPM,Specimen
+OML_11_OBR_DR,fsh,1157391454,Segment OML_11_OBR to DiagnosticReport,OML-11 OBR 検査要求,2022-02-01,OML-11.OBR,DiagnosticReport
+OML_11_ORC_SR,fsh,409702772,Segment OML_11_ORC to ServiceRequest,OML-11 ORC 共通オーダ,2022-02-01,OML-11.ORC,ServiceRequest
+OML_11_OBX,fsh,1052352380,Segment OML_11_OBX to Observation,OML-11 OBX 検査結果,2022-02-01,OML-11.OBX,JP_Observation_LabResult
+,md,,,<br/>,,,
+,md,,,,,,

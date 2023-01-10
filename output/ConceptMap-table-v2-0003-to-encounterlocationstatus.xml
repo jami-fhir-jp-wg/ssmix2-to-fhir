@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="table-v2-0003-to-encounterlocationstatus"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Tablev2-0003toEncounterLocationStatus (http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/table-v2-0003-to-encounterlocationstatus)</h2><p>Mapping from <a href="http://terminology.hl7.org/4.0.0/CodeSystem-v2-0003.html">http://terminology.hl7.org/CodeSystem/v2-0003</a> to <a href="http://hl7.org/fhir/R4/valueset-encounter-location-status.html">http://hl7.org/fhir/ValueSet/encounter-location-status</a></p><p>ACTIVE (not intended for production usage). Published on 2022-07-27 by swgssmix. </p><br/><p><b>Group 1</b>Mapping from <a href="http://terminology.hl7.org/4.0.0/CodeSystem-v2-0003.html">eventType</a> to <a href="http://hl7.org/fhir/R4/valueset-encounter-location-status.html">EncounterLocationStatus</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>A54 (担当医の変更)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>active</td></tr><tr><td>A55 (担当医の取消)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>active</td></tr><tr><td>A04 (外来診察の受付)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>active</td></tr><tr><td>A14 (入院予定)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>planned</td></tr><tr><td>A27 (入院予定の取消)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>planned</td></tr><tr><td>A01 (入院実施)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>active</td></tr><tr><td>A11 (入院実施の取消)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>active</td></tr><tr><td>A21 (外出泊実施)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>active</td></tr><tr><td>A52 (外出泊実施の取消)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>active</td></tr><tr><td>A22 (外出泊帰院実施)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>active</td></tr><tr><td>A53 (外出泊帰院実施の取消)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>active</td></tr><tr><td>A15 (転科・転棟(転室・転床)予定)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>planned</td></tr><tr><td>A26 (転科・転棟(転室・転床)予定の取消)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>planned</td></tr><tr><td>A02 (転科・転棟(転室・転床)実施)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>active</td></tr><tr><td>A12 (転科・転棟(転室・転床)実施の取消)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>active</td></tr><tr><td>A16 (退院予定)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>planned</td></tr><tr><td>A25 (退院予定の取消)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>planned</td></tr><tr><td>A03 (退院実施)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>completed</td></tr><tr><td>A13 (退院実施の取消)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>active</td></tr></table></div>
+  </text>
+  <extension url="EncounterLocationStatus">
+    <extension url="type">
+      <valueCode value="derived-from"/>
+    </extension>
+  </extension>
+  <extension url="label">
+    <valueString value="Table v2-0003 to EncounterLocationStatus.fsh"/>
+  </extension>
+  <url value="http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/table-v2-0003-to-encounterlocationstatus"/>
+  <version value="0.1.0"/>
+  <name value="Tablev2-0003toEncounterLocationStatus"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-07-27"/>
+  <publisher value="swgssmix"/>
+  <sourceUri value="http://terminology.hl7.org/CodeSystem/v2-0003"/>
+  <targetUri value="http://hl7.org/fhir/ValueSet/encounter-location-status"/>
+  <group>
+    <source value="http://terminology.hl7.org/CodeSystem/v2-0003"/>
+    <target value="http://hl7.org/fhir/ValueSet/encounter-location-status"/>
+    <element>
+      <code value="A54"/>
+      <display value="担当医の変更"/>
+      <target>
+        <code value="active"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="A55"/>
+      <display value="担当医の取消"/>
+      <target>
+        <code value="active"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="A04"/>
+      <display value="外来診察の受付"/>
+      <target>
+        <code value="active"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="A14"/>
+      <display value="入院予定"/>
+      <target>
+        <code value="planned"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="A27"/>
+      <display value="入院予定の取消"/>
+      <target>
+        <code value="planned"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="A01"/>
+      <display value="入院実施"/>
+      <target>
+        <code value="active"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="A11"/>
+      <display value="入院実施の取消"/>
+      <target>
+        <code value="active"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="A21"/>
+      <display value="外出泊実施"/>
+      <target>
+        <code value="active"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="A52"/>
+      <display value="外出泊実施の取消"/>
+      <target>
+        <code value="active"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="A22"/>
+      <display value="外出泊帰院実施"/>
+      <target>
+        <code value="active"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="A53"/>
+      <display value="外出泊帰院実施の取消"/>
+      <target>
+        <code value="active"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="A15"/>
+      <display value="転科・転棟(転室・転床)予定"/>
+      <target>
+        <code value="planned"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="A26"/>
+      <display value="転科・転棟(転室・転床)予定の取消"/>
+      <target>
+        <code value="planned"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="A02"/>
+      <display value="転科・転棟(転室・転床)実施"/>
+      <target>
+        <code value="active"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="A12"/>
+      <display value="転科・転棟(転室・転床)実施の取消"/>
+      <target>
+        <code value="active"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="A16"/>
+      <display value="退院予定"/>
+      <target>
+        <code value="planned"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="A25"/>
+      <display value="退院予定の取消"/>
+      <target>
+        <code value="planned"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="A03"/>
+      <display value="退院実施"/>
+      <target>
+        <code value="completed"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="A13"/>
+      <display value="退院実施の取消"/>
+      <target>
+        <code value="active"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

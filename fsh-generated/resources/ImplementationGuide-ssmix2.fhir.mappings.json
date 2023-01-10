@@ -1,0 +1,321 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "ssmix2.fhir.mappings",
+  "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ImplementationGuide/ssmix2.fhir.mappings",
+  "version": "0.1.0",
+  "name": "ImplementationGuideSSMIX2FHIRMappings",
+  "title": "SSMIX2toFHIR",
+  "status": "draft",
+  "contact": [
+    {
+      "name": "swgssmix",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "swgssmix.org@email.dummy"
+        }
+      ]
+    }
+  ],
+  "description": "An example of how convert SS-MIX2 to FHIR.",
+  "packageId": "ssmix2.fhir.mappings",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "ConceptMap/message-adt-00-to-bundle"
+        },
+        "name": "MessageADT_00toBundle",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/message-adt-22-to-bundle"
+        },
+        "name": "MessageADT_22toBundle",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/message-adt-61-to-bundle"
+        },
+        "name": "MessageADT_61toBundle",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/message-oml-11-to-bundle"
+        },
+        "name": "MessageOML_11toBundle",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/message-omp-01-to-bundle"
+        },
+        "name": "MessageOMP_01toBundle",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/message-omp-12-to-bundle"
+        },
+        "name": "MessageOMP_12toBundle",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/message-ppr-01-to-bundle"
+        },
+        "name": "MessagePPR_01toBundle",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/segment-adt-00-al1-to-allergyintolerance"
+        },
+        "name": "SegmentADT_00_AL1toAllergyIntolerance",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/segment-adt-00-in1-to-coverage"
+        },
+        "name": "SegmentADT_00_IN1toCoverage",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/segment-adt-00-obx-to-observation"
+        },
+        "name": "SegmentADT_00_OBXtoObservation",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/segment-adt-61-iam-to-allergyintolerance"
+        },
+        "name": "SegmentADT_61_IAMtoAllergyIntolerance",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/segment-adt-xx-pv1-to-encounter"
+        },
+        "name": "SegmentADT_XX_PV1toEncounter",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/segment-msh-to-bundle"
+        },
+        "name": "SegmentMSHtoBundle",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/segment-msh-to-messageheader"
+        },
+        "name": "SegmentMSHtoMessageHeader",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/segment-oml-11-obr-to-diagnosticreport"
+        },
+        "name": "SegmentOML_11_OBRtoDiagnosticReport",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/segment-oml-11-obx-to-observation"
+        },
+        "name": "SegmentOML_11_OBXtoObservation",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/segment-oml-11-orc-to-servicerequest"
+        },
+        "name": "SegmentOML_11_ORCtoServiceRequest",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/segment-oml-11-spm-to-specimen"
+        },
+        "name": "SegmentOML_11_SPMtoSpecimen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/segment-omp-01-rxe-to-medicationrequest"
+        },
+        "name": "SegmentOMP_01_RXEtoMedicationRequest",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/segment-omp-12-rxa-to-medicationadministration"
+        },
+        "name": "SegmentOMP_12_RXAtoMedicationAdministration",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/segment-pid-to-patient"
+        },
+        "name": "SegmentPIDtoPatient",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/segment-ppr-01-prb-to-condition"
+        },
+        "name": "SegmentPPR_01_PRBtoCondition",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/segment-pv1-to-encounter"
+        },
+        "name": "SegmentPV1toEncounter",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/table-v2-0001-to-administrativegender"
+        },
+        "name": "Tablev2-0001toAdministrativeGender",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/table-v2-0003-to-encounterlocationstatus"
+        },
+        "name": "Tablev2-0003toEncounterLocationStatus",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/table-v2-0003-to-encounterstatus"
+        },
+        "name": "Tablev2-0003toEncounterStatus",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/table-v2-0004-to-v3-actcode"
+        },
+        "name": "Tablev2-0004tov3-ActCode",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/table-v2-0127-to-allergyintolerancecategory"
+        },
+        "name": "Tablev2-0127toAllergyIntoleranceCategory",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/table-v2-0128-to-reactioneventseverity"
+        },
+        "name": "Tablev2-0128toReactionEventSeverity",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/table-v2-0201-to-contactpointuse"
+        },
+        "name": "Tablev2-0201toContactPointUse",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/table-v2-0465-to-iso-21090"
+        },
+        "name": "Tablev2-0465toiso-21090",
+        "exampleBoolean": true
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "010_common_specifications.html",
+          "title": "Common Specifications",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "020_mappings.html",
+          "title": "Mappings",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "021_message_maps.html",
+          "title": "Message Maps",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "022_segment_maps.html",
+          "title": "Segment Maps",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "023_datatype_maps.html",
+          "title": "Datatype Maps",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "024_table_maps.html",
+          "title": "Table Maps",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "030_profiles.html",
+          "title": "Profiles",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "040_usecases.html",
+          "title": "Usecases",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2022+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      },
+      {
+        "code": "apply-publisher",
+        "value": "false"
+      },
+      {
+        "code": "apply-contact",
+        "value": "false"
+      },
+      {
+        "code": "show-inherited-invariants",
+        "value": "false"
+      }
+    ]
+  }
+}

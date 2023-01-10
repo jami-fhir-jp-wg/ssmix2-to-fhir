@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="segment-adt-61-iam-to-allergyintolerance"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>SegmentADT_61_IAMtoAllergyIntolerance (http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-adt-61-iam-to-allergyintolerance)</h2><p>Mapping from ADT-61.IAM to JP_AllergyIntolerance</p><p>ACTIVE (not intended for production usage). Published on 2022-02-01 by swgssmix. </p><div><p>この ConceptMap には ADT-61 IAM アレルギー情報 から AllergyIntolerance への変換を定義する。</p>
+</div><br/><p><b>Group 1</b>Mapping from <code>ADT-61.IAM</code> to <code>JP_AllergyIntolerance</code></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>PID-3 (患者ID リスト)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>AllergyIntolerance.patient</td><td>Patientへの参照を設定する。</td></tr><tr><td>IAM-0 (セグメントID)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>IAM-1 (セットID-IAM)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>IAM-2 (アレルゲン分類)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>AllergyIntolerance.category</td><td/></tr><tr><td>IAM-3 (アレルゲン情報)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>AllergyIntolerance.code</td><td/></tr><tr><td>IAM-4 (アレルギー重症度)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#relatedto" title="relatedto">is related to</a></td><td>AllergyIntolerance.reaction.severity</td><td/></tr><tr><td>IAM-5 (アレルギー反応情報)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>AllergyIntolerance.reaction.description</td><td/></tr><tr><td>IAM-5 (アレルギー反応情報)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>AllergyIntolerance.reaction.manifestation</td><td>コード化できない場合、テキストのみ設定。欠損値として「アレルギー反応情報なし」などを設定する。</td></tr><tr><td>IAM-6 (アレルギーアクションコード)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>AllergyIntolerance.clinicalStatus</td><td/></tr><tr><td>IAM-9 (アレルギー物質に対する感受性)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>AllergyIntolerance.type</td><td/></tr><tr><td>IAM-11 (アレルギー発症日)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>AllergyIntolerance.onsetDateTime</td><td/></tr><tr><td>IAM-12 (副作用情報 アレルギー発症時期)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>AllergyIntolerance.onsetString</td><td/></tr><tr><td>IAM-13 (副作用情報 情報提供日時)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>AllergyIntolerance.recordedDate</td><td/></tr><tr><td>IAM-14 (情報提供者)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>IAM-15 (情報提供者と患者の続柄)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>IAM-17 (アレルギー臨床確認状況)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>AllergyIntolerance.verificationStatus</td><td/></tr><tr><td>IAM-18 (確認者)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>AllergyIntolerance.assester</td><td/></tr><tr><td>IAM-17 (アレルギー臨床確認状況)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>AllergyIntolerance.verificationStatus</td><td/></tr><tr><td>IAM-19 (確認機関)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>IAM-20 (確認日時)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr></table></div>
+  </text>
+  <extension url="AllergyIntolerance">
+    <extension url="type">
+      <valueCode value="derived-from"/>
+    </extension>
+  </extension>
+  <extension url="label">
+    <valueString value="Segment ADT_61_IAM to AllergyIntolerance.fsh"/>
+  </extension>
+  <url value="http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-adt-61-iam-to-allergyintolerance"/>
+  <version value="0.1.0"/>
+  <name value="SegmentADT_61_IAMtoAllergyIntolerance"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-02-01"/>
+  <publisher value="swgssmix"/>
+  <description value="この ConceptMap には ADT-61 IAM アレルギー情報 から AllergyIntolerance への変換を定義する。"/>
+  <sourceUri value="ADT-61.IAM"/>
+  <targetUri value="JP_AllergyIntolerance"/>
+  <group>
+    <source value="ADT-61.IAM"/>
+    <target value="JP_AllergyIntolerance"/>
+    <element>
+      <code value="PID-3"/>
+      <display value="患者ID リスト"/>
+      <target>
+        <code value="AllergyIntolerance.patient"/>
+        <equivalence value="equivalent"/>
+        <comment value="Patientへの参照を設定する。"/>
+      </target>
+    </element>
+    <element>
+      <code value="IAM-0"/>
+      <display value="セグメントID"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="IAM-1"/>
+      <display value="セットID-IAM"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="IAM-2"/>
+      <display value="アレルゲン分類"/>
+      <target>
+        <code value="AllergyIntolerance.category"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="IAM-3"/>
+      <display value="アレルゲン情報"/>
+      <target>
+        <code value="AllergyIntolerance.code"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="IAM-4"/>
+      <display value="アレルギー重症度"/>
+      <target>
+        <code value="AllergyIntolerance.reaction.severity"/>
+        <equivalence value="relatedto"/>
+      </target>
+    </element>
+    <element>
+      <code value="IAM-5"/>
+      <display value="アレルギー反応情報"/>
+      <target>
+        <code value="AllergyIntolerance.reaction.description"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="IAM-5"/>
+      <display value="アレルギー反応情報"/>
+      <target>
+        <code value="AllergyIntolerance.reaction.manifestation"/>
+        <equivalence value="equivalent"/>
+        <comment value="コード化できない場合、テキストのみ設定。欠損値として「アレルギー反応情報なし」などを設定する。"/>
+      </target>
+    </element>
+    <element>
+      <code value="IAM-6"/>
+      <display value="アレルギーアクションコード"/>
+      <target>
+        <code value="AllergyIntolerance.clinicalStatus"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="IAM-9"/>
+      <display value="アレルギー物質に対する感受性"/>
+      <target>
+        <code value="AllergyIntolerance.type"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="IAM-11"/>
+      <display value="アレルギー発症日"/>
+      <target>
+        <code value="AllergyIntolerance.onsetDateTime"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="IAM-12"/>
+      <display value="副作用情報 アレルギー発症時期"/>
+      <target>
+        <code value="AllergyIntolerance.onsetString"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="IAM-13"/>
+      <display value="副作用情報 情報提供日時"/>
+      <target>
+        <code value="AllergyIntolerance.recordedDate"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="IAM-14"/>
+      <display value="情報提供者"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="IAM-15"/>
+      <display value="情報提供者と患者の続柄"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="IAM-17"/>
+      <display value="アレルギー臨床確認状況"/>
+      <target>
+        <code value="AllergyIntolerance.verificationStatus"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="IAM-18"/>
+      <display value="確認者"/>
+      <target>
+        <code value="AllergyIntolerance.assester"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="IAM-17"/>
+      <display value="アレルギー臨床確認状況"/>
+      <target>
+        <code value="AllergyIntolerance.verificationStatus"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="IAM-19"/>
+      <display value="確認機関"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="IAM-20"/>
+      <display value="確認日時"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

@@ -1,0 +1,187 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/message-omp-12-to-bundle> a fhir:ConceptMap;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "message-omp-12-to-bundle"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MessageOMP_12toBundle (http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/message-omp-12-to-bundle)</h2><p>Mapping from OMP-12 to <a href=\"http://hl7.org/fhir/R4/bundle.html\">Bundle</a></p><p>ACTIVE (not intended for production usage). Published on 2022-06-15 by swgssmix. </p><div><p>この ConceptMap には OMP-12 注射実施 から Message Bundle への変換を定義する。</p>\n</div><br/><p><b>Group 1</b>Mapping from <code>OMP-12</code> to <a href=\"http://hl7.org/fhir/R4/bundle.html\">Bundle</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>RAS_O17.MSH (メッセージヘッダ)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>MessageHeader (メッセージヘッダ)</td><td/></tr><tr><td>RAS_O17.PID (患者識別)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>JP_Patient (患者)</td><td/></tr><tr><td>RAS_O17.AL1 (アレルギー情報)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>JP_AllergyIntolerance (アレルギー情報・不耐性)</td><td/></tr><tr><td>RAS_O17.PV1 (来院情報)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Encounter (来院情報)</td><td/></tr><tr><td>RAS_O17.ORC (共通オーダ)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>JP_MedicationAdministration_Injection (薬剤／処置 成分オーダ)</td><td/></tr><tr><td>RAS_O17.RXE (薬剤／処置 コード化されたオーダ)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#disjoint\" title=\"disjoint\">is not related to</a></td><td>JP_MedicationRequest_Injection (注射薬剤処方)</td><td>実施にひもづくオーダ情報、MedicationAdministration.request 参照を想定する。現在協議中であるため「disjoint」とし、マッピング対象外としている。</td></tr><tr><td>RAS_O17.TQ1 (タイミング／数量)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#disjoint\" title=\"disjoint\">is not related to</a></td><td>JP_MedicationAdministration_Injection (注射薬剤処方投与実施情報)</td><td>実施にひもづくオーダ情報、現在協議中であるため「disjoint」とし、マッピング対象外としている。</td></tr><tr><td>RAS_O17.RXR (投薬経路)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#disjoint\" title=\"disjoint\">is not related to</a></td><td>JP_MedicationAdministration_Injection (注射薬剤処方投与実施情報)</td><td>実施にひもづくオーダ情報、現在協議中であるため「disjoint」とし、マッピング対象外としている。</td></tr><tr><td>RAS_O17.RXC (薬剤／処置 成分オーダ)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#disjoint\" title=\"disjoint\">is not related to</a></td><td>JP_MedicationAdministration_Injection (注射薬剤処方投与実施情報)</td><td>実施にひもづくオーダ情報、現在協議中であるため「disjoint」とし、マッピング対象外としている。</td></tr><tr><td>RAS_O17.RXA (薬剤／処置 投薬)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>JP_MedicationAdministration_Injection (注射薬剤処方投与実施情報)</td><td/></tr><tr><td>RAS_O17.RXA (薬剤／処置 投薬)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Immunization (予防接種)</td><td>RXE-2 が 「06 予防接種（JHSI 表-#0002）」の場合、MedicationAdministrationに加えて生成する（検討中）。</td></tr><tr><td>RAS_O17.RXR (投薬経路)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>JP_MedicationAdministration_Injection (注射薬剤処方投与実施情報)</td><td/></tr><tr><td>RAS_O17.CTI (治験情報)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#disjoint\" title=\"disjoint\">is not related to</a></td><td>未定</td><td>実施にひもづく治験情報、現在協議中であるため「disjoint」とし、マッピング対象外としている。</td></tr></table></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "type" ];
+       fhir:Extension.valueCode [ fhir:value "derived-from" ]
+     ];
+     fhir:Extension.url [ fhir:value "Bundle" ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "label" ];
+     fhir:Extension.valueString [ fhir:value "Message OMP_12 to Bundle.fsh" ]
+  ];
+  fhir:ConceptMap.url [ fhir:value "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/message-omp-12-to-bundle"];
+  fhir:ConceptMap.version [ fhir:value "0.1.0"];
+  fhir:ConceptMap.name [ fhir:value "MessageOMP_12toBundle"];
+  fhir:ConceptMap.status [ fhir:value "active"];
+  fhir:ConceptMap.experimental [ fhir:value "true"^^xsd:boolean];
+  fhir:ConceptMap.date [ fhir:value "2022-06-15"^^xsd:date];
+  fhir:ConceptMap.publisher [ fhir:value "swgssmix"];
+  fhir:ConceptMap.description [ fhir:value "この ConceptMap には OMP-12 注射実施 から Message Bundle への変換を定義する。"];
+  fhir:ConceptMap.sourceUri [ fhir:value "OMP-12"];
+  fhir:ConceptMap.targetUri [ fhir:value "Bundle"];
+  fhir:ConceptMap.group [
+     fhir:index 0;
+     fhir:ConceptMap.group.source [ fhir:value "OMP-12" ];
+     fhir:ConceptMap.group.target [ fhir:value "Bundle" ];
+     fhir:ConceptMap.group.element [
+       fhir:index 0;
+       fhir:ConceptMap.group.element.code [ fhir:value "RAS_O17.MSH" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "メッセージヘッダ" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "MessageHeader" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "メッセージヘッダ" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ConceptMap.group.element.code [ fhir:value "RAS_O17.PID" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "患者識別" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "JP_Patient" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "患者" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:ConceptMap.group.element.code [ fhir:value "RAS_O17.AL1" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "アレルギー情報" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "JP_AllergyIntolerance" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "アレルギー情報・不耐性" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:ConceptMap.group.element.code [ fhir:value "RAS_O17.PV1" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "来院情報" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Encounter" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "来院情報" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:ConceptMap.group.element.code [ fhir:value "RAS_O17.ORC" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "共通オーダ" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "JP_MedicationAdministration_Injection" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "薬剤／処置 成分オーダ" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "relatedto" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:ConceptMap.group.element.code [ fhir:value "RAS_O17.RXE" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "薬剤／処置 コード化されたオーダ" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "JP_MedicationRequest_Injection" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "注射薬剤処方" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "disjoint" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "実施にひもづくオーダ情報、MedicationAdministration.request 参照を想定する。現在協議中であるため「disjoint」とし、マッピング対象外としている。" ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:ConceptMap.group.element.code [ fhir:value "RAS_O17.TQ1" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "タイミング／数量" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "JP_MedicationAdministration_Injection" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "注射薬剤処方投与実施情報" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "disjoint" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "実施にひもづくオーダ情報、現在協議中であるため「disjoint」とし、マッピング対象外としている。" ]
+       ]
+     ], [
+       fhir:index 7;
+       fhir:ConceptMap.group.element.code [ fhir:value "RAS_O17.RXR" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "投薬経路" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "JP_MedicationAdministration_Injection" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "注射薬剤処方投与実施情報" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "disjoint" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "実施にひもづくオーダ情報、現在協議中であるため「disjoint」とし、マッピング対象外としている。" ]
+       ]
+     ], [
+       fhir:index 8;
+       fhir:ConceptMap.group.element.code [ fhir:value "RAS_O17.RXC" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "薬剤／処置 成分オーダ" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "JP_MedicationAdministration_Injection" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "注射薬剤処方投与実施情報" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "disjoint" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "実施にひもづくオーダ情報、現在協議中であるため「disjoint」とし、マッピング対象外としている。" ]
+       ]
+     ], [
+       fhir:index 9;
+       fhir:ConceptMap.group.element.code [ fhir:value "RAS_O17.RXA" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "薬剤／処置 投薬" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "JP_MedicationAdministration_Injection" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "注射薬剤処方投与実施情報" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 10;
+       fhir:ConceptMap.group.element.code [ fhir:value "RAS_O17.RXA" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "薬剤／処置 投薬" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Immunization" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "予防接種" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "RXE-2 が 「06 予防接種（JHSI 表-#0002）」の場合、MedicationAdministrationに加えて生成する（検討中）。" ]
+       ]
+     ], [
+       fhir:index 11;
+       fhir:ConceptMap.group.element.code [ fhir:value "RAS_O17.RXR" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "投薬経路" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "JP_MedicationAdministration_Injection" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "注射薬剤処方投与実施情報" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "relatedto" ]
+       ]
+     ], [
+       fhir:index 12;
+       fhir:ConceptMap.group.element.code [ fhir:value "RAS_O17.CTI" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "治験情報" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "未定" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "未定" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "disjoint" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "実施にひもづく治験情報、現在協議中であるため「disjoint」とし、マッピング対象外としている。" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/message-omp-12-to-bundle.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,96 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "message-adt-22-to-bundle",
+  "description": "この ConceptMap には ADT-22 入院実施 から Message Bundle への変換を定義する。",
+  "version": "1.0",
+  "name": "MessageADT_22toBundle",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-07-20",
+  "publisher": "swgssmix",
+  "sourceUri": "ADT-22",
+  "targetUri": "Bundle",
+  "group": [
+    {
+      "source": "ADT-22",
+      "target": "Bundle",
+      "element": [
+        {
+          "code": "ADT_A01.MSH",
+          "display": "メッセージヘッダ",
+          "target": [
+            {
+              "code": "MessageHeader",
+              "display": "メッセージヘッダ",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "ADT_A01.EVN",
+          "display": "事象型",
+          "target": [
+            {
+              "code": "Encounter",
+              "display": "来院情報",
+              "equivalence": "relatedto",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "ADT_A01.PID",
+          "display": "患者識別",
+          "target": [
+            {
+              "code": "JP_Patient",
+              "display": "患者",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "ADT_A01.PV1",
+          "display": "来院情報",
+          "target": [
+            {
+              "code": "Encounter",
+              "display": "来院情報",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "ADT_A01.PV2",
+          "display": "来院補足情報",
+          "target": [
+            {
+              "code": "Encounter",
+              "display": "来院情報",
+              "equivalence": "relatedto",
+              "comment": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "Bundle",
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        }
+      ]
+    },
+    {
+      "url": "label",
+      "valueString": "Message ADT_22 to Bundle.fsh"
+    }
+  ]
+}

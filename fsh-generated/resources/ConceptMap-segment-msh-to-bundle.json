@@ -1,0 +1,69 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "segment-msh-to-bundle",
+  "description": "この ConceptMap には 共通 MSH メッセージヘッダ Bundle から Bundle への変換を定義する。",
+  "version": "1.0",
+  "name": "SegmentMSHtoBundle",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-02-01",
+  "publisher": "swgssmix",
+  "sourceUri": "MSH",
+  "targetUri": "Bundle",
+  "group": [
+    {
+      "source": "MSH",
+      "target": "Bundle",
+      "element": [
+        {
+          "code": "MSH-7",
+          "display": "メッセージ日時",
+          "target": [
+            {
+              "code": "Bundle.timestamp",
+              "equivalence": "disjoint",
+              "comment": "メッセージの送信日時を設定する。SS-MIX2のMSH-7は標準化ストレージやトランザクションストレージの作成タイミングであるため、FHIRサーバへの送信日時やファイル出力日時を設定する。"
+            }
+          ]
+        },
+        {
+          "code": "MSH-9",
+          "display": "メッセージ型",
+          "target": [
+            {
+              "code": "Bundle.entry.resource.meta.profile",
+              "equivalence": "equivalent",
+              "comment": "プロファイルを明示する場合、設定する。プロファイルはメッセージ型およびセグメントIDから決定する。"
+            }
+          ]
+        },
+        {
+          "code": "MSH-10",
+          "display": "メッセージ制御ID",
+          "target": [
+            {
+              "code": "Bundle.id",
+              "equivalence": "equivalent",
+              "comment": "Bundleの場合、ロジカルIDとしての採用も考えられる。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "Bundle",
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        }
+      ]
+    },
+    {
+      "url": "label",
+      "valueString": "Segment MSH to Bundle.fsh"
+    }
+  ]
+}

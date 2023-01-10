@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="table-v2-0001-to-administrativegender"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Tablev2-0001toAdministrativeGender (http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/table-v2-0001-to-administrativegender)</h2><p>Mapping from <a href="http://terminology.hl7.org/4.0.0/CodeSystem-v2-0001.html">http://terminology.hl7.org/CodeSystem/v2-0001</a> to <a href="http://hl7.org/fhir/R4/codesystem-administrative-gender.html">http://hl7.org/fhir/administrative-gender</a></p><p>ACTIVE (not intended for production usage). Published on 2022-02-01 by swgssmix. </p><br/><p><b>Group 1</b>Mapping from <a href="http://terminology.hl7.org/4.0.0/CodeSystem-v2-0001.html">administrativeSex</a> to <a href="http://hl7.org/fhir/R4/codesystem-administrative-gender.html">AdministrativeGender</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>F (女性)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>female</td></tr><tr><td>M (男性)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>male</td></tr><tr><td>O (その他)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>other</td></tr><tr><td>U (不明)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>unknown</td></tr></table></div>
+  </text>
+  <extension url="AdministrativeGender">
+    <extension url="type">
+      <valueCode value="derived-from"/>
+    </extension>
+  </extension>
+  <extension url="label">
+    <valueString value="Table v2-0001 to AdministrativeGender.fsh"/>
+  </extension>
+  <url value="http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/table-v2-0001-to-administrativegender"/>
+  <version value="0.1.0"/>
+  <name value="Tablev2-0001toAdministrativeGender"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-02-01"/>
+  <publisher value="swgssmix"/>
+  <sourceUri value="http://terminology.hl7.org/CodeSystem/v2-0001"/>
+  <targetUri value="http://hl7.org/fhir/administrative-gender"/>
+  <group>
+    <source value="http://terminology.hl7.org/CodeSystem/v2-0001"/>
+    <target value="http://hl7.org/fhir/administrative-gender"/>
+    <element>
+      <code value="F"/>
+      <display value="女性"/>
+      <target>
+        <code value="female"/>
+        <display value="Female"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="M"/>
+      <display value="男性"/>
+      <target>
+        <code value="male"/>
+        <display value="Male"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="O"/>
+      <display value="その他"/>
+      <target>
+        <code value="other"/>
+        <display value="Other"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="U"/>
+      <display value="不明"/>
+      <target>
+        <code value="unknown"/>
+        <display value="unknown"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

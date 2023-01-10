@@ -1,0 +1,99 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-msh-to-messageheader> a fhir:ConceptMap;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "segment-msh-to-messageheader"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SegmentMSHtoMessageHeader (http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-msh-to-messageheader)</h2><p>Mapping from MSH to <a href=\"http://hl7.org/fhir/R4/messageheader.html\">MessageHeader</a></p><p>ACTIVE (not intended for production usage). Published on 2022-02-01 by swgssmix. </p><div><p>この ConceptMap には 共通 MSH メッセージヘッダ MessageHeader から MessageHeader への変換を定義する。</p>\n</div><br/><p><b>Group 1</b>Mapping from <code>MSH</code> to <a href=\"http://hl7.org/fhir/R4/messageheader.html\">MessageHeader</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>MSH-3 (送信アプリケーション)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>MessageHeader.source.name</td><td/></tr><tr><td>MSH-5 (受信アプリケーション)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>MessageHeader.destination.name</td><td/></tr><tr><td>MSH-9 (メッセージ型)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>MessageHeader.eventCoding</td><td>第2 成分のHL7 表「0003 - イベント型」を設定する。\r\nhttp://terminology.hl7.org/CodeSystem/v2-0003</td></tr><tr><td>MSH-24 (送信ネットワークアドレス)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>MessageHeader.source.endpoint</td><td>HL7v2.7の項目、SS-MIX2では設定されていないため、固定のURLを設定する。</td></tr><tr><td>MSH-25 (受信ネットワークアドレス)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>MessageHeader.destination.endpoint</td><td>HL7v2.7の項目、SS-MIX2では設定されていないため、固定のURLを設定する。</td></tr></table></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "type" ];
+       fhir:Extension.valueCode [ fhir:value "derived-from" ]
+     ];
+     fhir:Extension.url [ fhir:value "MessageHeader" ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "label" ];
+     fhir:Extension.valueString [ fhir:value "Segment MSH to MessageHeader.fsh" ]
+  ];
+  fhir:ConceptMap.url [ fhir:value "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-msh-to-messageheader"];
+  fhir:ConceptMap.version [ fhir:value "0.1.0"];
+  fhir:ConceptMap.name [ fhir:value "SegmentMSHtoMessageHeader"];
+  fhir:ConceptMap.status [ fhir:value "active"];
+  fhir:ConceptMap.experimental [ fhir:value "true"^^xsd:boolean];
+  fhir:ConceptMap.date [ fhir:value "2022-02-01"^^xsd:date];
+  fhir:ConceptMap.publisher [ fhir:value "swgssmix"];
+  fhir:ConceptMap.description [ fhir:value "この ConceptMap には 共通 MSH メッセージヘッダ MessageHeader から MessageHeader への変換を定義する。"];
+  fhir:ConceptMap.sourceUri [ fhir:value "MSH"];
+  fhir:ConceptMap.targetUri [ fhir:value "MessageHeader"];
+  fhir:ConceptMap.group [
+     fhir:index 0;
+     fhir:ConceptMap.group.source [ fhir:value "MSH" ];
+     fhir:ConceptMap.group.target [ fhir:value "MessageHeader" ];
+     fhir:ConceptMap.group.element [
+       fhir:index 0;
+       fhir:ConceptMap.group.element.code [ fhir:value "MSH-3" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "送信アプリケーション" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "MessageHeader.source.name" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ConceptMap.group.element.code [ fhir:value "MSH-5" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "受信アプリケーション" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "MessageHeader.destination.name" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:ConceptMap.group.element.code [ fhir:value "MSH-9" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "メッセージ型" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "MessageHeader.eventCoding" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "第2 成分のHL7 表「0003 - イベント型」を設定する。\r\nhttp://terminology.hl7.org/CodeSystem/v2-0003" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:ConceptMap.group.element.code [ fhir:value "MSH-24" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "送信ネットワークアドレス" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "MessageHeader.source.endpoint" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "HL7v2.7の項目、SS-MIX2では設定されていないため、固定のURLを設定する。" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:ConceptMap.group.element.code [ fhir:value "MSH-25" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "受信ネットワークアドレス" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "MessageHeader.destination.endpoint" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "HL7v2.7の項目、SS-MIX2では設定されていないため、固定のURLを設定する。" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-msh-to-messageheader.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

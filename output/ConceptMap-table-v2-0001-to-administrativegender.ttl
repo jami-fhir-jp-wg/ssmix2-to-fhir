@@ -1,0 +1,90 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/table-v2-0001-to-administrativegender> a fhir:ConceptMap;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "table-v2-0001-to-administrativegender"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Tablev2-0001toAdministrativeGender (http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/table-v2-0001-to-administrativegender)</h2><p>Mapping from <a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-v2-0001.html\">http://terminology.hl7.org/CodeSystem/v2-0001</a> to <a href=\"http://hl7.org/fhir/R4/codesystem-administrative-gender.html\">http://hl7.org/fhir/administrative-gender</a></p><p>ACTIVE (not intended for production usage). Published on 2022-02-01 by swgssmix. </p><br/><p><b>Group 1</b>Mapping from <a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-v2-0001.html\">administrativeSex</a> to <a href=\"http://hl7.org/fhir/R4/codesystem-administrative-gender.html\">AdministrativeGender</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>F (女性)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>female</td></tr><tr><td>M (男性)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>male</td></tr><tr><td>O (その他)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>other</td></tr><tr><td>U (不明)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>unknown</td></tr></table></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "type" ];
+       fhir:Extension.valueCode [ fhir:value "derived-from" ]
+     ];
+     fhir:Extension.url [ fhir:value "AdministrativeGender" ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "label" ];
+     fhir:Extension.valueString [ fhir:value "Table v2-0001 to AdministrativeGender.fsh" ]
+  ];
+  fhir:ConceptMap.url [ fhir:value "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/table-v2-0001-to-administrativegender"];
+  fhir:ConceptMap.version [ fhir:value "0.1.0"];
+  fhir:ConceptMap.name [ fhir:value "Tablev2-0001toAdministrativeGender"];
+  fhir:ConceptMap.status [ fhir:value "active"];
+  fhir:ConceptMap.experimental [ fhir:value "true"^^xsd:boolean];
+  fhir:ConceptMap.date [ fhir:value "2022-02-01"^^xsd:date];
+  fhir:ConceptMap.publisher [ fhir:value "swgssmix"];
+  fhir:ConceptMap.sourceUri [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0001"];
+  fhir:ConceptMap.targetUri [ fhir:value "http://hl7.org/fhir/administrative-gender"];
+  fhir:ConceptMap.group [
+     fhir:index 0;
+     fhir:ConceptMap.group.source [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0001" ];
+     fhir:ConceptMap.group.target [ fhir:value "http://hl7.org/fhir/administrative-gender" ];
+     fhir:ConceptMap.group.element [
+       fhir:index 0;
+       fhir:ConceptMap.group.element.code [ fhir:value "F" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "女性" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "female" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Female" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ConceptMap.group.element.code [ fhir:value "M" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "男性" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "male" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Male" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:ConceptMap.group.element.code [ fhir:value "O" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "その他" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "other" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Other" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:ConceptMap.group.element.code [ fhir:value "U" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "不明" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "unknown" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "unknown" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/table-v2-0001-to-administrativegender.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

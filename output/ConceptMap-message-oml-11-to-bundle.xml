@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="message-oml-11-to-bundle"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>MessageOML_11toBundle (http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/message-oml-11-to-bundle)</h2><p>Mapping from OML-11 to <a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></p><p>ACTIVE (not intended for production usage). Published on 2022-06-15 by swgssmix. </p><div><p>この ConceptMap には OML-11 検体検査結果 から Message Bundle への変換を定義する。</p>
+</div><br/><p><b>Group 1</b>Mapping from <code>OML-11</code> to <a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>ORU_R01.MSH (メッセージヘッダ)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>MessageHeader (メッセージヘッダ)</td><td/></tr><tr><td>ORU_R01.PID (患者識別)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>JP_Patient (患者)</td><td/></tr><tr><td>ORU_R01.PV1 (来院情報)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Encounter (来院情報)</td><td/></tr><tr><td>ORU_R01.SPECIMEN.SPM (検体)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Specimen (検体)</td><td/></tr><tr><td>ORU_R01.SPECIMEN.ORDER.OBR (検査要求)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>JP_Observation_LabResult (検体検査結果（グループ）)</td><td>基本的に1件のOBRから1件のObservation（検査種別：生化学・尿検査など）を作成する。Observation（検査項目）を明示的にObservation（検査種別）でグルーピングする目的で作成する。Observation（検査項目）をObservation（検査種別）.hasMenberから参照する。</td></tr><tr><td>ORU_R01.SPECIMEN.ORDER.OBR (検査要求)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>JP_DiagnosticReport_LabResult (検体検査レポート用プロファイル)</td><td>（Observationを採用するか検討、グループ化する単位を検討）基本的に1件のOBRから1件のDiagnosticReportを作成する。Observationを明示的に検査種別や検査材料でグルーピングする目的で作成する。</td></tr><tr><td>ORU_R01.SPECIMEN.ORDER.OBR (検査要求)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#relatedto" title="relatedto">is related to</a></td><td>ServiceRequest (サービス要求)</td><td>ORCから変換した ServiceRequest の要素として設定する。</td></tr><tr><td>ORU_R01.SPECIMEN.ORDER.ORC (共通オーダ)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>ServiceRequest (サービス要求)</td><td/></tr><tr><td>ORU_R01.SPECIMEN.ORDER.ORC (共通オーダ)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#relatedto" title="relatedto">is related to</a></td><td>JP_Observation_LabResult (検体検査結果)</td><td>OBXから変換した JP_Observation_LabResult 要素として設定する。</td></tr><tr><td>ORU_R01.SPECIMEN.ORDER.RESULT.OBX (検査結果)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>JP_Observation_LabResult (検体検査結果)</td><td/></tr></table></div>
+  </text>
+  <extension url="Bundle">
+    <extension url="type">
+      <valueCode value="derived-from"/>
+    </extension>
+  </extension>
+  <extension url="label">
+    <valueString value="Message OML_11 to Bundle.fsh"/>
+  </extension>
+  <url value="http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/message-oml-11-to-bundle"/>
+  <version value="0.1.0"/>
+  <name value="MessageOML_11toBundle"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-06-15"/>
+  <publisher value="swgssmix"/>
+  <description value="この ConceptMap には OML-11 検体検査結果 から Message Bundle への変換を定義する。"/>
+  <sourceUri value="OML-11"/>
+  <targetUri value="Bundle"/>
+  <group>
+    <source value="OML-11"/>
+    <target value="Bundle"/>
+    <element>
+      <code value="ORU_R01.MSH"/>
+      <display value="メッセージヘッダ"/>
+      <target>
+        <code value="MessageHeader"/>
+        <display value="メッセージヘッダ"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="ORU_R01.PID"/>
+      <display value="患者識別"/>
+      <target>
+        <code value="JP_Patient"/>
+        <display value="患者"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="ORU_R01.PV1"/>
+      <display value="来院情報"/>
+      <target>
+        <code value="Encounter"/>
+        <display value="来院情報"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="ORU_R01.SPECIMEN.SPM"/>
+      <display value="検体"/>
+      <target>
+        <code value="Specimen"/>
+        <display value="検体"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="ORU_R01.SPECIMEN.ORDER.OBR"/>
+      <display value="検査要求"/>
+      <target>
+        <code value="JP_Observation_LabResult"/>
+        <display value="検体検査結果（グループ）"/>
+        <equivalence value="equivalent"/>
+        <comment value="基本的に1件のOBRから1件のObservation（検査種別：生化学・尿検査など）を作成する。Observation（検査項目）を明示的にObservation（検査種別）でグルーピングする目的で作成する。Observation（検査項目）をObservation（検査種別）.hasMenberから参照する。"/>
+      </target>
+    </element>
+    <element>
+      <code value="ORU_R01.SPECIMEN.ORDER.OBR"/>
+      <display value="検査要求"/>
+      <target>
+        <code value="JP_DiagnosticReport_LabResult"/>
+        <display value="検体検査レポート用プロファイル"/>
+        <equivalence value="equivalent"/>
+        <comment value="（Observationを採用するか検討、グループ化する単位を検討）基本的に1件のOBRから1件のDiagnosticReportを作成する。Observationを明示的に検査種別や検査材料でグルーピングする目的で作成する。"/>
+      </target>
+    </element>
+    <element>
+      <code value="ORU_R01.SPECIMEN.ORDER.OBR"/>
+      <display value="検査要求"/>
+      <target>
+        <code value="ServiceRequest"/>
+        <display value="サービス要求"/>
+        <equivalence value="relatedto"/>
+        <comment value="ORCから変換した ServiceRequest の要素として設定する。"/>
+      </target>
+    </element>
+    <element>
+      <code value="ORU_R01.SPECIMEN.ORDER.ORC"/>
+      <display value="共通オーダ"/>
+      <target>
+        <code value="ServiceRequest"/>
+        <display value="サービス要求"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="ORU_R01.SPECIMEN.ORDER.ORC"/>
+      <display value="共通オーダ"/>
+      <target>
+        <code value="JP_Observation_LabResult"/>
+        <display value="検体検査結果"/>
+        <equivalence value="relatedto"/>
+        <comment value="OBXから変換した JP_Observation_LabResult 要素として設定する。"/>
+      </target>
+    </element>
+    <element>
+      <code value="ORU_R01.SPECIMEN.ORDER.RESULT.OBX"/>
+      <display value="検査結果"/>
+      <target>
+        <code value="JP_Observation_LabResult"/>
+        <display value="検体検査結果"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

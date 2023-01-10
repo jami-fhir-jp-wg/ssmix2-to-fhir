@@ -1,0 +1,91 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "segment-msh-to-messageheader",
+  "description": "この ConceptMap には 共通 MSH メッセージヘッダ MessageHeader から MessageHeader への変換を定義する。",
+  "version": "1.0",
+  "name": "SegmentMSHtoMessageHeader",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-02-01",
+  "publisher": "swgssmix",
+  "sourceUri": "MSH",
+  "targetUri": "MessageHeader",
+  "group": [
+    {
+      "source": "MSH",
+      "target": "MessageHeader",
+      "element": [
+        {
+          "code": "MSH-3",
+          "display": "送信アプリケーション",
+          "target": [
+            {
+              "code": "MessageHeader.source.name",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "MSH-5",
+          "display": "受信アプリケーション",
+          "target": [
+            {
+              "code": "MessageHeader.destination.name",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "MSH-9",
+          "display": "メッセージ型",
+          "target": [
+            {
+              "code": "MessageHeader.eventCoding",
+              "equivalence": "equivalent",
+              "comment": "第2 成分のHL7 表「0003 - イベント型」を設定する。\r\nhttp://terminology.hl7.org/CodeSystem/v2-0003"
+            }
+          ]
+        },
+        {
+          "code": "MSH-24",
+          "display": "送信ネットワークアドレス",
+          "target": [
+            {
+              "code": "MessageHeader.source.endpoint",
+              "equivalence": "equivalent",
+              "comment": "HL7v2.7の項目、SS-MIX2では設定されていないため、固定のURLを設定する。"
+            }
+          ]
+        },
+        {
+          "code": "MSH-25",
+          "display": "受信ネットワークアドレス",
+          "target": [
+            {
+              "code": "MessageHeader.destination.endpoint",
+              "equivalence": "equivalent",
+              "comment": "HL7v2.7の項目、SS-MIX2では設定されていないため、固定のURLを設定する。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "MessageHeader",
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        }
+      ]
+    },
+    {
+      "url": "label",
+      "valueString": "Segment MSH to MessageHeader.fsh"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/table-v2-0127-to-allergyintolerancecategory> a fhir:ConceptMap;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "table-v2-0127-to-allergyintolerancecategory"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Tablev2-0127toAllergyIntoleranceCategory (http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/table-v2-0127-to-allergyintolerancecategory)</h2><p>Mapping from <a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-v2-0127.html\">http://terminology.hl7.org/CodeSystem/v2-0127</a> to <a href=\"http://hl7.org/fhir/R4/codesystem-allergy-intolerance-category.html\">http://hl7.org/fhir/allergy-intolerance-category</a></p><p>ACTIVE (not intended for production usage). Published on 2022-02-01 by swgssmix. </p><br/><p><b>Group 1</b>Mapping from <a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-v2-0127.html\">allergenType</a> to <a href=\"http://hl7.org/fhir/R4/codesystem-allergy-intolerance-category.html\">AllergyIntoleranceCategory</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>DA (薬物アレルギー)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>medication</td></tr><tr><td>FA (食物アレルギー)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>food</td></tr><tr><td>MA (種々のアレルギー)</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>MC (種々の禁忌)</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>EA (環境アレルギー)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>environment</td></tr><tr><td>AA (動物アレルギー)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>biologic (Environment)</td></tr><tr><td>PA (植物アレルギー)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>environment</td></tr><tr><td>LA (花粉アレルギー)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>environment</td></tr></table></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "type" ];
+       fhir:Extension.valueCode [ fhir:value "derived-from" ]
+     ];
+     fhir:Extension.url [ fhir:value "AllergyIntoleranceCategory" ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "label" ];
+     fhir:Extension.valueString [ fhir:value "Table v2-0127 to AllergyIntoleranceCategory.fsh" ]
+  ];
+  fhir:ConceptMap.url [ fhir:value "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/table-v2-0127-to-allergyintolerancecategory"];
+  fhir:ConceptMap.version [ fhir:value "0.1.0"];
+  fhir:ConceptMap.name [ fhir:value "Tablev2-0127toAllergyIntoleranceCategory"];
+  fhir:ConceptMap.status [ fhir:value "active"];
+  fhir:ConceptMap.experimental [ fhir:value "true"^^xsd:boolean];
+  fhir:ConceptMap.date [ fhir:value "2022-02-01"^^xsd:date];
+  fhir:ConceptMap.publisher [ fhir:value "swgssmix"];
+  fhir:ConceptMap.sourceUri [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0127"];
+  fhir:ConceptMap.targetUri [ fhir:value "http://hl7.org/fhir/allergy-intolerance-category"];
+  fhir:ConceptMap.group [
+     fhir:index 0;
+     fhir:ConceptMap.group.source [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0127" ];
+     fhir:ConceptMap.group.target [ fhir:value "http://hl7.org/fhir/allergy-intolerance-category" ];
+     fhir:ConceptMap.group.element [
+       fhir:index 0;
+       fhir:ConceptMap.group.element.code [ fhir:value "DA" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "薬物アレルギー" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "medication" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Medication" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ConceptMap.group.element.code [ fhir:value "FA" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "食物アレルギー" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "food" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Food" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:ConceptMap.group.element.code [ fhir:value "MA" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "種々のアレルギー" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:ConceptMap.group.element.code [ fhir:value "MC" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "種々の禁忌" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:ConceptMap.group.element.code [ fhir:value "EA" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "環境アレルギー" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "environment" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Environment" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:ConceptMap.group.element.code [ fhir:value "AA" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "動物アレルギー" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "biologic" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Environment" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:ConceptMap.group.element.code [ fhir:value "PA" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "植物アレルギー" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "environment" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Environment" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 7;
+       fhir:ConceptMap.group.element.code [ fhir:value "LA" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "花粉アレルギー" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "environment" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Environment" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/table-v2-0127-to-allergyintolerancecategory.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

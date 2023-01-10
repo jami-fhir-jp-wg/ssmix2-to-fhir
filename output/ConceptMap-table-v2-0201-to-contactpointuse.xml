@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="table-v2-0201-to-contactpointuse"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Tablev2-0201toContactPointUse (http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/table-v2-0201-to-contactpointuse)</h2><p>Mapping from <a href="http://terminology.hl7.org/4.0.0/CodeSystem-v2-0201.html">http://terminology.hl7.org/CodeSystem/v2-0201</a> to <a href="http://hl7.org/fhir/R4/codesystem-contact-point-use.html">http://hl7.org/fhir/contact-point-use</a></p><p>ACTIVE (not intended for production usage). Published on 2022-02-01 by swgssmix. </p><br/><p><b>Group 1</b>Mapping from <a href="http://terminology.hl7.org/4.0.0/CodeSystem-v2-0201.html">telecommunicationUse</a> to <a href="http://hl7.org/fhir/R4/codesystem-contact-point-use.html">ContactPointUse</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>PRN (主要な自宅番号)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>home</td></tr><tr><td>ORN (他の自宅番号)</td><td colspan="2" style="background-color: #efefef">(not mapped)</td></tr><tr><td>WPN (勤務先番号)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>work</td></tr><tr><td>VHN (別荘番号)</td><td colspan="2" style="background-color: #efefef">(not mapped)</td></tr><tr><td>ASN (留守電話応答サービス番号)</td><td colspan="2" style="background-color: #efefef">(not mapped)</td></tr><tr><td>EMR (緊急番号)</td><td colspan="2" style="background-color: #efefef">(not mapped)</td></tr><tr><td>NET (ネットワーク（電子メール）アドレス)</td><td colspan="2" style="background-color: #efefef">(not mapped)</td></tr><tr><td>BPN (ポケットベルの番号)</td><td colspan="2" style="background-color: #efefef">(not mapped)</td></tr><tr><td>PRS (個人の連絡先)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>mobile</td></tr></table></div>
+  </text>
+  <extension url="ContactPointUse">
+    <extension url="type">
+      <valueCode value="derived-from"/>
+    </extension>
+  </extension>
+  <extension url="label">
+    <valueString value="Table v2-0201 to ContactPointUse.fsh"/>
+  </extension>
+  <url value="http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/table-v2-0201-to-contactpointuse"/>
+  <version value="0.1.0"/>
+  <name value="Tablev2-0201toContactPointUse"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-02-01"/>
+  <publisher value="swgssmix"/>
+  <sourceUri value="http://terminology.hl7.org/CodeSystem/v2-0201"/>
+  <targetUri value="http://hl7.org/fhir/contact-point-use"/>
+  <group>
+    <source value="http://terminology.hl7.org/CodeSystem/v2-0201"/>
+    <target value="http://hl7.org/fhir/contact-point-use"/>
+    <element>
+      <code value="PRN"/>
+      <display value="主要な自宅番号&#xD;"/>
+      <target>
+        <code value="home"/>
+        <display value="Home"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="ORN"/>
+      <display value="他の自宅番号"/>
+      <target>
+        <equivalence value="unmatched"/>
+      </target>
+    </element>
+    <element>
+      <code value="WPN"/>
+      <display value="勤務先番号&#xD;"/>
+      <target>
+        <code value="work"/>
+        <display value="Work"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="VHN"/>
+      <display value="別荘番号"/>
+      <target>
+        <equivalence value="unmatched"/>
+      </target>
+    </element>
+    <element>
+      <code value="ASN"/>
+      <display value="留守電話応答サービス番号"/>
+      <target>
+        <equivalence value="unmatched"/>
+      </target>
+    </element>
+    <element>
+      <code value="EMR"/>
+      <display value="緊急番号"/>
+      <target>
+        <equivalence value="unmatched"/>
+      </target>
+    </element>
+    <element>
+      <code value="NET"/>
+      <display value="ネットワーク（電子メール）アドレス"/>
+      <target>
+        <equivalence value="unmatched"/>
+      </target>
+    </element>
+    <element>
+      <code value="BPN"/>
+      <display value="ポケットベルの番号"/>
+      <target>
+        <equivalence value="unmatched"/>
+      </target>
+    </element>
+    <element>
+      <code value="PRS"/>
+      <display value="個人の連絡先"/>
+      <target>
+        <code value="mobile"/>
+        <display value="Mobile"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

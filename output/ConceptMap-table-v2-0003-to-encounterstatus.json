@@ -1,0 +1,230 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "table-v2-0003-to-encounterstatus",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Tablev2-0003toEncounterStatus (http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/table-v2-0003-to-encounterstatus)</h2><p>Mapping from <a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-v2-0003.html\">http://terminology.hl7.org/CodeSystem/v2-0003</a> to <a href=\"http://hl7.org/fhir/R4/valueset-encounter-status.html\">http://hl7.org/fhir/ValueSet/encounter-status</a></p><p>ACTIVE (not intended for production usage). Published on 2022-07-27 by swgssmix. </p><br/><p><b>Group 1</b>Mapping from <a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-v2-0003.html\">eventType</a> to <a href=\"http://hl7.org/fhir/R4/valueset-encounter-status.html\">EncounterStatus</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>A54 (担当医の変更)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>in-progress</td></tr><tr><td>A55 (担当医の取消)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>in-progress</td></tr><tr><td>A04 (外来診察の受付)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>arrived</td></tr><tr><td>A14 (入院予定)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>planned</td></tr><tr><td>A27 (入院予定の取消)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>cancelled</td></tr><tr><td>A01 (入院実施)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>arrived</td></tr><tr><td>A11 (入院実施の取消)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>cancelled</td></tr><tr><td>A21 (外出泊実施)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>onleave</td></tr><tr><td>A52 (外出泊実施の取消)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>in-progress</td></tr><tr><td>A22 (外出泊帰院実施)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>in-progress</td></tr><tr><td>A53 (外出泊帰院実施の取消)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>onleave</td></tr><tr><td>A15 (転科・転棟(転室・転床)予定)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>in-progress</td></tr><tr><td>A26 (転科・転棟(転室・転床)予定の取消)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>in-progress</td></tr><tr><td>A02 (転科・転棟(転室・転床)実施)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>in-progress</td></tr><tr><td>A12 (転科・転棟(転室・転床)実施の取消)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>in-progress</td></tr><tr><td>A16 (退院予定)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>in-progress</td></tr><tr><td>A25 (退院予定の取消)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>in-progress</td></tr><tr><td>A03 (退院実施)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>finished</td></tr><tr><td>A13 (退院実施の取消)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>in-progress</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        }
+      ],
+      "url": "EncounterStatus"
+    },
+    {
+      "url": "label",
+      "valueString": "Table v2-0003 to EncounterStatus.fsh"
+    }
+  ],
+  "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/table-v2-0003-to-encounterstatus",
+  "version": "0.1.0",
+  "name": "Tablev2-0003toEncounterStatus",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-07-27",
+  "publisher": "swgssmix",
+  "sourceUri": "http://terminology.hl7.org/CodeSystem/v2-0003",
+  "targetUri": "http://hl7.org/fhir/ValueSet/encounter-status",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/v2-0003",
+      "target": "http://hl7.org/fhir/ValueSet/encounter-status",
+      "element": [
+        {
+          "code": "A54",
+          "display": "担当医の変更",
+          "target": [
+            {
+              "code": "in-progress",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "A55",
+          "display": "担当医の取消",
+          "target": [
+            {
+              "code": "in-progress",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "A04",
+          "display": "外来診察の受付",
+          "target": [
+            {
+              "code": "arrived",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "A14",
+          "display": "入院予定",
+          "target": [
+            {
+              "code": "planned",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "A27",
+          "display": "入院予定の取消",
+          "target": [
+            {
+              "code": "cancelled",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "A01",
+          "display": "入院実施",
+          "target": [
+            {
+              "code": "arrived",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "A11",
+          "display": "入院実施の取消",
+          "target": [
+            {
+              "code": "cancelled",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "A21",
+          "display": "外出泊実施",
+          "target": [
+            {
+              "code": "onleave",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "A52",
+          "display": "外出泊実施の取消",
+          "target": [
+            {
+              "code": "in-progress",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "A22",
+          "display": "外出泊帰院実施",
+          "target": [
+            {
+              "code": "in-progress",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "A53",
+          "display": "外出泊帰院実施の取消",
+          "target": [
+            {
+              "code": "onleave",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "A15",
+          "display": "転科・転棟(転室・転床)予定",
+          "target": [
+            {
+              "code": "in-progress",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "A26",
+          "display": "転科・転棟(転室・転床)予定の取消",
+          "target": [
+            {
+              "code": "in-progress",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "A02",
+          "display": "転科・転棟(転室・転床)実施",
+          "target": [
+            {
+              "code": "in-progress",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "A12",
+          "display": "転科・転棟(転室・転床)実施の取消",
+          "target": [
+            {
+              "code": "in-progress",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "A16",
+          "display": "退院予定",
+          "target": [
+            {
+              "code": "in-progress",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "A25",
+          "display": "退院予定の取消",
+          "target": [
+            {
+              "code": "in-progress",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "A03",
+          "display": "退院実施",
+          "target": [
+            {
+              "code": "finished",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "A13",
+          "display": "退院実施の取消",
+          "target": [
+            {
+              "code": "in-progress",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

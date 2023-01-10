@@ -1,0 +1,5 @@
+管理番号,変換前コード,変換前表記,変換後コード,変換後表記,等価性,コメント,自由記載欄
+,ADT_A01.MSH,メッセージヘッダ,MessageHeader,メッセージヘッダ,equivalent,,
+,ADT_A01.PID,患者識別,JP_Patient,患者,equivalent,,
+,ADT_A01.PV1,来院情報,Encounter,来院情報,equivalent,,
+,ADT_A01.PV2,来院補足情報,Encounter,来院情報,relatedto,,

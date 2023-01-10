@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="table-v2-0004-to-v3-actcode"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Tablev2-0004tov3-ActCode (http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/table-v2-0004-to-v3-actcode)</h2><p>Mapping from <a href="http://terminology.hl7.org/4.0.0/CodeSystem-v2-0004.html">http://terminology.hl7.org/CodeSystem/v2-0004</a> to <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActCode.html">http://terminology.hl7.org/CodeSystem/v3-ActCode</a></p><p>ACTIVE (not intended for production usage). Published on 2022-02-01 by swgssmix. </p><br/><p><b>Group 1</b>Mapping from <a href="http://terminology.hl7.org/4.0.0/CodeSystem-v2-0004.html">patientClass</a> to <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActCode.html">ActCode</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>O (外来患者)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>AMB (ambulatory)</td></tr><tr><td>I (入院患者)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>IMP (inpatient encounter)</td></tr></table></div>
+  </text>
+  <extension url="v3-ActCode">
+    <extension url="type">
+      <valueCode value="derived-from"/>
+    </extension>
+  </extension>
+  <extension url="label">
+    <valueString value="Table v2-0004 to v3-ActCode.fsh"/>
+  </extension>
+  <url value="http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/table-v2-0004-to-v3-actcode"/>
+  <version value="0.1.0"/>
+  <name value="Tablev2-0004tov3-ActCode"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-02-01"/>
+  <publisher value="swgssmix"/>
+  <sourceUri value="http://terminology.hl7.org/CodeSystem/v2-0004"/>
+  <targetUri value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+  <group>
+    <source value="http://terminology.hl7.org/CodeSystem/v2-0004"/>
+    <target value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <element>
+      <code value="O"/>
+      <display value="外来患者"/>
+      <target>
+        <code value="AMB"/>
+        <display value="ambulatory"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="I"/>
+      <display value="入院患者"/>
+      <target>
+        <code value="IMP"/>
+        <display value="inpatient encounter"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

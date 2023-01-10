@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="table-v2-0128-to-reactioneventseverity"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Tablev2-0128toReactionEventSeverity (http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/table-v2-0128-to-reactioneventseverity)</h2><p>Mapping from <a href="http://terminology.hl7.org/4.0.0/CodeSystem-v2-0128.html">http://terminology.hl7.org/CodeSystem/v2-0128</a> to <a href="http://hl7.org/fhir/R4/codesystem-reaction-event-severity.html">http://hl7.org/fhir/reaction-event-severity</a></p><p>ACTIVE (not intended for production usage). Published on 2022-02-01 by swgssmix. </p><br/><p><b>Group 1</b>Mapping from <a href="http://terminology.hl7.org/4.0.0/CodeSystem-v2-0128.html">allergySeverity</a> to <a href="http://hl7.org/fhir/R4/codesystem-reaction-event-severity.html">AllergyIntoleranceSeverity</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>MI (軽度)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>mild</td></tr><tr><td>MO (中等度)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>moderate</td></tr><tr><td>SV (重度)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>severe</td></tr></table></div>
+  </text>
+  <extension url="ReactionEventSeverity">
+    <extension url="type">
+      <valueCode value="derived-from"/>
+    </extension>
+  </extension>
+  <extension url="label">
+    <valueString value="Table v2-0128 to ReactionEventSeverity.fsh"/>
+  </extension>
+  <url value="http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/table-v2-0128-to-reactioneventseverity"/>
+  <version value="0.1.0"/>
+  <name value="Tablev2-0128toReactionEventSeverity"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-02-01"/>
+  <publisher value="swgssmix"/>
+  <sourceUri value="http://terminology.hl7.org/CodeSystem/v2-0128"/>
+  <targetUri value="http://hl7.org/fhir/reaction-event-severity"/>
+  <group>
+    <source value="http://terminology.hl7.org/CodeSystem/v2-0128"/>
+    <target value="http://hl7.org/fhir/reaction-event-severity"/>
+    <element>
+      <code value="MI"/>
+      <display value="軽度"/>
+      <target>
+        <code value="mild"/>
+        <display value="Mild"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="MO"/>
+      <display value="中等度"/>
+      <target>
+        <code value="moderate"/>
+        <display value="Moderate"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="SV"/>
+      <display value="重度"/>
+      <target>
+        <code value="severe"/>
+        <display value="Severe"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

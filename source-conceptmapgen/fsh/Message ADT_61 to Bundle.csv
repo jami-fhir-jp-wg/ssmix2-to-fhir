@@ -1,0 +1,4 @@
+管理番号,変換前コード,変換前表記,変換後コード,変換後表記,等価性,コメント,自由記載欄
+,ADT_A60.MSH,メッセージヘッダ,MessageHeader,メッセージヘッダ,equivalent,,
+,ADT_A60.PID,患者識別,JP_Patient,患者,equivalent,,
+,ADT_A60.IAM,アレルギー情報,JP_AllergyIntolerance,アレルギー情報,equivalent,,

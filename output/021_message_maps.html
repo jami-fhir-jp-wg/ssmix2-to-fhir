@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>SSMIX2.FHIR.MAPPINGS\Message Maps - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">SSMIX2toFHIR</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts Summary</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Other Resources
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html" target="_blank">FHIR Spec </a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Message Maps</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">SSMIX2toFHIR - Local Development build (v0.1.0). See the <a href="http://example.org/fhir/ig/ssmix2.fhir.mappings/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Message Maps</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#メッセージレベルマッピング仕様" id="markdown-toc-メッセージレベルマッピング仕様">メッセージレベルマッピング仕様</a></li>
+  <li><a href="#データ種別一覧" id="markdown-toc-データ種別一覧">データ種別一覧</a></li>
+</ul>
+
+</div>
+<p>このセクションでは、メッセージレベルのマッピングやデータ種別ごとの補足事項について説明する。</p>
+
+<h3 id="メッセージレベルマッピング仕様">メッセージレベルマッピング仕様</h3>
+<ul>
+  <li>メッセージレベルのマッピングはSS-MIX2のデータ種別単位で定義する。個々のデータ種別に対応する内容はこのページの下部にある<a href="#データ種別一覧">データ種別一覧</a>のリンク先で説明する。
+ユースケースについては <a href="040_usecases.html">ユースケース</a> を参照のこと。<br/></li>
+  <li>メッセージレベルのマッピングでは HL7 V2 メッセージ を Bundle にマッピングすることを基本とするが、Bundle.type は問わない。ユースケースに応じた Bundle.type を指定し、その仕様に従いリソースを生成すること。<br/></li>
+  <li>メッセージレベルのマッピングでは各リソース要素からの参照（例えばMedicationRequest.subject）へのマッピングについては割愛する。セグメントレベルのマッピングを参照のこと。
+<br/><br/></li>
+</ul>
+
+<h3 id="データ種別一覧">データ種別一覧</h3>
+<h4 id="adt-00-患者基本情報">ADT-00 患者基本情報</h4>
+<ul>
+  <li><a href="ConceptMap-message-adt-00-to-bundle.html">Message ADT_00 to Bundle</a> - ADT-00 患者基本情報<br/>
+    <ul>
+      <li><a href="ConceptMap-segment-msh-to-bundle.html">Segment MSH to Bundle</a> - 共通 MSH メッセージヘッダ Bundle<br/></li>
+      <li><a href="ConceptMap-segment-msh-to-messageheader.html">Segment MSH to MessageHeader</a> - 共通 MSH メッセージヘッダ MessageHeader<br/></li>
+      <li><a name="l314">​</a><a href="ConceptMap-segment-msh-to-provenance.html">Segment MSH to Provenance</a> - 共通 MSH Provenance<br/></li>
+      <li><a href="ConceptMap-segment-pid-to-patient.html">Segment PID to Patient</a> - 共通 PID 患者識別<br/></li>
+      <li><a href="ConceptMap-segment-pv1-to-encounter.html">Segment PV1 to Encounter</a> - 共通 PV1 来院情報<br/></li>
+      <li><a href="ConceptMap-segment-adt-00-al1-to-allergyintolerance.html">Segment ADT_00_AL1 to AllergyIntolerance</a> - ADT-00 AL1  アレルギー情報<br/></li>
+      <li><a href="ConceptMap-segment-adt-00-obx-to-observation.html">Segment ADT_00_OBX to Observation</a> - ADT-00 OBX  検査結果<br/></li>
+      <li><a href="ConceptMap-segment-adt-00-in1-to-coverage.html">Segment ADT_00_IN1 to Coverage</a> - ADT-00 IN1  保険<br/><br/></li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="db1セグメントの扱い">DB1セグメントの扱い</h5>
+<ul>
+  <li><a href="http://hl7.org/fhir/R4/extension-patient-disability.html">http://hl7.org/fhir/R4/extension-patient-disability.html</a>を使用する。<br/>
+<br/></li>
+</ul>
+
+<h4 id="adt-xx-入退院転送外出泊帰院">ADT-XX 入退院・転送・外出泊・帰院</h4>
+<ul>
+  <li><a href="ConceptMap-message-adt-22-to-bundle.html">Message ADT_22 to Bundle</a> - ADT-22 入院実施<br/>
+    <ul>
+      <li><a href="ConceptMap-segment-msh-to-bundle.html">Segment MSH to Bundle</a> - 共通 MSH メッセージヘッダ Bundle<br/></li>
+      <li><a href="ConceptMap-segment-msh-to-messageheader.html">Segment MSH to MessageHeader</a> - 共通 MSH メッセージヘッダ MessageHeader<br/></li>
+      <li><a href="ConceptMap-segment-pid-to-patient.html">Segment PID to Patient</a> - 共通 PID 患者識別<br/></li>
+      <li><a href="ConceptMap-segment-pv1-to-encounter.html">Segment PV1 to Encounter</a> - 共通 PV1 来院情報<br/></li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="適用対象となるデータ種別">適用対象となるデータ種別</h5>
+<ul>
+  <li>ADT-21 入院予約<br/></li>
+  <li>ADT-22 入院実施<br/></li>
+  <li>ADT-31 外出泊実施<br/></li>
+  <li>ADT-32 外出泊帰院実施<br/></li>
+  <li>ADT-41 転科転棟予約<br/></li>
+  <li>ADT-42 転科転棟実施<br/></li>
+  <li>ADT-51 退院予約<br/></li>
+  <li>ADT-52 退院実施<br/></li>
+</ul>
+
+<h5 id="msh-92イベント型-status-間のマッピング">MSH-9.2（イベント型）・ status 間のマッピング</h5>
+<ul>
+  <li><a href="ConceptMap-table-v2-0003-to-encounterstatus.html">Encounter.status</a><br/></li>
+  <li><a href="ConceptMap-table-v2-0003-to-encounterlocationstatus.html">Encounter.location.status</a> <br/></li>
+</ul>
+
+<h5 id="入退院日時および事象発生日時とリソース要素との関係">入退院日時および事象発生日時とリソース要素との関係</h5>
+<ul>
+  <li>EVN-6（事象発生日時）：ADT-31・ADT-32・ADT-41・ADT-42（転送・外出泊・帰院）で使用する。Encounter.location.period.start に設定する。<br/></li>
+  <li>PV1-44（入院日時）：Encounter.period.start に設定する。ADT-22 の場合、Encounter.location.period.start にも同様の値を設定する。<br/></li>
+  <li>PV1-45（退院日時）：Encounter.period.endに設定する。ADT-52 の場合、Encounter.location.period.end にも同様の値を設定する。<br/></li>
+  <li>PV2-8（予定入院日時）：ADT-51で使用する。Encounter.period.start に設定する。ADT-21 の場合、Encounter.location.period.startにも同様の値を設定する。<br/></li>
+  <li>PV2-9（予定退院日時）：ADT-21またはADT-51で使用する。Encounter.period.end に設定する。ADT-51 の場合、Encounter.location.period.end にも同様の値を設定する。<br/></li>
+  <li>PV2-47（予定帰院日時）：ADT-31で使用する。 Encounter.period.location.end に設定する。<br/>
+<br/></li>
+</ul>
+
+<h4 id="adt-61-アレルギー情報">ADT-61 アレルギー情報</h4>
+<ul>
+  <li><a href="ConceptMap-message-adt-61-to-bundle.html">Message ADT_61 to Bundle</a> - ADT-61 アレルギー情報<br/>
+    <ul>
+      <li><a href="ConceptMap-segment-msh-to-bundle.html">Segment MSH to Bundle</a> - 共通 MSH メッセージヘッダ Bundle<br/></li>
+      <li><a href="ConceptMap-segment-msh-to-messageheader.html">Segment MSH to MessageHeader</a> - 共通 MSH メッセージヘッダ MessageHeader<br/></li>
+      <li><a href="ConceptMap-segment-pid-to-patient.html">Segment PID to Patient</a> - 共通 PID 患者識別<br/></li>
+      <li><a href="ConceptMap-segment-adt-61-iam-to-allergyintolerance.html">Segment ADT_61_IAM to AllergyIntolerance</a> - ADT-61 IAM アレルギー情報<br/>
+<br/></li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="ppr-01-病名歴情報">PPR-01 病名（歴）情報</h4>
+<ul>
+  <li><a href="ConceptMap-message-ppr-01-to-bundle.html">Message PPR_01 to Bundle</a> - PPR-01 病名（歴）情報<br/>
+    <ul>
+      <li><a href="ConceptMap-segment-msh-to-bundle.html">Segment MSH to Bundle</a> - 共通 MSH メッセージヘッダ Bundle<br/></li>
+      <li><a href="ConceptMap-segment-msh-to-messageheader.html">Segment MSH to MessageHeader</a> - 共通 MSH メッセージヘッダ MessageHeader<br/></li>
+      <li><a href="ConceptMap-segment-pid-to-patient.html">Segment PID to Patient</a> - 共通 PID 患者識別<br/></li>
+      <li><a href="ConceptMap-segment-ppr-01-prb-to-condition.html">Segment PPR_01_PRB to Condition</a> - PPR-01 PRB プロブレム詳細<br/>
+<br/></li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="omp-01-処方オーダ">OMP-01 処方オーダ</h4>
+<ul>
+  <li><a href="ConceptMap-message-omp-01-to-bundle.html">Message OMP_01 to Bundle</a> - OMP-01 処方オーダ<br/>
+    <ul>
+      <li><a href="ConceptMap-segment-msh-to-bundle.html">Segment MSH to Bundle</a> - 共通 MSH メッセージヘッダ Bundle<br/></li>
+      <li><a href="ConceptMap-segment-msh-to-messageheader.html">Segment MSH to MessageHeader</a> - 共通 MSH メッセージヘッダ MessageHeader<br/></li>
+      <li><a href="ConceptMap-segment-pid-to-patient.html">Segment PID to Patient</a> - 共通 PID 患者識別<br/></li>
+      <li><a href="ConceptMap-segment-pv1-to-encounter.html">Segment PV1 to Encounter</a> - 共通 PV1 来院情報<br/></li>
+      <li><a href="ConceptMap-segment-adt-00-al1-to-allergyintolerance.html">Segment AL1 to AllergyIntolerance</a> -  AL1  アレルギー情報<br/></li>
+      <li><a href="ConceptMap-segment-omp-01-rxe-to-medicationrequest.html">Segment OMP_01_RXE to MedicationRequest</a> - OMP-01 RXE 薬剤／処置 コード化されたオーダ<br/>
+<br/></li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="omp-12-注射実施">OMP-12 注射実施</h4>
+<ul>
+  <li><a href="ConceptMap-message-omp-12-to-bundle.html">Message OMP_12 to Bundle</a> - OMP-12 注射実施<br/>
+    <ul>
+      <li><a href="ConceptMap-segment-msh-to-bundle.html">Segment MSH to Bundle</a> - 共通 MSH メッセージヘッダ Bundle<br/></li>
+      <li><a href="ConceptMap-segment-msh-to-messageheader.html">Segment MSH to MessageHeader</a> - 共通 MSH メッセージヘッダ MessageHeader<br/></li>
+      <li><a href="ConceptMap-segment-pid-to-patient.html">Segment PID to Patient</a> - 共通 PID 患者識別<br/></li>
+      <li><a href="ConceptMap-segment-adt-00-al1-to-allergyintolerance.html">Segment AL1 to AllergyIntolerance</a> -  AL1  アレルギー情報<br/></li>
+      <li><a href="ConceptMap-segment-pv1-to-encounter.html">Segment PV1 to Encounter</a> - 共通 PV1 来院情報<br/></li>
+      <li><a href="ConceptMap-segment-omp-12-rxa-to-medicationadministration.html">Segment OMP_12_RXA to MedicationAdministration</a> - OMP-12 RXA 薬剤／処置 投薬<br/></li>
+      <li><a name="l682">​</a><a href="ConceptMap-segment-omp-12-rxa-to-immuznization.html">Segment OMP_12_RXA to Immunization</a> - OMP-12 RXA 薬剤／処置 投薬（検討中）<br/></li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="注射種別">注射種別</h5>
+<ul>
+  <li>OMP-12ではRXE-2に使用薬剤の種類の区分情報としての注射種別をセットする。取りうる値は「JHSI 表 0002-注射種別」を参照する。マッピングの際、注射種別を考慮する必要がある。<br/></li>
+  <li>注射種別が「06 予防接種」の場合、RXAセグメントはImmunizationリソースにマッピングする必要がある（SHOULD）。<br/>
+<br/></li>
+</ul>
+
+<h4 id="oml-11-検体検査結果">OML-11 検体検査結果</h4>
+<ul>
+  <li><a href="ConceptMap-message-oml-11-to-bundle.html">Message OML_11 to Bundle</a> - OML-11 検体検査結果<br/>
+    <ul>
+      <li><a href="ConceptMap-segment-msh-to-bundle.html">Segment MSH to Bundle</a> - 共通 MSH メッセージヘッダ Bundle<br/></li>
+      <li><a href="ConceptMap-segment-msh-to-messageheader.html">Segment MSH to MessageHeader</a> - 共通 MSH メッセージヘッダ MessageHeader<br/></li>
+      <li><a href="ConceptMap-segment-pid-to-patient.html">Segment PID to Patient</a> - 共通 PID 患者識別<br/></li>
+      <li><a href="ConceptMap-segment-pv1-to-encounter.html">Segment PV1 to Encounter</a> - 共通 PV1 来院情報<br/></li>
+      <li><a href="ConceptMap-segment-oml-11-spm-to-specimen.html">Segment OML_11_SPM to Specimen</a> - OML-11 SPM 検体<br/></li>
+      <li><a href="ConceptMap-segment-oml-11-obr-to-diagnosticreport.html">Segment OML_11_OBR to DiagnosticReport</a> - OML-11 OBR 検査要求<br/></li>
+      <li><a href="ConceptMap-segment-oml-11-orc-to-servicerequest.html">Segment OML_11_ORC to ServiceRequest</a> - OML-11 ORC 共通オーダ<br/></li>
+      <li><a href="ConceptMap-segment-oml-11-obx-to-observation.html">Segment OML_11_OBX to Observation</a> - OML-11 OBX 検査結果<br/>
+<br/></li>
+    </ul>
+  </li>
+</ul>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p><a name="l810">​</a>
+          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="swgssmix.org@email.dummy"></a>.  Package ssmix2.fhir.mappings#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 30, 2022 12:40+0900">2022-11-30</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

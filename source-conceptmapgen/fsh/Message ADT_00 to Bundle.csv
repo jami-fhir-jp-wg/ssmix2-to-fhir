@@ -1,0 +1,9 @@
+管理番号,変換前コード,変換前表記,変換後コード,変換後表記,等価性,コメント,自由記載欄
+,ADT_A08.MSH,メッセージヘッダ,MessageHeader,メッセージヘッダ,equivalent,,
+,ADT_A08.PID,患者識別,JP_Patient,患者,equivalent,,
+,ADT_A08.PV1,来院情報,Encounter,来院情報,equivalent,,
+,ADT_A08.DB1,身体障害,JP_Patient,患者,equivalent,http://hl7.org/fhir/R4/extension-patient-disability.html,
+,ADT_A08.OBSERVATION.OBX,検査結果,JP_Observation_Common,検査（共通）,equivalent,,
+,ADT_A08.AL1,アレルギー情報,JP_AllergyIntolerance,アレルギー・不耐症,equivalent,,
+,ADT_A08.INSURANCE.IN1,保険,JP_Coverage,保険・公費,equivalent,,
+,ADT_A08.NK1,近親者情報,JP_Patient,患者,relatedto,Patient.contact にマッピングする。詳細は[Segment PID to Patient](ConceptMap-segment-pid-to-patient.html)を参照のこと。,

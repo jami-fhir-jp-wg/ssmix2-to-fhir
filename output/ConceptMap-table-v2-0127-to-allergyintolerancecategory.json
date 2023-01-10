@@ -1,0 +1,124 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "table-v2-0127-to-allergyintolerancecategory",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Tablev2-0127toAllergyIntoleranceCategory (http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/table-v2-0127-to-allergyintolerancecategory)</h2><p>Mapping from <a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-v2-0127.html\">http://terminology.hl7.org/CodeSystem/v2-0127</a> to <a href=\"http://hl7.org/fhir/R4/codesystem-allergy-intolerance-category.html\">http://hl7.org/fhir/allergy-intolerance-category</a></p><p>ACTIVE (not intended for production usage). Published on 2022-02-01 by swgssmix. </p><br/><p><b>Group 1</b>Mapping from <a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-v2-0127.html\">allergenType</a> to <a href=\"http://hl7.org/fhir/R4/codesystem-allergy-intolerance-category.html\">AllergyIntoleranceCategory</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>DA (薬物アレルギー)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>medication</td></tr><tr><td>FA (食物アレルギー)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>food</td></tr><tr><td>MA (種々のアレルギー)</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>MC (種々の禁忌)</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>EA (環境アレルギー)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>environment</td></tr><tr><td>AA (動物アレルギー)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>biologic (Environment)</td></tr><tr><td>PA (植物アレルギー)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>environment</td></tr><tr><td>LA (花粉アレルギー)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>environment</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        }
+      ],
+      "url": "AllergyIntoleranceCategory"
+    },
+    {
+      "url": "label",
+      "valueString": "Table v2-0127 to AllergyIntoleranceCategory.fsh"
+    }
+  ],
+  "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/table-v2-0127-to-allergyintolerancecategory",
+  "version": "0.1.0",
+  "name": "Tablev2-0127toAllergyIntoleranceCategory",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-02-01",
+  "publisher": "swgssmix",
+  "sourceUri": "http://terminology.hl7.org/CodeSystem/v2-0127",
+  "targetUri": "http://hl7.org/fhir/allergy-intolerance-category",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/v2-0127",
+      "target": "http://hl7.org/fhir/allergy-intolerance-category",
+      "element": [
+        {
+          "code": "DA",
+          "display": "薬物アレルギー",
+          "target": [
+            {
+              "code": "medication",
+              "display": "Medication",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "FA",
+          "display": "食物アレルギー",
+          "target": [
+            {
+              "code": "food",
+              "display": "Food",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MA",
+          "display": "種々のアレルギー",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "MC",
+          "display": "種々の禁忌",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "EA",
+          "display": "環境アレルギー",
+          "target": [
+            {
+              "code": "environment",
+              "display": "Environment",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "AA",
+          "display": "動物アレルギー",
+          "target": [
+            {
+              "code": "biologic",
+              "display": "Environment",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PA",
+          "display": "植物アレルギー",
+          "target": [
+            {
+              "code": "environment",
+              "display": "Environment",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "LA",
+          "display": "花粉アレルギー",
+          "target": [
+            {
+              "code": "environment",
+              "display": "Environment",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

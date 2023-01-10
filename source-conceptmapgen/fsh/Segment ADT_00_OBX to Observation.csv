@@ -1,0 +1,16 @@
+管理番号,変換前コード,変換前表記,変換後コード,変換後表記,等価性,コメント,自由記載欄
+,PID-3,患者ID リスト,Observation.subject,,equivalent,Patientへの参照を設定する。,
+,OBX-0,セグメントID,,,equivalent,,
+,OBX-1,セットID-OBX,,,equivalent,,
+,OBX-2,値型,Observation.value[x],,relatedto,"値型の設定により、value[x] の Data Type を変更する。
+NM: valueQuantity, ST: valueString, CWE: valueCodeableConcept",
+,OBX-3,検査項目,Observation.code,,equivalent,,
+,OBX-3,検査項目,Observation.category,,equivalent,マッピング例）JC10.9N001000000000001（身長）やJC10.9N006000000000001（体重）が指定されている場合、http://terminology.hl7.org/CodeSystem/observation-category の vital-sign を設定する。,
+,OBX-4,検査副ID,Observation.identifier,,equivalent,,
+,OBX-5,結果値,Observation.value[x],,equivalent,,
+,OBX-6,単位,Observation.valueQuantity.code,,equivalent,,
+,OBX-6,単位,Observation.valueQuantity.unit,,equivalent,,
+,OBX-7,基準値範囲,Observation.referenceRange,,equivalent,,
+,OBX-8,異常フラグ,Observation.interpretation,,equivalent,,
+,OBX-11,検査結果状態,Observation.status,,equivalent,final 固定,
+,OBX-14,検査日時,Observation.effective,,equivalent,,

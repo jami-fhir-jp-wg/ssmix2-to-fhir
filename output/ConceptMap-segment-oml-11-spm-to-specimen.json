@@ -1,0 +1,100 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "segment-oml-11-spm-to-specimen",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SegmentOML_11_SPMtoSpecimen (http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-oml-11-spm-to-specimen)</h2><p>Mapping from OML-11.SPM to <a href=\"http://hl7.org/fhir/R4/specimen.html\">Specimen</a></p><p>ACTIVE (not intended for production usage). Published on 2022-02-01 by swgssmix. </p><div><p>この ConceptMap には OML-11 SPM 検体 から Specimen への変換を定義する。</p>\n</div><br/><p><b>Group 1</b>Mapping from <code>OML-11.SPM</code> to <a href=\"http://hl7.org/fhir/R4/specimen.html\">Specimen</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>PID-3 (患者ID リスト)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Observation.subject</td><td>Patientへの参照を設定する。</td></tr><tr><td>SPM-0 (セグメントID)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>SPM-1 (セットID – SPM)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td/><td/></tr><tr><td>SPM-4 (検体タイプ)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Specimen.type</td><td/></tr><tr><td>SPM-8 (検査材料・検査部位)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Specimen.bodySite</td><td/></tr><tr><td>SPM-17 (検体採取日時)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Specimen.collection.collected</td><td/></tr></table></div>"
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        }
+      ],
+      "url": "Specimen"
+    },
+    {
+      "url": "label",
+      "valueString": "Segment OML_11_SPM to Specimen.fsh"
+    }
+  ],
+  "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-oml-11-spm-to-specimen",
+  "version": "0.1.0",
+  "name": "SegmentOML_11_SPMtoSpecimen",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-02-01",
+  "publisher": "swgssmix",
+  "description": "この ConceptMap には OML-11 SPM 検体 から Specimen への変換を定義する。",
+  "sourceUri": "OML-11.SPM",
+  "targetUri": "Specimen",
+  "group": [
+    {
+      "source": "OML-11.SPM",
+      "target": "Specimen",
+      "element": [
+        {
+          "code": "PID-3",
+          "display": "患者ID リスト",
+          "target": [
+            {
+              "code": "Observation.subject",
+              "equivalence": "equivalent",
+              "comment": "Patientへの参照を設定する。"
+            }
+          ]
+        },
+        {
+          "code": "SPM-0",
+          "display": "セグメントID",
+          "target": [
+            {
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SPM-1",
+          "display": "セットID – SPM",
+          "target": [
+            {
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SPM-4",
+          "display": "検体タイプ",
+          "target": [
+            {
+              "code": "Specimen.type",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SPM-8",
+          "display": "検査材料・検査部位",
+          "target": [
+            {
+              "code": "Specimen.bodySite",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SPM-17",
+          "display": "検体採取日時",
+          "target": [
+            {
+              "code": "Specimen.collection.collected",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

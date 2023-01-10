@@ -1,0 +1,83 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "table-v2-0001-to-administrativegender",
+  "version": "1.0",
+  "name": "Tablev2-0001toAdministrativeGender",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-02-01",
+  "publisher": "swgssmix",
+  "sourceUri": "http://terminology.hl7.org/CodeSystem/v2-0001",
+  "targetUri": "http://hl7.org/fhir/administrative-gender",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/v2-0001",
+      "target": "http://hl7.org/fhir/administrative-gender",
+      "element": [
+        {
+          "code": "F",
+          "display": "女性",
+          "target": [
+            {
+              "code": "female",
+              "display": "Female",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "M",
+          "display": "男性",
+          "target": [
+            {
+              "code": "male",
+              "display": "Male",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "O",
+          "display": "その他",
+          "target": [
+            {
+              "code": "other",
+              "display": "Other",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "U",
+          "display": "不明",
+          "target": [
+            {
+              "code": "unknown",
+              "display": "unknown",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "AdministrativeGender",
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        }
+      ]
+    },
+    {
+      "url": "label",
+      "valueString": "Table v2-0001 to AdministrativeGender.fsh"
+    }
+  ]
+}

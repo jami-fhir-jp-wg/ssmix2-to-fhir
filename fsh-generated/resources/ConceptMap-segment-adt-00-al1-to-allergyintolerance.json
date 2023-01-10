@@ -1,0 +1,89 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "segment-adt-00-al1-to-allergyintolerance",
+  "description": "この ConceptMap には ADT-00 AL1  アレルギー情報 から AllergyIntolerance への変換を定義する。",
+  "version": "1.0",
+  "name": "SegmentADT_00_AL1toAllergyIntolerance",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-02-01",
+  "publisher": "swgssmix",
+  "sourceUri": "ADT-00.IAM",
+  "targetUri": "JP_AllergyIntolerance",
+  "group": [
+    {
+      "source": "ADT-00.IAM",
+      "target": "JP_AllergyIntolerance",
+      "element": [
+        {
+          "code": "PID-3",
+          "display": "患者ID リスト",
+          "target": [
+            {
+              "code": "AllergyIntolerance.patient",
+              "equivalence": "equivalent",
+              "comment": "Patientへの参照を設定する。"
+            }
+          ]
+        },
+        {
+          "code": "AL1-0",
+          "display": "セグメントID",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "AL1-1",
+          "display": "セットID-AL1",
+          "target": [
+            {
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "AL1-2",
+          "display": "アレルゲン分類",
+          "target": [
+            {
+              "code": "AllergyIntolerance.category",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "AL1-3",
+          "display": "アレルゲン情報",
+          "target": [
+            {
+              "code": "AllergyIntolerance.code",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "AllergyIntolerance",
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        }
+      ]
+    },
+    {
+      "url": "label",
+      "valueString": "Segment ADT_00_AL1 to AllergyIntolerance.fsh"
+    }
+  ]
+}

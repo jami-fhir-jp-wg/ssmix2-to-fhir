@@ -1,0 +1,10 @@
+管理番号,変換前コード,変換前表記,変換後コード,変換後表記,等価性,コメント,自由記載欄
+,PRN,"主要な自宅番号",home,Home,equivalent,,
+,ORN,他の自宅番号,,,unmatched,ContactPoint.systemを設定,
+,WPN,"勤務先番号",work,Work,equivalent,,
+,VHN,別荘番号,,,unmatched,ContactPoint.systemを設定,
+,ASN,留守電話応答サービス番号,,,unmatched,ContactPoint.systemを設定,
+,EMR,緊急番号,,,unmatched,ContactPoint.systemを設定,
+,NET,ネットワーク（電子メール）アドレス,,,unmatched,ContactPoint.systemを設定,
+,BPN,ポケットベルの番号,,,unmatched,ContactPoint.systemを設定,
+,PRS,個人の連絡先,mobile,Mobile,equivalent,,

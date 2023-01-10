@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="message-omp-12-to-bundle"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>MessageOMP_12toBundle (http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/message-omp-12-to-bundle)</h2><p>Mapping from OMP-12 to <a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></p><p>ACTIVE (not intended for production usage). Published on 2022-06-15 by swgssmix. </p><div><p>この ConceptMap には OMP-12 注射実施 から Message Bundle への変換を定義する。</p>
+</div><br/><p><b>Group 1</b>Mapping from <code>OMP-12</code> to <a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>RAS_O17.MSH (メッセージヘッダ)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>MessageHeader (メッセージヘッダ)</td><td/></tr><tr><td>RAS_O17.PID (患者識別)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>JP_Patient (患者)</td><td/></tr><tr><td>RAS_O17.AL1 (アレルギー情報)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>JP_AllergyIntolerance (アレルギー情報・不耐性)</td><td/></tr><tr><td>RAS_O17.PV1 (来院情報)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Encounter (来院情報)</td><td/></tr><tr><td>RAS_O17.ORC (共通オーダ)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#relatedto" title="relatedto">is related to</a></td><td>JP_MedicationAdministration_Injection (薬剤／処置 成分オーダ)</td><td/></tr><tr><td>RAS_O17.RXE (薬剤／処置 コード化されたオーダ)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#disjoint" title="disjoint">is not related to</a></td><td>JP_MedicationRequest_Injection (注射薬剤処方)</td><td>実施にひもづくオーダ情報、MedicationAdministration.request 参照を想定する。現在協議中であるため「disjoint」とし、マッピング対象外としている。</td></tr><tr><td>RAS_O17.TQ1 (タイミング／数量)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#disjoint" title="disjoint">is not related to</a></td><td>JP_MedicationAdministration_Injection (注射薬剤処方投与実施情報)</td><td>実施にひもづくオーダ情報、現在協議中であるため「disjoint」とし、マッピング対象外としている。</td></tr><tr><td>RAS_O17.RXR (投薬経路)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#disjoint" title="disjoint">is not related to</a></td><td>JP_MedicationAdministration_Injection (注射薬剤処方投与実施情報)</td><td>実施にひもづくオーダ情報、現在協議中であるため「disjoint」とし、マッピング対象外としている。</td></tr><tr><td>RAS_O17.RXC (薬剤／処置 成分オーダ)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#disjoint" title="disjoint">is not related to</a></td><td>JP_MedicationAdministration_Injection (注射薬剤処方投与実施情報)</td><td>実施にひもづくオーダ情報、現在協議中であるため「disjoint」とし、マッピング対象外としている。</td></tr><tr><td>RAS_O17.RXA (薬剤／処置 投薬)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>JP_MedicationAdministration_Injection (注射薬剤処方投与実施情報)</td><td/></tr><tr><td>RAS_O17.RXA (薬剤／処置 投薬)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Immunization (予防接種)</td><td>RXE-2 が 「06 予防接種（JHSI 表-#0002）」の場合、MedicationAdministrationに加えて生成する（検討中）。</td></tr><tr><td>RAS_O17.RXR (投薬経路)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#relatedto" title="relatedto">is related to</a></td><td>JP_MedicationAdministration_Injection (注射薬剤処方投与実施情報)</td><td/></tr><tr><td>RAS_O17.CTI (治験情報)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#disjoint" title="disjoint">is not related to</a></td><td>未定</td><td>実施にひもづく治験情報、現在協議中であるため「disjoint」とし、マッピング対象外としている。</td></tr></table></div>
+  </text>
+  <extension url="Bundle">
+    <extension url="type">
+      <valueCode value="derived-from"/>
+    </extension>
+  </extension>
+  <extension url="label">
+    <valueString value="Message OMP_12 to Bundle.fsh"/>
+  </extension>
+  <url value="http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/message-omp-12-to-bundle"/>
+  <version value="0.1.0"/>
+  <name value="MessageOMP_12toBundle"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-06-15"/>
+  <publisher value="swgssmix"/>
+  <description value="この ConceptMap には OMP-12 注射実施 から Message Bundle への変換を定義する。"/>
+  <sourceUri value="OMP-12"/>
+  <targetUri value="Bundle"/>
+  <group>
+    <source value="OMP-12"/>
+    <target value="Bundle"/>
+    <element>
+      <code value="RAS_O17.MSH"/>
+      <display value="メッセージヘッダ"/>
+      <target>
+        <code value="MessageHeader"/>
+        <display value="メッセージヘッダ"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RAS_O17.PID"/>
+      <display value="患者識別"/>
+      <target>
+        <code value="JP_Patient"/>
+        <display value="患者"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RAS_O17.AL1"/>
+      <display value="アレルギー情報"/>
+      <target>
+        <code value="JP_AllergyIntolerance"/>
+        <display value="アレルギー情報・不耐性"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RAS_O17.PV1"/>
+      <display value="来院情報"/>
+      <target>
+        <code value="Encounter"/>
+        <display value="来院情報"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RAS_O17.ORC"/>
+      <display value="共通オーダ"/>
+      <target>
+        <code value="JP_MedicationAdministration_Injection"/>
+        <display value="薬剤／処置 成分オーダ"/>
+        <equivalence value="relatedto"/>
+      </target>
+    </element>
+    <element>
+      <code value="RAS_O17.RXE"/>
+      <display value="薬剤／処置 コード化されたオーダ"/>
+      <target>
+        <code value="JP_MedicationRequest_Injection"/>
+        <display value="注射薬剤処方"/>
+        <equivalence value="disjoint"/>
+        <comment value="実施にひもづくオーダ情報、MedicationAdministration.request 参照を想定する。現在協議中であるため「disjoint」とし、マッピング対象外としている。"/>
+      </target>
+    </element>
+    <element>
+      <code value="RAS_O17.TQ1"/>
+      <display value="タイミング／数量"/>
+      <target>
+        <code value="JP_MedicationAdministration_Injection"/>
+        <display value="注射薬剤処方投与実施情報"/>
+        <equivalence value="disjoint"/>
+        <comment value="実施にひもづくオーダ情報、現在協議中であるため「disjoint」とし、マッピング対象外としている。"/>
+      </target>
+    </element>
+    <element>
+      <code value="RAS_O17.RXR"/>
+      <display value="投薬経路"/>
+      <target>
+        <code value="JP_MedicationAdministration_Injection"/>
+        <display value="注射薬剤処方投与実施情報"/>
+        <equivalence value="disjoint"/>
+        <comment value="実施にひもづくオーダ情報、現在協議中であるため「disjoint」とし、マッピング対象外としている。"/>
+      </target>
+    </element>
+    <element>
+      <code value="RAS_O17.RXC"/>
+      <display value="薬剤／処置 成分オーダ"/>
+      <target>
+        <code value="JP_MedicationAdministration_Injection"/>
+        <display value="注射薬剤処方投与実施情報"/>
+        <equivalence value="disjoint"/>
+        <comment value="実施にひもづくオーダ情報、現在協議中であるため「disjoint」とし、マッピング対象外としている。"/>
+      </target>
+    </element>
+    <element>
+      <code value="RAS_O17.RXA"/>
+      <display value="薬剤／処置 投薬"/>
+      <target>
+        <code value="JP_MedicationAdministration_Injection"/>
+        <display value="注射薬剤処方投与実施情報"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RAS_O17.RXA"/>
+      <display value="薬剤／処置 投薬"/>
+      <target>
+        <code value="Immunization"/>
+        <display value="予防接種"/>
+        <equivalence value="equivalent"/>
+        <comment value="RXE-2 が 「06 予防接種（JHSI 表-#0002）」の場合、MedicationAdministrationに加えて生成する（検討中）。"/>
+      </target>
+    </element>
+    <element>
+      <code value="RAS_O17.RXR"/>
+      <display value="投薬経路"/>
+      <target>
+        <code value="JP_MedicationAdministration_Injection"/>
+        <display value="注射薬剤処方投与実施情報"/>
+        <equivalence value="relatedto"/>
+      </target>
+    </element>
+    <element>
+      <code value="RAS_O17.CTI"/>
+      <display value="治験情報"/>
+      <target>
+        <code value="未定"/>
+        <display value="未定"/>
+        <equivalence value="disjoint"/>
+        <comment value="実施にひもづく治験情報、現在協議中であるため「disjoint」とし、マッピング対象外としている。"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

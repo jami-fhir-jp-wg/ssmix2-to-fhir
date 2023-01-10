@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="segment-oml-11-obx-to-observation"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>SegmentOML_11_OBXtoObservation (http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-oml-11-obx-to-observation)</h2><p>Mapping from OML-11.OBX to JP_Observation_LabResult</p><p>ACTIVE (not intended for production usage). Published on 2022-02-01 by swgssmix. </p><div><p>この ConceptMap には OML-11 OBX 検査結果 から Observation への変換を定義する。</p>
+</div><br/><p><b>Group 1</b>Mapping from <code>OML-11.OBX</code> to <code>JP_Observation_LabResult</code></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>PID-3 (患者ID リスト)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Observation.subject</td><td>Patientへの参照を設定する。</td></tr><tr><td>ORC-2 (依頼者オーダ番号)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Observation.identifier</td><td/></tr><tr><td>OBX-0 (セグメントID)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>OBX-1 (セットID-OBX)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>OBX-2 (値型)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#relatedto" title="relatedto">is related to</a></td><td>Observation.value[x]</td><td>値型の設定により、value[x] の Data Type を変更する。
+NM: valueQuantity, ST: valueString, CWE: valueCodeableConcept</td></tr><tr><td>OBX-3 (検査項目)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Observation.code</td><td/></tr><tr><td>OBX-4 (検査副ID)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Observation.identifier</td><td/></tr><tr><td>OBX-5 (結果値)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Observation.value[x]</td><td/></tr><tr><td>OBX-6 (単位)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Observation.valueQuantity.code</td><td/></tr><tr><td>OBX-6 (単位)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Observation.valueQuantity.unit</td><td/></tr><tr><td>OBX-7 (基準値範囲)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Observation.referenceRange</td><td/></tr><tr><td>OBX-8 (異常フラグ)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Observation.interpretation</td><td/></tr><tr><td>OBX-11 (検査結果状態)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Observation.status</td><td>final 固定</td></tr><tr><td>OBX-14 (検査日時)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Observation.effective</td><td/></tr></table></div>
+  </text>
+  <extension url="Observation">
+    <extension url="type">
+      <valueCode value="derived-from"/>
+    </extension>
+  </extension>
+  <extension url="label">
+    <valueString value="Segment OML_11_OBX to Observation.fsh"/>
+  </extension>
+  <url value="http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-oml-11-obx-to-observation"/>
+  <version value="0.1.0"/>
+  <name value="SegmentOML_11_OBXtoObservation"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-02-01"/>
+  <publisher value="swgssmix"/>
+  <description value="この ConceptMap には OML-11 OBX 検査結果 から Observation への変換を定義する。"/>
+  <sourceUri value="OML-11.OBX"/>
+  <targetUri value="JP_Observation_LabResult"/>
+  <group>
+    <source value="OML-11.OBX"/>
+    <target value="JP_Observation_LabResult"/>
+    <element>
+      <code value="PID-3"/>
+      <display value="患者ID リスト"/>
+      <target>
+        <code value="Observation.subject"/>
+        <equivalence value="equivalent"/>
+        <comment value="Patientへの参照を設定する。"/>
+      </target>
+    </element>
+    <element>
+      <code value="ORC-2"/>
+      <display value="依頼者オーダ番号"/>
+      <target>
+        <code value="Observation.identifier"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="OBX-0"/>
+      <display value="セグメントID"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="OBX-1"/>
+      <display value="セットID-OBX"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="OBX-2"/>
+      <display value="値型"/>
+      <target>
+        <code value="Observation.value[x]"/>
+        <equivalence value="relatedto"/>
+        <comment value="値型の設定により、value[x] の Data Type を変更する。&#xD;&#xA;NM: valueQuantity, ST: valueString, CWE: valueCodeableConcept"/>
+      </target>
+    </element>
+    <element>
+      <code value="OBX-3"/>
+      <display value="検査項目"/>
+      <target>
+        <code value="Observation.code"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="OBX-4"/>
+      <display value="検査副ID"/>
+      <target>
+        <code value="Observation.identifier"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="OBX-5"/>
+      <display value="結果値"/>
+      <target>
+        <code value="Observation.value[x]"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="OBX-6"/>
+      <display value="単位"/>
+      <target>
+        <code value="Observation.valueQuantity.code"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="OBX-6"/>
+      <display value="単位"/>
+      <target>
+        <code value="Observation.valueQuantity.unit"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="OBX-7"/>
+      <display value="基準値範囲"/>
+      <target>
+        <code value="Observation.referenceRange"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="OBX-8"/>
+      <display value="異常フラグ"/>
+      <target>
+        <code value="Observation.interpretation"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="OBX-11"/>
+      <display value="検査結果状態"/>
+      <target>
+        <code value="Observation.status"/>
+        <equivalence value="equivalent"/>
+        <comment value="final 固定"/>
+      </target>
+    </element>
+    <element>
+      <code value="OBX-14"/>
+      <display value="検査日時"/>
+      <target>
+        <code value="Observation.effective"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

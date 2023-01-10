@@ -1,0 +1,30 @@
+id: ssmix2.fhir.mappings
+canonical: http://example.org/fhir/ig/ssmix2.fhir.mappings
+version: 0.1.0
+name: ImplementationGuideSSMIX2FHIRMappings
+title: SSMIX2toFHIR
+status: draft
+publisher: swgssmix
+contact:
+  - name: swgssmix
+    telecom:
+      - system: email
+        value: swgssmix.org@email.dummy
+description: An example of how convert SS-MIX2 to FHIR.
+license: CC0-1.0
+fhirVersion: 4.0.1
+parameters:
+  apply-publisher: false
+  apply-contact: false
+  show-inherited-invariants: false
+copyrightYear: 2022+
+releaseLabel: ci-build
+
+menu:
+  IG Home: index.html
+  Table of Contents: toc.html
+  Artifacts Summary: artifacts.html
+  Other Resources:
+    "FHIR Spec ": new-tab {{site.data.fhir.path}}index.html
+    "FHIR JP Core Spec ": new-tab https://jpfhir.jp/jpcoreV1/
+    "SS-MIX2 ": new-tab http://www.ss-mix.org/

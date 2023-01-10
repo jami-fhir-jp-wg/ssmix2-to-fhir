@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="segment-omp-01-rxe-to-medicationrequest"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>SegmentOMP_01_RXEtoMedicationRequest (http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-omp-01-rxe-to-medicationrequest)</h2><p>Mapping from OMP-01.RXE to JP_MedicationRequest</p><p>ACTIVE (not intended for production usage). Published on 2022-02-01 by swgssmix. </p><div><p>この ConceptMap には OMP-01 RXE 薬剤／処置 コード化されたオーダ から MedicationRequest への変換を定義する。</p>
+</div><br/><p><b>Group 1</b>Mapping from <code>OMP-01.RXE</code> to <code>JP_MedicationRequest</code></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>PID-3 (患者ID リスト)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationRequest.subject</td><td>Patientへの参照を設定する。</td></tr><tr><td>ORC-2 (依頼者オーダ番号)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationRequest.identifier:RequestIdentifier</td><td/></tr><tr><td>ORC-4 (依頼者グループ番号)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationRequest.identifier:RpNumber</td><td>ORC-4から、Rp番号を抽出し設定する。</td></tr><tr><td>ORC-4 (依頼者グループ番号)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#relatedto" title="relatedto">is related to</a></td><td>MedicationRequest.identifier:OrderInRp</td><td>同一RP番号での薬剤の表記順を指定する。</td></tr><tr><td>ORC-10 (入力者)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationRequest.recorder</td><td>Practitionerへの参照を設定する。
+インラインのPractitionerリソースを生成し、参照してもよい。</td></tr><tr><td>ORC-12 (依頼者)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationRequest.requester</td><td>Practitionerへの参照を設定する。
+インラインのPractitionerリソースを生成し、参照してもよい。</td></tr><tr><td>RXE-0 (セグメントID)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>RXE-2 (与薬コード)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationRequest.medicationCodeableConcept</td><td/></tr><tr><td>RXE-3 (与薬量－最小)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationRequest.dosageInstruction.doseAndRate.doseQuantity.value</td><td/></tr><tr><td>RXE-4 (与薬量－最大)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationRequest.dosageInstruction.doseAndRate.doseQuantity.value</td><td/></tr><tr><td>RXE-5 (与薬単位)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationRequest.dosageInstruction.doseAndRate.doseQuantity.code</td><td/></tr><tr><td>RXE-5 (与薬単位)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationRequest.dosageInstruction.doseAndRate.doseQuantity.unit</td><td/></tr><tr><td>RXE-6 (与薬剤形)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>RXE-7 (依頼者の投薬指示)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationRequest.dispenseRequest.extension.valueCodeableConcept</td><td>JP_MedicationRequest-DispenseRequest-InstructionForDispense</td></tr><tr><td>RXE-10 (調剤量)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationRequest.dispenseRequest.quantity.value</td><td/></tr><tr><td>RXE-11 (調剤単位)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationRequest.dispenseRequest.quantity.code</td><td/></tr><tr><td>RXE-11 (調剤単位)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationRequest.dispenseRequest.quantity.unit</td><td/></tr><tr><td>RXE-12 (同一薬発行数)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationRequest.dispenseRequest.numberOfRepeatsAllowed</td><td>Ver. 1.2h以降</td></tr><tr><td>RXE-13 (オーダ発行者のDEA 番号)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationRequest.requester</td><td>Practitioner.qualification</td></tr><tr><td>RXE-14 (薬剤師/治療提供者の検証ID)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>RXE-15 (処方箋番号)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationRequest.identifier</td><td/></tr><tr><td>RXE-16 (薬剤残数)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>RXE-17 (調剤済薬品数または投与数)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>RXE-18 (調剤済薬品数または投与数の最新
+日時)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>RXE-19 (1日あたりの総投与量)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationRequest.dosageInstruction.doseAndRate.rateRatio</td><td/></tr><tr><td>RXE-21 (薬剤部門/治療部門による特別な指示)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationRequest.category</td><td/></tr><tr><td>RXE-21 (薬剤部門/治療部門による特別な指示)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationRequest.dispenseRequest.extension.valueCodeableConcept</td><td>JP_MedicationRequest-DispenseRequest-InstructionForDispense</td></tr><tr><td>RXE-25 (与薬力価)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>RXE-26 (与薬力価単位と結合して使用される力価の数値部分で)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>RXE-27 (与薬指示)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>RXE-28 (調剤パッケージサイズ)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>RXE-29 (調剤パッケージサイズの単位)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>RXE-30 (調剤パッケージ方法)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>RXE-31 (補足コード)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationRequest.medicationCodeableConcept</td><td>Ver. 1.2g以降</td></tr><tr><td>RXE-32 (当初のオーダ日/時間)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationRequest.authoredOn</td><td/></tr><tr><td>RXE-33 (与薬力価量)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>RXE-34 (与薬力価量単位)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>RXE-33 (与薬力価量に関連した量単位を提示する。)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>RXE-35 (薬物コントロールスケジュール)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>RXE-36 (処方集ステータス)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>RXE-37 (薬物代替え)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>RXE-38 (最新の与薬の薬剤部)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>RXE-39 (最初の調剤量)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>RXE-40 (調剤薬剤部)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>RXE-41 (調剤薬剤部の住所)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>TQ1-3 (繰返しパターン)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationRequest.dosageInstruction.timing.code</td><td/></tr><tr><td>TQ1-3 (繰返しパターン)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationRequest.dosageInstruction.additionalInstruction</td><td/></tr><tr><td>TQ1-7 (開始日時)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationRequest.dosageInstruction.extension.valuePeriod.start</td><td>JP_MedicationRequest-DosageInstruction-PeriodOfUse</td></tr><tr><td>TQ1-8 (終了日時)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationRequest.dosageInstruction.extension.valuePeriod.end</td><td>JP_MedicationRequest-DosageInstruction-PeriodOfUse</td></tr><tr><td>RXR-1 (経路)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationRequest.dosageInstruction.route</td><td/></tr><tr><td>RXR-2 (部位)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationRequest.dosageInstruction.site</td><td/></tr><tr><td>RXR-3 (投薬装置)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>RXR-4 (投薬方法)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationRequest.dosageInstruction.method</td><td/></tr></table></div>
+  </text>
+  <extension url="MedicationRequest">
+    <extension url="type">
+      <valueCode value="derived-from"/>
+    </extension>
+  </extension>
+  <extension url="label">
+    <valueString value="Segment OMP_01_RXE to MedicationRequest.fsh"/>
+  </extension>
+  <url value="http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-omp-01-rxe-to-medicationrequest"/>
+  <version value="0.1.0"/>
+  <name value="SegmentOMP_01_RXEtoMedicationRequest"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-02-01"/>
+  <publisher value="swgssmix"/>
+  <description value="この ConceptMap には OMP-01 RXE 薬剤／処置 コード化されたオーダ から MedicationRequest への変換を定義する。"/>
+  <sourceUri value="OMP-01.RXE"/>
+  <targetUri value="JP_MedicationRequest"/>
+  <group>
+    <source value="OMP-01.RXE"/>
+    <target value="JP_MedicationRequest"/>
+    <element>
+      <code value="PID-3"/>
+      <display value="患者ID リスト"/>
+      <target>
+        <code value="MedicationRequest.subject"/>
+        <equivalence value="equivalent"/>
+        <comment value="Patientへの参照を設定する。"/>
+      </target>
+    </element>
+    <element>
+      <code value="ORC-2"/>
+      <display value="依頼者オーダ番号"/>
+      <target>
+        <code value="MedicationRequest.identifier:RequestIdentifier"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="ORC-4"/>
+      <display value="依頼者グループ番号"/>
+      <target>
+        <code value="MedicationRequest.identifier:RpNumber"/>
+        <equivalence value="equivalent"/>
+        <comment value="ORC-4から、Rp番号を抽出し設定する。"/>
+      </target>
+    </element>
+    <element>
+      <code value="ORC-4"/>
+      <display value="依頼者グループ番号"/>
+      <target>
+        <code value="MedicationRequest.identifier:OrderInRp"/>
+        <equivalence value="relatedto"/>
+        <comment value="同一RP番号での薬剤の表記順を指定する。"/>
+      </target>
+    </element>
+    <element>
+      <code value="ORC-10"/>
+      <display value="入力者"/>
+      <target>
+        <code value="MedicationRequest.recorder"/>
+        <equivalence value="equivalent"/>
+        <comment value="Practitionerへの参照を設定する。&#xD;&#xA;インラインのPractitionerリソースを生成し、参照してもよい。"/>
+      </target>
+    </element>
+    <element>
+      <code value="ORC-12"/>
+      <display value="依頼者"/>
+      <target>
+        <code value="MedicationRequest.requester"/>
+        <equivalence value="equivalent"/>
+        <comment value="Practitionerへの参照を設定する。&#xD;&#xA;インラインのPractitionerリソースを生成し、参照してもよい。"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-0"/>
+      <display value="セグメントID"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-2"/>
+      <display value="与薬コード"/>
+      <target>
+        <code value="MedicationRequest.medicationCodeableConcept"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-3"/>
+      <display value="与薬量－最小"/>
+      <target>
+        <code value="MedicationRequest.dosageInstruction.doseAndRate.doseQuantity.value"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-4"/>
+      <display value="与薬量－最大"/>
+      <target>
+        <code value="MedicationRequest.dosageInstruction.doseAndRate.doseQuantity.value"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-5"/>
+      <display value="与薬単位"/>
+      <target>
+        <code value="MedicationRequest.dosageInstruction.doseAndRate.doseQuantity.code"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-5"/>
+      <display value="与薬単位"/>
+      <target>
+        <code value="MedicationRequest.dosageInstruction.doseAndRate.doseQuantity.unit"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-6"/>
+      <display value="与薬剤形"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-7"/>
+      <display value="依頼者の投薬指示"/>
+      <target>
+        <code value="MedicationRequest.dispenseRequest.extension.valueCodeableConcept"/>
+        <equivalence value="equivalent"/>
+        <comment value="JP_MedicationRequest-DispenseRequest-InstructionForDispense"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-10"/>
+      <display value="調剤量"/>
+      <target>
+        <code value="MedicationRequest.dispenseRequest.quantity.value"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-11"/>
+      <display value="調剤単位"/>
+      <target>
+        <code value="MedicationRequest.dispenseRequest.quantity.code"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-11"/>
+      <display value="調剤単位"/>
+      <target>
+        <code value="MedicationRequest.dispenseRequest.quantity.unit"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-12"/>
+      <display value="同一薬発行数"/>
+      <target>
+        <code value="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed"/>
+        <equivalence value="equivalent"/>
+        <comment value="Ver. 1.2h以降"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-13"/>
+      <display value="オーダ発行者のDEA 番号"/>
+      <target>
+        <code value="MedicationRequest.requester"/>
+        <equivalence value="equivalent"/>
+        <comment value="Practitioner.qualification"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-14"/>
+      <display value="薬剤師/治療提供者の検証ID"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-15"/>
+      <display value="処方箋番号"/>
+      <target>
+        <code value="MedicationRequest.identifier"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-16"/>
+      <display value="薬剤残数"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-17"/>
+      <display value="調剤済薬品数または投与数"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-18"/>
+      <display value="調剤済薬品数または投与数の最新&#xD;&#xD;&#xA;日時"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-19"/>
+      <display value="1日あたりの総投与量"/>
+      <target>
+        <code value="MedicationRequest.dosageInstruction.doseAndRate.rateRatio"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-21"/>
+      <display value="薬剤部門/治療部門による特別な指示"/>
+      <target>
+        <code value="MedicationRequest.category"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-21"/>
+      <display value="薬剤部門/治療部門による特別な指示"/>
+      <target>
+        <code value="MedicationRequest.dispenseRequest.extension.valueCodeableConcept"/>
+        <equivalence value="equivalent"/>
+        <comment value="JP_MedicationRequest-DispenseRequest-InstructionForDispense"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-25"/>
+      <display value="与薬力価"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-26"/>
+      <display value="与薬力価単位と結合して使用される力価の数値部分で"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-27"/>
+      <display value="与薬指示"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-28"/>
+      <display value="調剤パッケージサイズ"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-29"/>
+      <display value="調剤パッケージサイズの単位"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-30"/>
+      <display value="調剤パッケージ方法"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-31"/>
+      <display value="補足コード"/>
+      <target>
+        <code value="MedicationRequest.medicationCodeableConcept"/>
+        <equivalence value="equivalent"/>
+        <comment value="Ver. 1.2g以降"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-32"/>
+      <display value="当初のオーダ日/時間"/>
+      <target>
+        <code value="MedicationRequest.authoredOn"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-33"/>
+      <display value="与薬力価量"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-34"/>
+      <display value="与薬力価量単位"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-33"/>
+      <display value="与薬力価量に関連した量単位を提示する。"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-35"/>
+      <display value="薬物コントロールスケジュール"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-36"/>
+      <display value="処方集ステータス"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-37"/>
+      <display value="薬物代替え"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-38"/>
+      <display value="最新の与薬の薬剤部"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-39"/>
+      <display value="最初の調剤量"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-40"/>
+      <display value="調剤薬剤部"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXE-41"/>
+      <display value="調剤薬剤部の住所"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="TQ1-3"/>
+      <display value="繰返しパターン"/>
+      <target>
+        <code value="MedicationRequest.dosageInstruction.timing.code"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="TQ1-3"/>
+      <display value="繰返しパターン"/>
+      <target>
+        <code value="MedicationRequest.dosageInstruction.additionalInstruction"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="TQ1-7"/>
+      <display value="開始日時"/>
+      <target>
+        <code value="MedicationRequest.dosageInstruction.extension.valuePeriod.start"/>
+        <equivalence value="equivalent"/>
+        <comment value="JP_MedicationRequest-DosageInstruction-PeriodOfUse"/>
+      </target>
+    </element>
+    <element>
+      <code value="TQ1-8"/>
+      <display value="終了日時"/>
+      <target>
+        <code value="MedicationRequest.dosageInstruction.extension.valuePeriod.end"/>
+        <equivalence value="equivalent"/>
+        <comment value="JP_MedicationRequest-DosageInstruction-PeriodOfUse"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXR-1"/>
+      <display value="経路"/>
+      <target>
+        <code value="MedicationRequest.dosageInstruction.route"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXR-2"/>
+      <display value="部位"/>
+      <target>
+        <code value="MedicationRequest.dosageInstruction.site"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXR-3"/>
+      <display value="投薬装置"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RXR-4"/>
+      <display value="投薬方法"/>
+      <target>
+        <code value="MedicationRequest.dosageInstruction.method"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

@@ -1,0 +1,59 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "table-v2-0004-to-v3-actcode",
+  "version": "1.0",
+  "name": "Tablev2-0004tov3-ActCode",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-02-01",
+  "publisher": "swgssmix",
+  "sourceUri": "http://terminology.hl7.org/CodeSystem/v2-0004",
+  "targetUri": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/v2-0004",
+      "target": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "element": [
+        {
+          "code": "O",
+          "display": "外来患者",
+          "target": [
+            {
+              "code": "AMB",
+              "display": "ambulatory",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "I",
+          "display": "入院患者",
+          "target": [
+            {
+              "code": "IMP",
+              "display": "inpatient encounter",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "v3-ActCode",
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        }
+      ]
+    },
+    {
+      "url": "label",
+      "valueString": "Table v2-0004 to v3-ActCode.fsh"
+    }
+  ]
+}

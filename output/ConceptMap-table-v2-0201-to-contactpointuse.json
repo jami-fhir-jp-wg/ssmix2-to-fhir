@@ -1,0 +1,127 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "table-v2-0201-to-contactpointuse",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Tablev2-0201toContactPointUse (http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/table-v2-0201-to-contactpointuse)</h2><p>Mapping from <a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-v2-0201.html\">http://terminology.hl7.org/CodeSystem/v2-0201</a> to <a href=\"http://hl7.org/fhir/R4/codesystem-contact-point-use.html\">http://hl7.org/fhir/contact-point-use</a></p><p>ACTIVE (not intended for production usage). Published on 2022-02-01 by swgssmix. </p><br/><p><b>Group 1</b>Mapping from <a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-v2-0201.html\">telecommunicationUse</a> to <a href=\"http://hl7.org/fhir/R4/codesystem-contact-point-use.html\">ContactPointUse</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>PRN (主要な自宅番号\r)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>home</td></tr><tr><td>ORN (他の自宅番号)</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>WPN (勤務先番号\r)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>work</td></tr><tr><td>VHN (別荘番号)</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>ASN (留守電話応答サービス番号)</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>EMR (緊急番号)</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>NET (ネットワーク（電子メール）アドレス)</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>BPN (ポケットベルの番号)</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>PRS (個人の連絡先)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>mobile</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        }
+      ],
+      "url": "ContactPointUse"
+    },
+    {
+      "url": "label",
+      "valueString": "Table v2-0201 to ContactPointUse.fsh"
+    }
+  ],
+  "url": "http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/table-v2-0201-to-contactpointuse",
+  "version": "0.1.0",
+  "name": "Tablev2-0201toContactPointUse",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-02-01",
+  "publisher": "swgssmix",
+  "sourceUri": "http://terminology.hl7.org/CodeSystem/v2-0201",
+  "targetUri": "http://hl7.org/fhir/contact-point-use",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/v2-0201",
+      "target": "http://hl7.org/fhir/contact-point-use",
+      "element": [
+        {
+          "code": "PRN",
+          "display": "主要な自宅番号\r",
+          "target": [
+            {
+              "code": "home",
+              "display": "Home",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ORN",
+          "display": "他の自宅番号",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "WPN",
+          "display": "勤務先番号\r",
+          "target": [
+            {
+              "code": "work",
+              "display": "Work",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "VHN",
+          "display": "別荘番号",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "ASN",
+          "display": "留守電話応答サービス番号",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "EMR",
+          "display": "緊急番号",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "NET",
+          "display": "ネットワーク（電子メール）アドレス",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "BPN",
+          "display": "ポケットベルの番号",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "PRS",
+          "display": "個人の連絡先",
+          "target": [
+            {
+              "code": "mobile",
+              "display": "Mobile",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>SSMIX2.FHIR.MAPPINGS\Usecases - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"9"}
+    h3,h4,h5,h6{--heading-prefix:"9"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">SSMIX2toFHIR</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts Summary</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Other Resources
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html" target="_blank">FHIR Spec </a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Usecases</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">SSMIX2toFHIR - Local Development build (v0.1.0). See the <a href="http://example.org/fhir/ig/ssmix2.fhir.mappings/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Usecases</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#標準化ストレージをbundle-transactionに変換しfhirサーバに転送する" id="markdown-toc-標準化ストレージをbundle-transactionに変換しfhirサーバに転送する">標準化ストレージをBundle-transactionに変換し、FHIRサーバに転送する</a></li>
+  <li><a href="#標準化ストレージををbundle-messageに変換し転送する" id="markdown-toc-標準化ストレージををbundle-messageに変換し転送する">標準化ストレージををBundle-messageに変換し、転送する</a></li>
+  <li><a href="#トランザクションストレージをbundleに変換し転送する" id="markdown-toc-トランザクションストレージをbundleに変換し転送する">トランザクションストレージをBundleに変換し、転送する</a></li>
+  <li><a href="#インデックスデータベースindexdbを使用する" id="markdown-toc-インデックスデータベースindexdbを使用する">インデックスデータベース（INDEXDB）を使用する</a></li>
+  <li><a href="#データ転送例" id="markdown-toc-データ転送例">データ転送例</a></li>
+</ul>
+
+</div>
+  <!-- usecases.md -->
+
+<style type="text/css">
+table {
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid gray;
+}
+</style>
+
+<p>このセクションでは、このガイドで定義されているマッピングのユースケースを説明する。<br/></p>
+
+<h3 id="標準化ストレージをbundle-transactionに変換しfhirサーバに転送する">標準化ストレージをBundle-transactionに変換し、FHIRサーバに転送する</h3>
+<ul>
+  <li>このケースではメッセージ単位で Bundle-transaction を生成し、transactionインタラクションを用い転送する。<br/></li>
+  <li>このケースではBundle.entryに格納された、個別のリソースが生成される。<br/></li>
+  <li>メッセージから生成されるすべてのリソースをBundleに含めなくてもよい。<br/>
+例えばOMP-01に含まれるPIDセグメントから生成されるPatientの実態は「ADT-00」であるため、別のトランザクションでPatientリソースが生成されているとしてもよい。
+ただし、参照整合性は確保されなくてはならない。<br/>
+<br/></li>
+</ul>
+
+<h4 id="messageheaderリソース">MessageHeaderリソース</h4>
+<ul>
+  <li>Bundle-transaction の場合は必須ではないが MessageHeaderリソースの追加してもよい。<br/></li>
+  <li>MessageHeader.eventCodingにはMSH-9.2の<a href="http://terminology.hl7.org/CodeSystem/v2-0003">HL70003 事象型</a>を設定する。<br/></li>
+  <li>
+    <p>MessageHeader.reason に <a href="http://terminology.hl7.org/CodeSystem/v2-0119">HL70119 オーダ制御コード</a> から処理区分に対応した値を設定する。オーダ制御の設定方法は次節を参考のこと。<br/></p>
+  </li>
+  <li>MessageHeaderの設定（処方オーダ）<br/>
+    <font style="color: blue;">
+    {<br/>
+      　"resourceType": "MessageHeader",<br/>
+      　"id": "1000094569.20160930.OMP-01.169300891137600.MSH",<br/>
+      　"eventCoding": {<br/>
+        　　"system": "http://terminology.hl7.org/CodeSystem/v2-0003",<br/>
+        　　"code": "O11"<br/>
+      　},<br/>
+      　"source": {<br/>
+        　　"name": "ssmix2tofhir",<br/>
+        　　"endpoint": "http://ssmix2tofhir.exp.org"<br/>
+      　},<br/>
+      　"reason": {<br/>
+        　"coding": [<br/>
+          　{<br/>
+            　　"system": "http://terminology.hl7.org/CodeSystem/v2-0119",<br/>
+            　　"code": "NW"<br/>
+          　}<br/>
+        　]<br/>
+      　},<br/>
+      　"focus": [ <br/>
+        　　{ <br/>
+        　　　"reference": "MedicationRequest/0000000123.20220101.OMP-01.000000000012345.5" <br/>
+        　　　"display": "0000000123.20220101.OMP-01.000000000012345.5.20220101235959568" <br/>
+        　　}, <br/>
+        　　{ <br/>
+        　　　"reference": "MedicationRequest/0000000123.20220101.OMP-01.000000000012345.9" <br/>
+        　　　"display": "0000000123.20220101.OMP-01.000000000012345.9.20220101235959568" <br/>
+        　　} <br/>
+      　] <br/>
+    }<br/>
+  </font>
+  </li>
+</ul>
+
+<p><br/>
+<br/></p>
+
+<h4 id="コンディションフラグとインタラクション">コンディションフラグとインタラクション</h4>
+<ul>
+  <li>このケースにおいて、インタラクションの選択にはファイル名の「コンディションフラグ」を用いる。<br/>
+下表でファイル名のコンディションフラグとインタラクションの関係について説明する。<br/></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">コンディションフラグ</th>
+      <th style="text-align: left">FHIR インタラクション</th>
+      <th style="text-align: left">method</th>
+      <th style="text-align: left">オーダ制御コード</th>
+      <th style="text-align: left">備考</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">delete</td>
+      <td style="text-align: left">DELETE</td>
+      <td style="text-align: left">CA</td>
+      <td style="text-align: left">削除</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">create または update</td>
+      <td style="text-align: left">POST または PUT</td>
+      <td style="text-align: left">NW</td>
+      <td style="text-align: left">挿入</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">2</td>
+      <td style="text-align: left">delete</td>
+      <td style="text-align: left">DELETE</td>
+      <td style="text-align: left">CA</td>
+      <td style="text-align: left">削除</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br/></p>
+
+<h4 id="メッセージ単位のデータ取得">メッセージ単位のデータ取得</h4>
+<ul>
+  <li>transactionインタラクションにより個別リソースを作成した場合、 event, _lastUpdated 検索パラメータを指定し、
+ MessageHeaderリソースを取得することで、MessageHeader.focus から関連リソースの参照の取得を想定する。<br/>
+    <ul>
+      <li>
+        <p>O11(処方オーダ) イベントを指定して、更新データを取得する。<br/>
+http://localhost/fhir-jpaserver/fhir/MessageHeader?event=O11&amp;_lastUpdated=gt2022-03-01T09:59:43.758&amp;_sort=_lastUpdated<br/></p>
+      </li>
+      <li>
+        <p>MessageHeader.focusの設定<br/>
+ 新規（INS）・新規（INS）で更新を行い、MessageHeader の内容が変わらない場合、サーバ側で_lastUpdatedが更新されない場合があるため、クライアント側は実装を考慮する必要がある。<br/>
+ これに対応するため、focus.displayに「[ロジカルID].[SS-MIXヘッダーのトランザクション日時]」などを設定しサーバ側で_lastUpdatedが更新されるようにしてもよい。<br/>
+ <br/></p>
+      </li>
+    </ul>
+    <font style="color: blue;">
+ "focus": [ <br/>
+       　{ <br/>
+       　　"reference": "MedicationRequest/0000000123.20220101.OMP-01.000000000012345.5" <br/>
+       　　"display": "0000000123.20220101.OMP-01.000000000012345.5.20220101235959568" <br/>
+       　}, <br/>
+       　{ <br/>
+       　　"reference": "MedicationRequest/0000000123.20220101.OMP-01.000000000012345.9" <br/>
+       　　"display": "0000000123.20220101.OMP-01.000000000012345.9.20220101235959568" <br/>
+       　} <br/>
+     ] <br/>
+ </font>
+    <p><br/></p>
+  </li>
+</ul>
+
+<p><br/></p>
+
+<h3 id="標準化ストレージををbundle-messageに変換し転送する">標準化ストレージををBundle-messageに変換し、転送する</h3>
+<ul>
+  <li>このケースではトランザクションストレージファイル内のメッセージをBundle-messageに変換し、FHIRサーバなどに転送する（このケースでは転送方法は問わない）ことを想定している。<br/></li>
+  <li>転送にFHIRインタラクションを用いる場合は update インタラクションで送信することを想定する。create-updateがサポートされていないはcreateを想定する。<br/></li>
+  <li>このケースではメッセージから生成されるすべてのリソースをBundleに含めることを推奨する。<br/></li>
+  <li>このケースではデータ取得側が Bundle-message 単位でデータを取得することを想定する。<br/></li>
+  <li>$process-message への対応についても検討する。<br/>
+<br/>
+<br/></li>
+</ul>
+
+<h3 id="トランザクションストレージをbundleに変換し転送する">トランザクションストレージをBundleに変換し、転送する</h3>
+<ul>
+  <li>このケースでは標準化ストレージに格納されている、メッセージをFHIRサーバなどに転送することを想定している。<br/></li>
+  <li>基本的にトランザクションストレージと同じであるが、ロジカルIDの取得元やインタラクションの決定方法が異なる。<br/>
+<br/></li>
+</ul>
+
+<h4 id="ss-mixヘッダとインタラクション">SS-MIXヘッダとインタラクション</h4>
+<ul>
+  <li>このケースにおいて、インタラクション（実際はBundle.entry.request.method）の選択にはSS-MIXヘッダの「処理区分」を用いる。<br/></li>
+  <li>MessageHeaderの削除をPUTで送信してもよい。その場合、MessageHeader.focus を設定しない。</li>
+  <li>このケースではデータ取得側が MessageHeader.focus から「有効なリソース」を取得することを想定する。<br/></li>
+  <li>下表で処理区分とインタラクションの関係について説明する。<br/></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">処理区分</th>
+      <th style="text-align: left">FHIR インタラクション</th>
+      <th style="text-align: left">method</th>
+      <th style="text-align: left">オーダ制御コード</th>
+      <th style="text-align: left">備考</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">INS</td>
+      <td style="text-align: left">create または update</td>
+      <td style="text-align: left">POST または PUT</td>
+      <td style="text-align: left">NW</td>
+      <td style="text-align: left">挿入</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">DEL</td>
+      <td style="text-align: left">update または delete</td>
+      <td style="text-align: left">PUT または DELETE</td>
+      <td style="text-align: left">CA</td>
+      <td style="text-align: left">削除、MessageHeaderの場合、methodをPUTとする</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br/></p>
+
+<h3 id="インデックスデータベースindexdbを使用する">インデックスデータベース（INDEXDB）を使用する</h3>
+<ul>
+  <li>「トランザクション日時」により期間を指定しするなどしてインデックスデータベースから定期的に転送対象となるメッセージを取得し、FHIRサーバに転送することを想定している。<br/></li>
+  <li>転送のプロセスは「標準化ストレージからFHIRサーバにリソースを転送する」ケースと同様である。<br/>
+<br/></li>
+</ul>
+
+<h3 id="データ転送例">データ転送例</h3>
+<h4 id="転送例bundle-trunsaction">転送例（bundle-trunsaction）</h4>
+<p>このケースではMessageHeader.focus から「有効なリソース」を取得することを想定する。<br/></p>
+<ul>
+  <li>ADT-00（患者基本情報）を削除・新規で送信する
+    <ul>
+      <li>削除送信
+        <ul>
+          <li>ヘッダー
+#SSMIX,2.00,9999999999,0000000123,-,ADT-00,999999999999999,DEL,-,20220101235959567<br/></li>
+          <li>インタラクション: transaction</li>
+          <li>送信対象リソース<br/>
+MessageHeader（ID: 0000000123.-.ADT-00.999999999999999.MSH, method: PUT, reason=CA, focusなし）<br/>
+Patient（ID: 0000000123.ADT-00, method: DELETE）<br/>
+※ MessageHeader.focusを除外し送信、配下のリソースはDELETE, Encounter, AllergyIntolerance, Observation(検体検査結果)は除外し送信<br/></li>
+        </ul>
+      </li>
+      <li>新規送信
+        <ul>
+          <li>ヘッダー
+#SSMIX,2.00,9999999999,0000000123,-,ADT-00,999999999999999,INS,-,20220101235959568<br/></li>
+          <li>インタラクション: transaction</li>
+          <li>送信対象リソース<br/>
+MessageHeader（ID: 0000000123.-.ADT-00.999999999999999.MSH, method: PUT, reason=NW）<br/>
+Patient（ID: 0000000123.ADT-00, method: PUT）<br/>
+Observation（身長を入力, ID: 0000000123.-.ADT-00.999999999999999.7, method: PUT）<br/>
+Observation（体重を入力, ID: 0000000123.-.ADT-00.999999999999999.8, method: PUT）<br/>
+※ Encounter, AllergyIntolerance, Observation(検体検査結果)は除外し送信<br/>
+<br/></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>OMP-01（処方オーダ）を削除・新規で送信する、新規でRXEを1件削除したケース
+    <ul>
+      <li>削除送信
+        <ul>
+          <li>ヘッダー
+#SSMIX,2.00,9999999999,0000000123,20220101,OMP-01,000000000012345,DEL,-,20220101235959567<br/></li>
+          <li>インタラクション: transaction</li>
+          <li>送信対象リソース（Bundle-transaction entry配下のリソース）<br/>
+MessageHeader（ID: 0000000123.-.ADT-00.999999999999999.MSH, method: PUT, reason=CA）<br/>
+MedicationRequest（ID: 0000000123.20220101.OMP-01.000000000012345.5, method: DELETE, subject=0000000123.ADT-00）<br/>
+MedicationRequest（ID: 0000000123.20220101.OMP-01.000000000012345.9, method: DELETE, subject=0000000123.ADT-00）<br/>
+※ Patient, Encounter は除外し送信<br/></li>
+        </ul>
+      </li>
+      <li>新規送信
+        <ul>
+          <li>ヘッダー
+#SSMIX,2.00,9999999999,0000000123,20220101,OMP-01,000000000012345,INS,-,20220101235959568<br/></li>
+          <li>インタラクション: transaction</li>
+          <li>送信対象リソース（Bundle-transaction entry配下のリソース）<br/>
+MessageHeader（ID: 0000000123.-.ADT-00.999999999999999.MSH, method: PUT, reason=NW）<br/>
+MedicationRequest（ID: 0000000123.20220101.OMP-01.000000000012345.5, method: PUT, subject=0000000123.ADT-00）<br/>
+※ Patient, Encounter は除外し送信<br/>
+<br/></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="転送例bundle-message">転送例（bundle-message）</h4>
+<ul>
+  <li>OMP-01（処方オーダ）の削除・新規で送信する
+    <ul>
+      <li>削除送信
+        <ul>
+          <li>ヘッダー
+#SSMIX,2.00,9999999999,0000000123,20220101,OMP-01,000000000012345,DEL,-,20220101235959567<br/></li>
+          <li>インタラクション: update</li>
+          <li>送信対象リソース（Bundle-message）<br/>
+Bundle（ID: 0000000123,20220101,OMP-01,000000000012345, method: PUT）<br/>
+配下の MessageHeader（ID: 0000000123.20220101.OMP-01.000000000012345.MSH, reason=CA）<br/></li>
+        </ul>
+      </li>
+      <li>新規送信
+        <ul>
+          <li>ヘッダー
+#SSMIX,2.00,9999999999,0000000123,20220101,OMP-01,000000000012345,INS,-,20220101235959568<br/></li>
+          <li>インタラクション: update</li>
+          <li>送信対象リソース（Bundle-message）<br/>
+Bundle（ID: 0000000123,20220101,OMP-01,000000000012345, method: PUT）<br/>
+配下の MessageHeader（ID: 0000000123.20220101.OMP-01.000000000012345.MSH, reason=NW）<br/>
+<br/></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p><br/></p>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p><a name="l934">​</a>
+          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="swgssmix.org@email.dummy"></a>.  Package ssmix2.fhir.mappings#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 30, 2022 12:40+0900">2022-11-30</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

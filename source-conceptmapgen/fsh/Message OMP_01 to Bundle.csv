@@ -1,0 +1,9 @@
+管理番号,変換前コード,変換前表記,変換後コード,変換後表記,等価性,コメント,自由記載欄
+,RDE_O11.MSH,メッセージヘッダ,MessageHeader,メッセージヘッダ,equivalent,,
+,RDE_O11.PID,患者識別,JP_Patient,患者,equivalent,,
+,RDE_O11.PV1,来院情報,Encounter,来院情報,equivalent,,
+,RDE_O11.ORC,薬剤／処置 コード化されたオーダ,JP_MedicationRequest,内服・外用薬剤処方,relatedto,RXEから変換した JP_MedicationRequest の要素として設定する。ORCからは identifier などを取得する。,
+,RDE_O11.AL1,アレルギー情報,JP_AllergyIntolerance,アレルギー情報・不耐性,equivalent,,
+,RDE_O11.RXE,薬剤／処置 コード化されたオーダ,JP_MedicationRequest,内服・外用薬剤処方,equivalent,,
+,RDE_O11.TQ1,タイミング／数量,JP_MedicationRequest,内服・外用薬剤処方,relatedto,RXEから変換した JP_MedicationRequest の要素として設定する。,
+,RDE_O11.RXR,投薬経路,JP_MedicationRequest,内服・外用薬剤処方,relatedto,RXEから変換した JP_MedicationRequest の要素として設定する。,

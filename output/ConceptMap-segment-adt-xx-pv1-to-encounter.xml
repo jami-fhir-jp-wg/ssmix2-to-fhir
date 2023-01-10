@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="segment-adt-xx-pv1-to-encounter"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>SegmentADT_XX_PV1toEncounter (http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-adt-xx-pv1-to-encounter)</h2><p>Mapping from ADT-XX.PV1 to <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a></p><p>ACTIVE (not intended for production usage). Published on 2022-07-20 by swgssmix. </p><div><p>この ConceptMap には ADT PV1 来院情報 から Encounter への変換を定義する。</p>
+</div><br/><p><b>Group 1</b>Mapping from <code>ADT-XX.PV1</code> to <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>MSH-9 (メッセージ型)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Encounter.status</td><td>Table v2-0003 to EncounterStatusを参照。</td></tr><tr><td>MSH-9 (メッセージ型)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Encounter.location.status</td><td>Table v2-0003 to EncounterLocationStatusを参照。</td></tr><tr><td>EVN-6 (事象発生日時)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Encounter.location.period.start</td><td>ADT-31、ADT-32、ADT-42の場合、設定する。</td></tr><tr><td>PID-3 (患者ID リスト)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Encounter.subject</td><td>Patientへの参照を設定する。</td></tr><tr><td>PV1-0 (セグメントID)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>PV1-1 (セットID-PV1)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>PV1-2 (患者区分)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Encounter.class</td><td>v3-ActCodeを設定する。</td></tr><tr><td>PV1-3 (来院情報)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Encounter.location.location</td><td>ADT-31の場合、外出泊先が不明の場合は固定値を設定する。location.statusの設定値はSS-MIX2データ種別EncounterLocationStatusを参照。</td></tr><tr><td>PV1-6 (患者の以前の所在)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>PV1-7 (主治医)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Encounter.participant</td><td>v3-ParticipationType から ATND を設定する。</td></tr><tr><td>PV1-10 (診療部門)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>PV1-17 (入院時医師)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Encounter.participant</td><td>v3-ParticipationType から ADM を設定する。</td></tr><tr><td>PV1-36 (退院区分)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Encounter.diagnostics.condition.identifier</td><td>use には diagnosis-role から DD を設定する。</td></tr><tr><td>PV1-36 (退院区分)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Encounter.diagnostics.condition.display</td><td>退院区分の表記を設定する。</td></tr><tr><td>PV1-44 (入院日時)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Encounter.period.start</td><td>患者区分が入院の場合、イベント型に関係なく入院日時を設定する。</td></tr><tr><td>PV1-44 (入院日時)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Encounter.location.period.start</td><td>ADT-22の場合、入院日時を設定する。</td></tr><tr><td>PV1-45 (退院日時)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Encounter.period.end</td><td>患者区分が入院の場合、イベント型に関係なく退院日時を設定する。</td></tr><tr><td>PV1-45 (退院日時)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Encounter.location.period.end</td><td>ADT-52の場合、退院日時を設定する。</td></tr><tr><td>PV2-0 (セグメントID)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td>ADT以外から生成する場合は使用しない。</td></tr><tr><td>PV2-1 (事前保留所在場所)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td>ADT以外から生成する場合は使用しない。</td></tr><tr><td>PV2-8 (予定入院日時)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Encounter.period.start</td><td>ADT-21の場合、設定する。</td></tr><tr><td>PV2-8 (予定入院日時)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Encounter.location.period.start</td><td>ADT-21、ADT-41の場合、設定する。</td></tr><tr><td>PV2-9 (予定退院日時)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Encounter.period.end</td><td>ADT-21の場合、設定する。</td></tr><tr><td>PV2-9 (予定退院日時)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Encounter.location.period.end</td><td>ADT-51の場合、設定する。</td></tr><tr><td>PV2-47 (予定帰院日時)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Encounter.location.period.end</td><td>ADT-31の場合、設定する。</td></tr></table></div>
+  </text>
+  <extension url="Encounter">
+    <extension url="type">
+      <valueCode value="derived-from"/>
+    </extension>
+  </extension>
+  <extension url="label">
+    <valueString value="Segment ADT_XX_PV1 to Encounter.fsh"/>
+  </extension>
+  <url value="http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-adt-xx-pv1-to-encounter"/>
+  <version value="0.1.0"/>
+  <name value="SegmentADT_XX_PV1toEncounter"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-07-20"/>
+  <publisher value="swgssmix"/>
+  <description value="この ConceptMap には ADT PV1 来院情報 から Encounter への変換を定義する。"/>
+  <sourceUri value="ADT-XX.PV1"/>
+  <targetUri value="Encounter"/>
+  <group>
+    <source value="ADT-XX.PV1"/>
+    <target value="Encounter"/>
+    <element>
+      <code value="MSH-9"/>
+      <display value="メッセージ型"/>
+      <target>
+        <code value="Encounter.status"/>
+        <equivalence value="equivalent"/>
+        <comment value="Table v2-0003 to EncounterStatusを参照。"/>
+      </target>
+    </element>
+    <element>
+      <code value="MSH-9"/>
+      <display value="メッセージ型"/>
+      <target>
+        <code value="Encounter.location.status"/>
+        <equivalence value="equivalent"/>
+        <comment value="Table v2-0003 to EncounterLocationStatusを参照。"/>
+      </target>
+    </element>
+    <element>
+      <code value="EVN-6"/>
+      <display value="事象発生日時"/>
+      <target>
+        <code value="Encounter.location.period.start"/>
+        <equivalence value="equivalent"/>
+        <comment value="ADT-31、ADT-32、ADT-42の場合、設定する。"/>
+      </target>
+    </element>
+    <element>
+      <code value="PID-3"/>
+      <display value="患者ID リスト"/>
+      <target>
+        <code value="Encounter.subject"/>
+        <equivalence value="equivalent"/>
+        <comment value="Patientへの参照を設定する。"/>
+      </target>
+    </element>
+    <element>
+      <code value="PV1-0"/>
+      <display value="セグメントID"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PV1-1"/>
+      <display value="セットID-PV1"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PV1-2"/>
+      <display value="患者区分"/>
+      <target>
+        <code value="Encounter.class"/>
+        <equivalence value="equivalent"/>
+        <comment value="v3-ActCodeを設定する。"/>
+      </target>
+    </element>
+    <element>
+      <code value="PV1-3"/>
+      <display value="来院情報"/>
+      <target>
+        <code value="Encounter.location.location"/>
+        <equivalence value="equivalent"/>
+        <comment value="ADT-31の場合、外出泊先が不明の場合は固定値を設定する。location.statusの設定値はSS-MIX2データ種別EncounterLocationStatusを参照。"/>
+      </target>
+    </element>
+    <element>
+      <code value="PV1-6"/>
+      <display value="患者の以前の所在"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PV1-7"/>
+      <display value="主治医"/>
+      <target>
+        <code value="Encounter.participant"/>
+        <equivalence value="equivalent"/>
+        <comment value="v3-ParticipationType から ATND を設定する。"/>
+      </target>
+    </element>
+    <element>
+      <code value="PV1-10"/>
+      <display value="診療部門"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PV1-17"/>
+      <display value="入院時医師"/>
+      <target>
+        <code value="Encounter.participant"/>
+        <equivalence value="equivalent"/>
+        <comment value="v3-ParticipationType から ADM を設定する。"/>
+      </target>
+    </element>
+    <element>
+      <code value="PV1-36"/>
+      <display value="退院区分"/>
+      <target>
+        <code value="Encounter.diagnostics.condition.identifier"/>
+        <equivalence value="equivalent"/>
+        <comment value="use には diagnosis-role から DD を設定する。"/>
+      </target>
+    </element>
+    <element>
+      <code value="PV1-36"/>
+      <display value="退院区分"/>
+      <target>
+        <code value="Encounter.diagnostics.condition.display"/>
+        <equivalence value="equivalent"/>
+        <comment value="退院区分の表記を設定する。"/>
+      </target>
+    </element>
+    <element>
+      <code value="PV1-44"/>
+      <display value="入院日時"/>
+      <target>
+        <code value="Encounter.period.start"/>
+        <equivalence value="equivalent"/>
+        <comment value="患者区分が入院の場合、イベント型に関係なく入院日時を設定する。"/>
+      </target>
+    </element>
+    <element>
+      <code value="PV1-44"/>
+      <display value="入院日時"/>
+      <target>
+        <code value="Encounter.location.period.start"/>
+        <equivalence value="equivalent"/>
+        <comment value="ADT-22の場合、入院日時を設定する。"/>
+      </target>
+    </element>
+    <element>
+      <code value="PV1-45"/>
+      <display value="退院日時"/>
+      <target>
+        <code value="Encounter.period.end"/>
+        <equivalence value="equivalent"/>
+        <comment value="患者区分が入院の場合、イベント型に関係なく退院日時を設定する。"/>
+      </target>
+    </element>
+    <element>
+      <code value="PV1-45"/>
+      <display value="退院日時"/>
+      <target>
+        <code value="Encounter.location.period.end"/>
+        <equivalence value="equivalent"/>
+        <comment value="ADT-52の場合、退院日時を設定する。"/>
+      </target>
+    </element>
+    <element>
+      <code value="PV2-0"/>
+      <display value="セグメントID"/>
+      <target>
+        <equivalence value="equivalent"/>
+        <comment value="ADT以外から生成する場合は使用しない。"/>
+      </target>
+    </element>
+    <element>
+      <code value="PV2-1"/>
+      <display value="事前保留所在場所"/>
+      <target>
+        <equivalence value="equivalent"/>
+        <comment value="ADT以外から生成する場合は使用しない。"/>
+      </target>
+    </element>
+    <element>
+      <code value="PV2-8"/>
+      <display value="予定入院日時"/>
+      <target>
+        <code value="Encounter.period.start"/>
+        <equivalence value="equivalent"/>
+        <comment value="ADT-21の場合、設定する。"/>
+      </target>
+    </element>
+    <element>
+      <code value="PV2-8"/>
+      <display value="予定入院日時"/>
+      <target>
+        <code value="Encounter.location.period.start"/>
+        <equivalence value="equivalent"/>
+        <comment value="ADT-21、ADT-41の場合、設定する。"/>
+      </target>
+    </element>
+    <element>
+      <code value="PV2-9"/>
+      <display value="予定退院日時"/>
+      <target>
+        <code value="Encounter.period.end"/>
+        <equivalence value="equivalent"/>
+        <comment value="ADT-21の場合、設定する。"/>
+      </target>
+    </element>
+    <element>
+      <code value="PV2-9"/>
+      <display value="予定退院日時"/>
+      <target>
+        <code value="Encounter.location.period.end"/>
+        <equivalence value="equivalent"/>
+        <comment value="ADT-51の場合、設定する。"/>
+      </target>
+    </element>
+    <element>
+      <code value="PV2-47"/>
+      <display value="予定帰院日時"/>
+      <target>
+        <code value="Encounter.location.period.end"/>
+        <equivalence value="equivalent"/>
+        <comment value="ADT-31の場合、設定する。"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

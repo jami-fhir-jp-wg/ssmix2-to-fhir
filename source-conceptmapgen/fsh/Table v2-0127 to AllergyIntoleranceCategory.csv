@@ -1,0 +1,9 @@
+管理番号,変換前コード,変換前表記,変換後コード,変換後表記,等価性,コメント,自由記載欄
+,DA,薬物アレルギー,medication,Medication,equivalent,,
+,FA,食物アレルギー,food,Food,equivalent,,
+,MA,種々のアレルギー,,,unmatched,,
+,MC,種々の禁忌,,,unmatched,,
+,EA,環境アレルギー,environment,Environment,equivalent,,
+,AA,動物アレルギー,biologic,Environment,equivalent,,
+,PA,植物アレルギー,environment,Environment,equivalent,,
+,LA,花粉アレルギー,environment,Environment,equivalent,,

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="segment-pid-to-patient"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>SegmentPIDtoPatient (http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-pid-to-patient)</h2><p>Mapping from PID to JP_Patient</p><p>ACTIVE (not intended for production usage). Published on 2022-02-01 by swgssmix. </p><div><p>この ConceptMap には 共通 PID 患者識別 から Patient への変換を定義する。</p>
+</div><br/><p><b>Group 1</b>Mapping from <code>PID</code> to <code>JP_Patient</code></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>PID-0 (セグメントID)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>PID-1 (セットID-PV1)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>PID-3 (患者ID リスト)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.identifier</td><td/></tr><tr><td>PID-5 (患者氏名)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.name</td><td/></tr><tr><td>PID-7 (生年月日年齢)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.birthDate</td><td/></tr><tr><td>PID-8 (性別)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.gender</td><td/></tr><tr><td>PID-11 (患者住所)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.address</td><td/></tr><tr><td>PID-13 (電話番号－自宅)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.telecom</td><td>system:  phone,  use: home</td></tr><tr><td>PID-14 (電話番号－勤務先)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.telecom</td><td>system:  phone,  use: work</td></tr><tr><td>PID-33 (最終更新日時)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>DB1-0 (セグメントID)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>DB1-1 (セットID-DB1)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>DB1-2 (身体障害情報)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.extension</td><td>http://hl7.org/fhir/R4/extension-patient-disability.html、CodeableConcept1件として設定する。</td></tr><tr><td>DB1-4 (身体障害の有無)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.extension</td><td>http://hl7.org/fhir/R4/extension-patient-disability.html、CodeableConcept1件として設定する。</td></tr><tr><td>NK1-0 (セグメントID)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>NK1-1 (セットID-NK1)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td/><td/></tr><tr><td>NK1-2 (氏名)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.contact.name</td><td/></tr><tr><td>NK1-3 (続柄)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.contact.relationship</td><td/></tr><tr><td>NK1-4 (住所)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.contact.address</td><td/></tr><tr><td>NK1-5 (電話番号)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.contact.telecom</td><td/></tr><tr><td>NK1-6 (勤務先電話番号)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.contact.telecom</td><td/></tr><tr><td>NK1-13 (所属組織名)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.contact.organization</td><td/></tr></table></div>
+  </text>
+  <extension url="Patient">
+    <extension url="type">
+      <valueCode value="derived-from"/>
+    </extension>
+  </extension>
+  <extension url="label">
+    <valueString value="Segment PID to Patient.fsh"/>
+  </extension>
+  <url value="http://example.org/fhir/ig/ssmix2.fhir.mappings/ConceptMap/segment-pid-to-patient"/>
+  <version value="0.1.0"/>
+  <name value="SegmentPIDtoPatient"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-02-01"/>
+  <publisher value="swgssmix"/>
+  <description value="この ConceptMap には 共通 PID 患者識別 から Patient への変換を定義する。"/>
+  <sourceUri value="PID"/>
+  <targetUri value="JP_Patient"/>
+  <group>
+    <source value="PID"/>
+    <target value="JP_Patient"/>
+    <element>
+      <code value="PID-0"/>
+      <display value="セグメントID"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PID-1"/>
+      <display value="セットID-PV1"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PID-3"/>
+      <display value="患者ID リスト"/>
+      <target>
+        <code value="Patient.identifier"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PID-5"/>
+      <display value="患者氏名"/>
+      <target>
+        <code value="Patient.name"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PID-7"/>
+      <display value="生年月日年齢"/>
+      <target>
+        <code value="Patient.birthDate"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PID-8"/>
+      <display value="性別"/>
+      <target>
+        <code value="Patient.gender"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PID-11"/>
+      <display value="患者住所"/>
+      <target>
+        <code value="Patient.address"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PID-13"/>
+      <display value="電話番号－自宅"/>
+      <target>
+        <code value="Patient.telecom"/>
+        <equivalence value="equivalent"/>
+        <comment value="system:  phone,  use: home"/>
+      </target>
+    </element>
+    <element>
+      <code value="PID-14"/>
+      <display value="電話番号－勤務先"/>
+      <target>
+        <code value="Patient.telecom"/>
+        <equivalence value="equivalent"/>
+        <comment value="system:  phone,  use: work"/>
+      </target>
+    </element>
+    <element>
+      <code value="PID-33"/>
+      <display value="最終更新日時"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="DB1-0"/>
+      <display value="セグメントID"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="DB1-1"/>
+      <display value="セットID-DB1"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="DB1-2"/>
+      <display value="身体障害情報"/>
+      <target>
+        <code value="Patient.extension"/>
+        <equivalence value="equivalent"/>
+        <comment value="http://hl7.org/fhir/R4/extension-patient-disability.html、CodeableConcept1件として設定する。"/>
+      </target>
+    </element>
+    <element>
+      <code value="DB1-4"/>
+      <display value="身体障害の有無"/>
+      <target>
+        <code value="Patient.extension"/>
+        <equivalence value="equivalent"/>
+        <comment value="http://hl7.org/fhir/R4/extension-patient-disability.html、CodeableConcept1件として設定する。"/>
+      </target>
+    </element>
+    <element>
+      <code value="NK1-0"/>
+      <display value="セグメントID"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="NK1-1"/>
+      <display value="セットID-NK1"/>
+      <target>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="NK1-2"/>
+      <display value="氏名"/>
+      <target>
+        <code value="Patient.contact.name"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="NK1-3"/>
+      <display value="続柄"/>
+      <target>
+        <code value="Patient.contact.relationship"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="NK1-4"/>
+      <display value="住所"/>
+      <target>
+        <code value="Patient.contact.address"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="NK1-5"/>
+      <display value="電話番号"/>
+      <target>
+        <code value="Patient.contact.telecom"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="NK1-6"/>
+      <display value="勤務先電話番号"/>
+      <target>
+        <code value="Patient.contact.telecom"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="NK1-13"/>
+      <display value="所属組織名"/>
+      <target>
+        <code value="Patient.contact.organization"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

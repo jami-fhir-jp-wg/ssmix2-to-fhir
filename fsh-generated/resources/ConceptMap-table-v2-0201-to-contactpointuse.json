@@ -1,0 +1,131 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "table-v2-0201-to-contactpointuse",
+  "version": "1.0",
+  "name": "Tablev2-0201toContactPointUse",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-02-01",
+  "publisher": "swgssmix",
+  "sourceUri": "http://terminology.hl7.org/CodeSystem/v2-0201",
+  "targetUri": "http://hl7.org/fhir/contact-point-use",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/v2-0201",
+      "target": "http://hl7.org/fhir/contact-point-use",
+      "element": [
+        {
+          "code": "PRN",
+          "display": "主要な自宅番号\r",
+          "target": [
+            {
+              "code": "home",
+              "display": "Home",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "ORN",
+          "display": "他の自宅番号",
+          "target": [
+            {
+              "equivalence": "unmatched",
+              "comment": "ContactPoint.systemを設定"
+            }
+          ]
+        },
+        {
+          "code": "WPN",
+          "display": "勤務先番号\r",
+          "target": [
+            {
+              "code": "work",
+              "display": "Work",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        },
+        {
+          "code": "VHN",
+          "display": "別荘番号",
+          "target": [
+            {
+              "equivalence": "unmatched",
+              "comment": "ContactPoint.systemを設定"
+            }
+          ]
+        },
+        {
+          "code": "ASN",
+          "display": "留守電話応答サービス番号",
+          "target": [
+            {
+              "equivalence": "unmatched",
+              "comment": "ContactPoint.systemを設定"
+            }
+          ]
+        },
+        {
+          "code": "EMR",
+          "display": "緊急番号",
+          "target": [
+            {
+              "equivalence": "unmatched",
+              "comment": "ContactPoint.systemを設定"
+            }
+          ]
+        },
+        {
+          "code": "NET",
+          "display": "ネットワーク（電子メール）アドレス",
+          "target": [
+            {
+              "equivalence": "unmatched",
+              "comment": "ContactPoint.systemを設定"
+            }
+          ]
+        },
+        {
+          "code": "BPN",
+          "display": "ポケットベルの番号",
+          "target": [
+            {
+              "equivalence": "unmatched",
+              "comment": "ContactPoint.systemを設定"
+            }
+          ]
+        },
+        {
+          "code": "PRS",
+          "display": "個人の連絡先",
+          "target": [
+            {
+              "code": "mobile",
+              "display": "Mobile",
+              "equivalence": "equivalent",
+              "comment": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "ContactPointUse",
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        }
+      ]
+    },
+    {
+      "url": "label",
+      "valueString": "Table v2-0201 to ContactPointUse.fsh"
+    }
+  ]
+}
